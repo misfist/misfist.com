@@ -3,8 +3,8 @@ Contributors: likebtn
 Donate link: http://likebtn.com
 Tags: like button, vote, voting, rating, dislike
 Requires at least: 2.8
-Tested up to: 3.8
-Stable tag: 1.8
+Tested up to: 3.9
+Stable tag: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,12 @@ Like Button allows visitors to like and dislike pages, posts, custom post types 
 
 == Description ==
 
-<strong><a href="http://likebtn.com" target="_blank" title="Like Button">LikeBtn.com</a></strong> - is the service providing a fully customizable like button widget for websites. The Like Button can be installed on any website for FREE. The service also offers a range of plans giving access to additional options and tools - see <a href="http://likebtn.com/en/#plans_pricing" target="_blank" title="Like Button Plans">Plans & Pricing</a>.
+<strong><a href="http://likebtn.com" target="_blank" title="Like Button">LikeBtn.com</a></strong> is the service providing a fully customizable like button widget for websites. This plugin integrates LikeBtn Like Button into your WordPress website and allows visitors to like and dislike pages, posts, custom post types and comments anonymously.
 
-This plugin integrates the LikeBtn Like Button into your WordPress website to allow visitors to like and dislike pages, posts, custom post types and comments anonymously.
+Keep in mind that this is not a standalone plugin as it depends on <a href="http://likebtn.com" target="_blank" title="Like Button for website">LikeBtn.com</a> widget. The LikeBtn service provides a 5-days TRIAL period when all the features are available. After this period your website is switched to the FREE plan (see <a href="http://likebtn.com/en/#plans_pricing" target="_blank" title="Like Button Plans">Plans & Pricing</a>).
 
-**Demo:** <a href="http://wordpress.likebtn.com/wordpress-like-button-plugin/" target="_blank" title="wordpress like button demo">http://wordpress.likebtn.com</a>
+= Demo =
+<a href="http://wordpress.likebtn.com/wordpress-like-button-plugin/" target="_blank" title="wordpress like button demo">http://wordpress.likebtn.com</a>
 
 = Features =
 * Allows visitors to like and dislike pages, posts, custom post types and comments anonymously.
@@ -44,68 +45,36 @@ This plugin integrates the LikeBtn Like Button into your WordPress website to al
 
 == Frequently Asked Questions ==
 
-See also <a href="http://likebtn.com/en/faq" target="_blank" title="Like Button FAQ">LikeBtn FAQ</a>.
-
-<strong>1. How can I place the Like Button inside the post/page content using a shortcode?</strong>
-
-Use the following shortcode: `[likebtn]`
-
-You can pass Like Button settings as parameters in the shortcode:
-`[likebtn identifier="my_button_in_post" style="large"]`
-
-If identifier parameter is not specified, post ID is used.
-
-
-<strong>2. How can I display a list of the most liked content inside the post/page using a shortcode? (PRO, VIP, ULTRA)</strong>
-
-Use the following shortcode:
-`[likebtn_most_liked content_types="post,comment" title="Most liked posts and comments on my website" show_date="1" show_likes="0" show_dislikes="1" number="3"]`
-
-Available content types: `post, page, attachment, revision, nav_menu_item, comment` and custom post types.
-
-
-<strong>3. Identifier structure.</strong>
-
-The `identifier` parameter in WordPress LikeBtn plugin has the following structure: **Post type** + **_** + **Post ID**
-
-Examples:
-<ul>
-<li>post_1</li>
-<li>page_7</li>
-</ul>
-
-So if you need to insert the LikeBtn HTML-code directly into WordPress post template, you can specify `identifier` parameter as follows:
-`data-identifier="post_<?php the_ID()?>"`
-
-<strong>4. Sort posts by likes.</strong>
-
-After enabling synchronization WordPress Like Button plugin adds 3 custom fields to posts:
-<ul>
-<li>Likes</li>
-<li>Dislikes</li>
-<li>Likes minus dislikes</li>
-</ul>
-
-You can sort posts in WordPress by custom fields values using <a href="http://codex.wordpress.org/Function_Reference/query_posts" target="_blank">query_posts()</a> function. At first determine the template for inserting the code, it can be index.php, page.php, archive.php or any other depending on your needs and WordPress theme you are using. Then find the <a href="http://codex.wordpress.org/The_Loop" target="_blank">Loop</a> in the template. Finally insert the query_posts() function call above the Loop:
-`<?php query_posts($query_string . '&meta_key=Likes&orderby=meta_value&order=DESC'); ?>
-<?php /* Start the Loop */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'content', get_post_format() ); ?>
-<?php endwhile; ?>`
-In `meta_key` parameter specify one of the 3 custom fields provided by LikeBtn plugin. In `order` parameter specify the desired sort order: DESC (descending), ASC (ascending).
-
-<strong>5. Using WordPress Like Button plugin in a Multisite network.</strong>
-
-You can use LikeBtn plugin in a domain-based <a href="http://codex.wordpress.org/Create_A_Network" target="_blank">multisite networks</a> in which sites use subdomains. Using LikeBtn plugin in a path-based multisite networks in which on-demand sites use paths is not recommended for now, as vote results will intersect between sub-sites.
+* <a href="http://likebtn.com/en/wordpress-like-button-plugin" target="_blank" title="WordPress Like Button Plugin<">WordPress LikeBtn Plugin FAQ</a>
+* <a href="http://likebtn.com/en/faq" target="_blank" title="Like Button FAQ">LikeBtn FAQ</a>
+* <a href="http://forum.likebtn.com/forums/34-WordPress" target="_blank" title="WordPress Like Button Forum">Forum</a>
 
 == Screenshots ==
-1. Like Button
-2. Plugin settings
-3. Statistics
-4. Most Liked Content Widget admin view
-5. Most Liked Content Widget frontend view
+1. Like Buttons
+2. Like Button styles
+3. Plugin settings
+4. Statistics
+5. Most Liked Content Widget admin view
+6. Most Liked Content Widget frontend view
 
 == Changelog ==
+
+= 1.9 =
+* Added thumbnails on Statistics page
+* Added custom post types on Statistics page
+* 12 new styles
+* Statistics for multisite networks
+* Added after liking tooltip option
+* Added revote_period option
+* Added loader_image option
+* Added loader_show option
+* Added lazy_load option
+* Added counter_padding option
+* Added counter_zero_show option
+* Added icon_like_show option
+* Added icon_dislike_show option
+* Added thumbnail and post excerpt to the Most Liked Content widget
+* Custom items in Statistics
 
 = 1.8 =
 * Added the feature allowing to change number of likes and dislikes in the admin

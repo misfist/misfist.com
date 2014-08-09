@@ -1,0 +1,201 @@
+// STARTER VARIABLES AND MIXINS
+
+
+// Colors, etc.
+$accent: #EF3F26; //orange
+$accent-secondary: #F15D38; //links etc.
+$panel: #F3F2E0; //beige background
+$sidebar-panel-primary: #ebebeb;
+$sidebar-panel-secondary: #e1eaea;
+$brand: #9C391D;//wine
+$backdrop: #2D2D2E; //#141414;  //dark grey background
+$even-backdrop: #f0f0f0;
+$odd-backdrop: white; 
+$rules-color: #cfcfcf; // gray horizontal and vertical rules
+$rules-color-accent: #141414;
+$text-color: #42454A; // body copy
+$text-color-prominent: #414042;
+$text-color-secondary: #808080;
+$button: #826853; // brown
+$search-input: #DDE4CC;
+//same as wine, but both things are unique enough to have separate vars
+$site-title-color: white;
+$nav-title-color: white;
+$gray-medium: #ccc;
+$gray-dark: #2D2D2E;
+
+
+
+//
+// Font faces, stacks and sizes.
+//
+
+// Compass' vertical_rhythm extension is a powerful tool to set up a vertical
+// rhythm for your entire page. You can see some of its mixins and functions in
+// use in the normalize.scss file.
+// @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
+// Typography
+// -------------------------
+$sansFontFamily:        SourceSansPro, Tahoma, sans-serif;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$header-font-family:   League, sans-serif;
+$header-font-weight:   normal;
+$header-color:         inherit;
+
+$base-font-size:   14px; // The font size set on the root html element.
+
+// $base-line-height set to px instead of a factor because 
+// it was resulting in the following error
+// error sass/normalize.scss (Line 108 of _vertical_rhythm.scss: 0.08571em/px isn't a valid CSS value.) 
+// this is a vertical rhythm bug
+$base-line-height: 16.4px; // This line-height determines the basic unit of vertical rhythm.
+
+
+// $h1-font-size: 2.7857 * $base-font-size;
+$h1-font-size: 4.85 * $base-font-size;
+$h2-font-size: 2.7857 * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.75 * $base-font-size;
+
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $sansFontFamily; // The font family set on the html element.
+$font-body:        $sansFontFamily;
+$font-monospace:   $monoFontFamily;
+$header-line-height: 1.2;
+
+
+// GRID (BOURBON NEAT) //
+// so great! read the docs:
+// neat.bourbon.io/docs/
+
+$grid-columns: 16;
+$max-width: 1200px;
+
+
+// MIXINS 
+// read the Bourbon docs for all kinds of well-tested mixins 
+// check there before adding new ones
+// http://bourbon.io/docs/
+
+
+// RWD BREAKPOINTS 
+// mobile first! so you only have to use floats etc in larger sizes
+// set breakpoints where your content breaks, not particular devices
+
+@mixin breakpoint($point) {
+	@if $point == tiny {
+		@media (min-width: 321px)  { @content; } 
+	}
+	@if $point == small {
+		@media (min-width: 481px) { @content; }
+	}
+	@if $point == medium {
+		@media (min-width: 769px) { @content; }
+	}
+	@if $point == large {
+		@media (min-width: 1025px) { @content; }
+	}
+	@else if $point == xl {
+		@media (min-width: 1200px) { @content; }
+	}
+}
+
+
+// CLEARFIX
+
+// for old markup w/clearfix class:
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// for semantic markup, a la http://blog.teamtreehouse.com/a-better-clearfix-with-sass
+%clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+// NOTCHED LINE
+
+@mixin notch($size, $border: $gray5, $fill: $gray9){
+    position: relative;
+    a:before,
+    a:after {
+        position: absolute;
+        content: '';
+        height: 0px;
+        left: 50%;
+        bottom: -1px;
+        border-color: transparent;
+    }
+    a:before {
+        border-bottom-color: $border;
+        border-width: $size;
+        margin-left: -$size;
+    }
+    a:after {
+        border-bottom-color: $fill;
+        border-width: $size - 1;
+        margin-left: -$size + 1;
+    }
+}
+
+
+// BUTTON THAT FLIPS BG/TEXT COLORS ON HOVER
+
+@mixin flip-button($color){
+    background: $color;
+    border-color: $color;
+    color: $white !important;
+    &:hover,
+    &:focus {
+        background: $white;
+        color: $color !important;
+    }
+}
+
+
+// OVERFLOW FADES OUT
+
+%overflow-fade {
+    position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		@include linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), $fallback: transparent);
+	}
+}
+
+
+// STATES
+
+.is-hidden {
+	display: none;
+}
+
+.fullwidth { 
+	width: 100%; 
+}
+
+
+
+// BROWSER ADJUSTMENTS
+
+// standardize box model across browsers! IE8 and up. bit.ly/1eXrOej 
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+

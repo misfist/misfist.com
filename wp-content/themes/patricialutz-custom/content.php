@@ -8,9 +8,9 @@
 		<div <?php post_class(); ?> id="post">
 			<div class="entry-meta">
 				<?php if ( is_category() ) : ?>
-					<div class="date"><?php// printf( __( '%s', 'chunk' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></div>					
+					<!-- <div class="date"><?php printf( __( '%s', 'chunk' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></div>	 -->				
 				<?php elseif ( is_tag() ) : ?>
-					<div class="date"><?php// printf( __( '%s', 'chunk' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></div>					
+					<!-- <div class="date"><?php printf( __( '%s', 'chunk' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></div>	 -->				
 				<?php else :?>
 					<div class="date"><?php the_category( ', ' ); ?></div>
 				<?php endif; ?>

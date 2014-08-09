@@ -10,6 +10,9 @@
 #likebtn_like_button h2.likebtn_logo img {
     vertical-align: top;
 }
+#review_link {
+    float: right;
+}
 .likebtn_like_button_collapse_trigger small {
     color: gray;
     margin-right: 5px;

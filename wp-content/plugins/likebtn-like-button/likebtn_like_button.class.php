@@ -23,7 +23,7 @@ class LikeBtnLikeButton {
      */
     public function runSyncVotes() {
         if (!self::$synchronized && get_option('likebtn_like_button_account_email') && get_option('likebtn_like_button_account_api_key') && get_option('likebtn_like_button_sync_inerval') && $this->timeToSyncVotes(get_option('likebtn_like_button_sync_inerval') * 60)) {
-            $this->syncVotes(get_option('likebtn_like_button_account_email'), get_option('likebtn_like_button_account_api_key'));
+            $this->syncVotes();
         }
     }
 
@@ -64,7 +64,7 @@ class LikeBtnLikeButton {
 
         $cms_version = $wp_version;
 
-        $likebtn_version = _likebtn_like_button_get_plugin_version;
+        $likebtn_version = _likebtn_like_button_get_plugin_version();
         $php_version = phpversion();
         $useragent = "WordPress $wp_version; likebtn plugin $likebtn_version; PHP $php_version";
 
@@ -83,22 +83,15 @@ class LikeBtnLikeButton {
     }
 
     /**
-     * Comment sync function.
+     * Sync votes from LikeBtn.com to local DB.
      */
-    public function syncVotes() {
+    public function syncVotes($email = '', $api_key = '', $full = false) {
         $sync_result = true;
 
         $last_sync_time = number_format(get_option('likebtn_like_button_last_sync_time'), 0, '', '');
 
-        $email = trim(get_option('likebtn_like_button_account_email'));
-        $api_key = trim(get_option('likebtn_like_button_account_api_key'));
-        $subdirectory = trim(get_option('likebtn_like_button_subdirectory'));
-        $parse_url = parse_url(get_site_url());
-        $domain = $parse_url['host'].$subdirectory;
-
         $updated_after = '';
-
-        if (get_option('likebtn_like_button_last_successfull_sync_time')) {
+        if (!$full && get_option('likebtn_like_button_last_successfull_sync_time')) {
             $updated_after = get_option('likebtn_like_button_last_successfull_sync_time') - LIKEBTN_LIKE_BUTTON_LAST_SUCCESSFULL_SYNC_TIME_OFFSET;
         }
 
@@ -108,7 +101,7 @@ class LikeBtnLikeButton {
         }
 
         // retrieve first page
-        $response = $this->apiRequest('stat', $url);
+        $response = $this->apiRequest('stat', $url, $email, $api_key);
 
         if (!$this->updateVotes($response)) {
             $sync_result = false;
@@ -119,7 +112,7 @@ class LikeBtnLikeButton {
             $total_pages = ceil((int) $response['response']['total'] / (int) $response['response']['page_size']);
 
             for ($page = 2; $page <= $total_pages; $page++) {
-                $response = $this->apiRequest('stat', $url . '&page=' . $page);
+                $response = $this->apiRequest('stat', $url . '&page=' . $page, $email, $api_key);
 
                 if (!$this->updateVotes($response)) {
                     $sync_result = false;
@@ -127,9 +120,14 @@ class LikeBtnLikeButton {
             }
         }
 
-        if ($sync_result) {
+        if ($sync_result && !$full) {
             update_option('likebtn_like_button_last_successfull_sync_time', $last_sync_time);
         }
+
+        return array(
+            'result' => $response['result'],
+            'message' => $response['message']
+        );
     }
 
     /**
@@ -170,7 +168,7 @@ class LikeBtnLikeButton {
                 if (!empty($item['dislikes'])) {
                     $dislikes = $item['dislikes'];
                 }
-                $entity_updated = $this->updateCustomFields($item['identifier'], $likes, $dislikes);
+                $entity_updated = $this->updateCustomFields($item['identifier'], $likes, $dislikes, $item['url']);
             }
         }
         return $entity_updated;
@@ -179,25 +177,18 @@ class LikeBtnLikeButton {
     /**
      * Update entity custom fields
      */
-    public function updateCustomFields($identifier, $likes, $dislikes) {
-        global $likebtn_like_button_entities;
-        global $likebtn_like_button_custom_fields;
+    public function updateCustomFields($identifier, $likes, $dislikes, $url = '') {
+        $likebtn_like_button_entities = _likebtn_like_button_get_entities();
 
         $identifier_parts = explode('_', $identifier);
         $entity_name = '';
         if (!empty($identifier_parts[0])) {
             $entity_name = $identifier_parts[0];
         }
-        // check if entity is supported
-        if (!array_key_exists($entity_name, $likebtn_like_button_entities)) {
-            return false;
-        }
+
         $entity_id = '';
         if (!empty($identifier_parts[1])) {
             $entity_id = $identifier_parts[1];
-            if (!is_numeric($entity_id)) {
-                return false;
-            }
         }
 
         $likes_minus_dislikes = null;
@@ -205,74 +196,92 @@ class LikeBtnLikeButton {
             $likes_minus_dislikes = $likes - $dislikes;
         }
 
-        $entity_updated = true;
+        $entity_updated = false;
 
-        // set Custom fields
-        if ($entity_name == 'comment') {
-            // entity is comment
-            $comment = get_comment($entity_id);
+        if (array_key_exists($entity_name, $likebtn_like_button_entities) && is_numeric($entity_id)) {
+            // set Custom fields
+            if ($entity_name == 'comment') {
+                // entity is comment
+                $comment = get_comment($entity_id);
 
-            // check if post exists and is not revision
-            if (!empty($comment) && $comment->comment_type != 'revision') {
-                if ($likes !== null) {
-                    if (count(get_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES)) > 1) {
-                        delete_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES);
-                        add_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes, true);
-                    } else {
-                        update_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes);
+                // check if post exists and is not revision
+                if (!empty($comment) && $comment->comment_type != 'revision') {
+                    if ($likes !== null) {
+                        if (count(get_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES)) > 1) {
+                            delete_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES);
+                            add_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes, true);
+                        } else {
+                            update_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes);
+                        }
                     }
-                }
-                if ($dislikes !== null) {
-                    if (count(get_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES)) > 1) {
-                        delete_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES);
-                        add_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes, true);
-                    } else {
-                        update_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes);
+                    if ($dislikes !== null) {
+                        if (count(get_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES)) > 1) {
+                            delete_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES);
+                            add_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes, true);
+                        } else {
+                            update_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes);
+                        }
                     }
-                }
-                if ($likes_minus_dislikes !== null) {
-                    if (count(get_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES)) > 1) {
-                        delete_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES);
-                        add_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes, true);
-                    } else {
-                        update_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes);
+                    if ($likes_minus_dislikes !== null) {
+                        if (count(get_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES)) > 1) {
+                            delete_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES);
+                            add_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes, true);
+                        } else {
+                            update_comment_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes);
+                        }
                     }
+                    $entity_updated = true;
                 }
             } else {
-                $entity_updated = false;
+                // entity is post
+                $post = get_post($entity_id);
+
+                // check if post exists and is not revision
+                if (!empty($post) && !empty($post->post_type) && $post->post_type != 'revision') {
+                    if ($likes !== null) {
+                        if (count(get_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES)) > 1) {
+                            delete_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES);
+                            add_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes, true);
+                        } else {
+                            update_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes);
+                        }
+                    }
+                    if ($dislikes !== null) {
+                        if (count(get_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES)) > 1) {
+                            delete_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES);
+                            add_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes, true);
+                        } else {
+                            update_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes);
+                        }
+                    }
+                    if ($likes_minus_dislikes !== null) {
+                        if (count(get_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES)) > 1) {
+                            delete_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES);
+                            add_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes, true);
+                        } else {
+                            update_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes);
+                        }
+                    }
+                    $entity_updated = true;
+                }
             }
-        } else {
-            // entity is post
-            $post = get_post($entity_id);
+        }
 
-            // check if post exists and is not revision
-            if (!empty($post) && !empty($post->post_type) && $post->post_type != 'revision') {
-                if ($likes !== null) {
-                    if (count(get_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES)) > 1) {
-                        delete_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES);
-                        add_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes, true);
-                    } else {
-                        update_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES, $likes);
-                    }
-                }
-                if ($dislikes !== null) {
-                    if (count(get_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES)) > 1) {
-                        delete_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES);
-                        add_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes, true);
-                    } else {
-                        update_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_DISLIKES, $dislikes);
-                    }
-                }
-                if ($likes_minus_dislikes !== null) {
-                    if (count(get_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES)) > 1) {
-                        delete_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES);
-                        add_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes, true);
-                    } else {
-                        update_post_meta($entity_id, LIKEBTN_LIKE_BUTTON_META_KEY_LIKES_MINUS_DISLIKES, $likes_minus_dislikes);
-                    }
-                }
-            } else {
-                $entity_updated = false;
+        // Custom identifier
+        if (!$entity_updated) {
+            global $wpdb;
+
+            $item_data = array(
+                'identifier' => $identifier,
+                'url' => $url,
+                'likes' => $likes,
+                'dislikes' => $dislikes,
+                'likes_minus_dislikes' => $likes_minus_dislikes
+            );
+
+            $replace_result = $wpdb->replace($wpdb->prefix . LIKEBTN_LIKE_BUTTON_TABLE_ITEM, $item_data);
+            if ($replace_result) {
+                $entity_updated = true;
             }
         }
 
@@ -355,17 +364,8 @@ class LikeBtnLikeButton {
     public function reset($identifier) {
         $result = false;
 
-        $email = trim(get_option('likebtn_like_button_account_email'));
-        $api_key = trim(get_option('likebtn_like_button_account_api_key'));
-        $subdirectory = trim(get_option('likebtn_like_button_subdirectory'));
-        $parse_url = parse_url(get_site_url());
-        $domain = $parse_url['host'].$subdirectory;
-
-        $url = $this->getApiUrl() . "identifier_filter={$identifier}";
-
-        // retrieve first page
-        $response_string = $this->curl($url);
-        $response = $this->jsonDecode($response_string);
+        $url = "identifier_filter={$identifier}";
+        $response = $this->apiRequest('reset', $url);
 
         // check result
         if (isset($response['response']['reseted']) && $response['response']['reseted']) {

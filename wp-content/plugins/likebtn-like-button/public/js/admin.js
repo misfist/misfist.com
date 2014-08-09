@@ -1,5 +1,10 @@
 var plans={trial:9,free:0,plus:1,pro:2,vip:3,ultra:4};
 
+jQuery(document).ready(function(jQuery) {
+    jQuery('#review_link a:first').tipsy({gravity: 'se'});
+    jQuery('#poststuff .likebtn_tooltip').tipsy({gravity: 's'});
+});
+
 // Show/hide entity options
 function entityShowChange(el, entity_name)
 {
@@ -61,8 +66,6 @@ function accountChange()
 // test synchronization
 function testSync(loader_src)
 {
-    var q = jQuery;
-
     jQuery(".likebtn_like_button_test_sync_container:first").html('<img src="' + loader_src + '" />');
 
     jQuery.ajax({
@@ -93,6 +96,43 @@ function testSync(loader_src)
         },
         error: function(response) {
             jQuery(".likebtn_like_button_test_sync_container:first").html('Error occured. Disable WP HTTP Compression plugin if you have it enabled.').css('color', 'red');
+        }
+    });
+}
+
+// full synchronization
+function manualSync(loader_src)
+{
+    jQuery(".likebtn_like_button_manual_sync_container:first").html('<img src="' + loader_src + '" />');
+
+    jQuery.ajax({
+        type: 'POST',
+        dataType: "json",
+        url: ajaxurl,
+        data: {
+            action: 'likebtn_like_button_manual_sync',
+            likebtn_like_button_account_email: jQuery(":input[name='likebtn_like_button_account_email']:first").val(),
+            likebtn_like_button_account_api_key: jQuery(":input[name='likebtn_like_button_account_api_key']:first").val()
+        },
+        success: function(response) {
+            var result_text = '';
+            if (typeof(response.result_text) != "undefined") {
+                result_text = response.result_text;
+            }
+            jQuery(".likebtn_like_button_manual_sync_container:first").text(result_text);
+            if (typeof(response.result) == "undefined" || response.result != "success") {
+                jQuery(".likebtn_like_button_manual_sync_container:first").css('color', 'red');
+                if (typeof(response.message) != "undefined") {
+                    var text = jQuery(".likebtn_like_button_manual_sync_container:first").html() + ': ' + response.message;
+                    jQuery(".likebtn_like_button_manual_sync_container:first").html(text);
+                }
+            } else {
+                jQuery(".likebtn_like_button_manual_sync_container:first").css('color', 'green');
+            }
+
+        },
+        error: function(response) {
+            jQuery(".likebtn_like_button_manual_sync_container:first").html('Error occured. Disable WP HTTP Compression plugin if you have it enabled.').css('color', 'red');
         }
     });
 }

@@ -2,6 +2,11 @@
 
 class LikeBtnLikeButtonMostLikedWidget extends WP_Widget {
 
+    // Default thumbnail size
+    const TUMBNAIL_SIZE = 32;
+    // Default number of items to show
+    const NUMBER_OF_ITEMS = 5;
+
     function LikeBtnLikeButtonMostLikedWidget() {
         load_plugin_textdomain(LIKEBTN_LIKE_BUTTON_I18N_DOMAIN, false, dirname(plugin_basename(__FILE__)) . '/languages');
         $widget_ops = array('description' => __('Most liked posts and comments', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN));
@@ -48,9 +53,9 @@ class LikeBtnLikeButtonMostLikedWidget extends WP_Widget {
             $instance['title'] = __('Most Liked Content', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN);
         }
 
-//        if ((int) $new_instance['number'] < 1) {
-//            $instance['number'] = 5;
-//        }
+        if ((int)$instance['number'] < 1) {
+            $instance['number'] = self::NUMBER_OF_ITEMS;
+        }
 
         if (!$instance['entity_name'] || !is_array($instance['entity_name'])) {
             $instance['entity_name'] = array(LIKEBTN_LIKE_BUTTON_ENTITY_POST);
@@ -61,7 +66,7 @@ class LikeBtnLikeButtonMostLikedWidget extends WP_Widget {
             <input class="widefat" type="text" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $instance['title']; ?>" />
         </p>
         <p>
-            <label for="<?php echo $this->get_field_id('entity_name'); ?>"><?php _e('Items to show (use CTRL to choose)', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?>:</label><br/>
+            <label for="<?php echo $this->get_field_id('entity_name'); ?>"><?php _e('Items to show (use CTRL to select multiple entries)', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?>:</label><br/>
             <select name="<?php echo $this->get_field_name('entity_name'); ?>[]" id="<?php echo $this->get_field_id('entity_name'); ?>" multiple="multiple" size="6" style="height:auto !important;">
                 <?php foreach ($likebtn_like_button_entities as $entity_name_value => $entity_title): ?>
                     <option value="<?php echo $entity_name_value; ?>" <?php echo (in_array($entity_name_value, $instance['entity_name']) ? 'selected="selected"' : ''); ?> ><?php _e($entity_title, LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></option>
@@ -81,16 +86,24 @@ class LikeBtnLikeButtonMostLikedWidget extends WP_Widget {
             </select>
         </p>
         <p>
-            <input class="checkbox" type="checkbox" <?php checked($instance['show_date']); ?> id="<?php echo $this->get_field_id('show_date'); ?>" name="<?php echo $this->get_field_name('show_date'); ?>" value="1" />
-            <label for="<?php echo $this->get_field_id('show_date'); ?>"><?php _e('Display item date?', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
-        </p>
-        <p>
             <input class="checkbox" type="checkbox" id="<?php echo $this->get_field_id('show_likes'); ?>" name="<?php echo $this->get_field_name('show_likes'); ?>" value="1" <?php checked($instance['show_likes']); ?> />
-            <label for="<?php echo $this->get_field_id('show_likes'); ?>"><?php _e('Show likes count', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
+            <label for="<?php echo $this->get_field_id('show_likes'); ?>"><?php _e('Display likes count', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
         </p>
         <p>
             <input class="checkbox" type="checkbox" id="<?php echo $this->get_field_id('show_dislikes'); ?>" name="<?php echo $this->get_field_name('show_dislikes'); ?>" value="1" <?php checked($instance['show_dislikes']); ?> />
-            <label for="<?php echo $this->get_field_id('show_dislikes'); ?>"><?php _e('Show dislikes count', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
+            <label for="<?php echo $this->get_field_id('show_dislikes'); ?>"><?php _e('Display dislikes count', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
+        </p>
+        <p>
+            <input class="checkbox" type="checkbox" <?php checked($instance['show_thumbnail']); ?> id="<?php echo $this->get_field_id('show_thumbnail'); ?>" name="<?php echo $this->get_field_name('show_thumbnail'); ?>" value="1" />
+            <label for="<?php echo $this->get_field_id('show_thumbnail'); ?>"><?php _e('Display thumbnail', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
+        </p>
+        <p>
+            <input class="checkbox" type="checkbox" <?php checked($instance['show_excerpt']); ?> id="<?php echo $this->get_field_id('show_excerpt'); ?>" name="<?php echo $this->get_field_name('show_excerpt'); ?>" value="1" />
+            <label for="<?php echo $this->get_field_id('show_excerpt'); ?>"><?php _e('Display excerpt', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
+        </p>
+        <p>
+            <input class="checkbox" type="checkbox" <?php checked($instance['show_date']); ?> id="<?php echo $this->get_field_id('show_date'); ?>" name="<?php echo $this->get_field_name('show_date'); ?>" value="1" />
+            <label for="<?php echo $this->get_field_id('show_date'); ?>"><?php _e('Display item date', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN); ?></label>
         </p>
         <input type="hidden" id="wti-most-submit" name="wti-submit" value="1" />
         <?php
@@ -99,6 +112,9 @@ class LikeBtnLikeButtonMostLikedWidget extends WP_Widget {
 }
 
 class LikeBtnLikeButtonMostLiked {
+
+    const PLUGIN_NAME = 'likebtn-like-button';
+    const TEMPLATE = 'most-liked-widget.php';
 
     function LikeBtnLikeButtonMostLiked() {
         add_action('widgets_init', array(&$this, 'init'));
@@ -110,25 +126,52 @@ class LikeBtnLikeButtonMostLiked {
 
     function widget($args, $instance = array()) {
         global $wpdb;
+
         if (is_array($args)) {
             extract($args);
         }
+        if (is_array($instance)) {
+            extract($instance);
+        }
 
-        $title = $instance['title'];
-        $show_date = $instance['show_date'];
-        $show_likes = $instance['show_likes'];
-        $show_dislikes = $instance['show_dislikes'];
+        /*$title = '';
+        if (isset($instance['title'])) {
+            $title = $instance['title'];
+        }
+        $show_thumbnail = '';
+        if (isset($instance['show_thumbnail'])) {
+            $show_thumbnail = $instance['show_thumbnail'];
+        }
+        $show_excerpt = '';
+        if (isset($instance['show_excerpt'])) {
+            $show_excerpt = $instance['show_excerpt'];
+        }
+        $show_date = '';
+        if (isset($instance['show_date'])) {
+            $show_date = $instance['show_date'];
+        }
+        $show_likes = '';
+        if (isset($instance['show_likes'])) {
+            $show_likes = $instance['show_likes'];
+        }
+        $show_dislikes = '';
+        if (isset($instance['show_dislikes'])) {
+            $show_dislikes = $instance['show_dislikes'];
+        }
 
         // validate parameters
+        if ($show_thumbnail == 'true') {
+            $show_thumbnail = '1';
+        }
         if ($show_date == 'true') {
             $show_date = '1';
         }
         if ($show_likes == 'true') {
-            $show_date = '1';
+            $show_likes = '1';
         }
         if ($show_dislikes == 'true') {
-            $show_date = '1';
-        }
+            $show_dislikes = '1';
+        }*/
 
         foreach ($instance['entity_name'] as $entity_index => $entity_name) {
             $instance['entity_name'][$entity_index] = str_replace("'", '', trim($entity_name));
@@ -136,7 +179,7 @@ class LikeBtnLikeButtonMostLiked {
         $query_post_types = "'" . implode("','", $instance['entity_name']) . "'";
 
         $query_limit = '';
-        if ((int) $instance['number'] > 0) {
+        if (isset($instance['number']) && (int) $instance['number'] > 0) {
             $query_limit = "LIMIT " . (int) $instance['number'];
         }
 
@@ -153,7 +196,8 @@ class LikeBtnLikeButtonMostLiked {
                     p.post_date,
                     CONVERT(pm_likes.meta_value, UNSIGNED INTEGER) as 'likes',
                     CONVERT(pm_dislikes.meta_value, UNSIGNED INTEGER) as 'dislikes',
-                    p.post_type
+                    p.post_type,
+                    p.post_mime_type
                  FROM {$wpdb->prefix}postmeta pm_likes
                  LEFT JOIN {$wpdb->prefix}posts p
                      ON (p.ID = pm_likes.post_id)
@@ -177,7 +221,8 @@ class LikeBtnLikeButtonMostLiked {
                     p.comment_date as 'post_date',
                     CONVERT(pm_likes.meta_value, UNSIGNED INTEGER) as 'likes',
                     CONVERT(pm_dislikes.meta_value, UNSIGNED INTEGER) as 'dislikes',
-                    'comment' as post_type
+                    'comment' as post_type,
+                    '' as post_mime_type
                  FROM {$wpdb->prefix}commentmeta pm_likes
                  LEFT JOIN {$wpdb->prefix}comments p
                     ON (p.comment_ID = pm_likes.comment_id)
@@ -197,69 +242,67 @@ class LikeBtnLikeButtonMostLiked {
             ORDER BY
                 likes DESC
              {$query_limit}";
-//        echo "<pre>";
-//        echo $query;
+
         $posts = $wpdb->get_results($query);
 
-        $widget_data = $before_widget;
-        $widget_data .= $before_title . $title . $after_title;
-        $widget_data .= '<ul class="likebtn-like-button-most-liked-content">';
+        $post_loop = array();
 
         if (count($posts) > 0) {
-            foreach ($posts as $post) {
-                $post_title = stripslashes($post->post_title);
+            foreach ($posts as $i=>$db_post) {
+                $post = array(
+                    'id' => $db_post->post_id,
+                    'type' => $db_post->post_type,
+                    'post_mime_type' => $db_post->post_mime_type,
+                    'title' => '',
+                    'link' => '',
+                    'likes' => '',
+                    'dislikes' => '',
+                    'date' => '',
+                    'excerpt' => '',
+                );
+
+                $post_title = stripslashes($db_post->post_title);
 
                 if (function_exists('qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage')) {
                     $post_title = qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage($post_title);
                 }
-                if ($post->post_type == LIKEBTN_LIKE_BUTTON_ENTITY_COMMENT) {
+                if ($db_post->post_type == LIKEBTN_LIKE_BUTTON_ENTITY_COMMENT) {
                     if (mb_strlen($post_title) > 30) {
                         $post_title = mb_substr($post_title, 0, 30) . '...';
                     }
                 }
+                $post['title'] = $post_title;
 
-                if ($post->post_type != LIKEBTN_LIKE_BUTTON_ENTITY_COMMENT) {
-                    $permalink = get_permalink($post->post_id);
+                if ($db_post->post_type != LIKEBTN_LIKE_BUTTON_ENTITY_COMMENT) {
+                    $permalink = get_permalink($db_post->post_id);
                 } else {
-                    $permalink = get_comment_link($post->post_id);
+                    $permalink = get_comment_link($db_post->post_id);
+                }
+                $post['link'] = $permalink;
+
+                $post['likes'] = $db_post->likes;
+                $post['dislikes'] = $db_post->dislikes;
+
+                if ($show_date) {
+                    $post['date'] = strtotime($db_post->post_date);
                 }
 
-                $likes = $post->likes;
-                $dislikes = $post->dislikes;
-
-                $widget_data .= '<li><a href="' . $permalink . '" title="' . $post_title . '" rel="nofollow">' . $post_title . '</a>';
-
-                if ($show_date == '1') {
-                    $date = strtotime($post->post_date);
-                    if ($date) {
-                        $widget_data .= ' <span class="likebtn-like-button-item-date">[' . date_i18n(get_option('date_format'), $date) . ']</span>';
+                if ($show_excerpt) {
+                    if ($db_post->post_type == 'comment') {
+                        $post['excerpt'] = get_comment_excerpt($db_post->post_id);
+                    } else {
+                        // get_the_excerpt
+                        $get_post = get_post($db_post->post_id);
+                        $post['excerpt'] = apply_filters( 'get_the_excerpt', $get_post->post_excerpt );
                     }
                 }
 
-                if ($show_likes == '1' || $show_dislikes == '1') {
-                    $widget_data .= ' <span class="likebtn-like-button-likes">(';
-                }
-                $widget_data .= $show_likes == '1' ? $likes : '';
-                if ($show_likes == '1' && $show_dislikes == '1') {
-                    $widget_data .= '/';
-                }
-                $widget_data .= $show_dislikes == '1' ? $dislikes : '';
-                if ($show_likes == '1' || $show_dislikes == '1') {
-                    $widget_data .= ')</span> ';
-                }
-
-                $widget_data .= '</li>';
+                $post_loop[$i] = $post;
             }
-        } else {
-            $widget_data .= '<li>';
-            $widget_data .= __('No items liked yet.', LIKEBTN_LIKE_BUTTON_I18N_DOMAIN);
-            $widget_data .= '</li>';
         }
 
-        $widget_data .= '</ul>';
-        $widget_data .= $after_widget;
-
-        return $widget_data;
+        // Get and include the template we're going to use
+		include( $this->getTemplateHierarchy(self::TEMPLATE) );
     }
 
     function timeRangeToDateTime($range) {
@@ -307,6 +350,25 @@ class LikeBtnLikeButtonMostLiked {
 
         return date('Y-m-d H:i:s', $range_timestamp);
     }
+
+	/**
+	 * Loads theme files in appropriate hierarchy:
+     * 1) child theme,
+	 * 2) parent template
+     * 3) plugin resources
+     *
+     * Will look in the PLUGIN_NAME directory in a theme
+	 **/
+	public function getTemplateHierarchy( $template ) {
+
+		if ( $theme_file = locate_template( array( self::PLUGIN_NAME . '/' . $template ) ) ) {
+			$file = $theme_file;
+		} else {
+			$file = 'templates/' . $template;
+		}
+
+		return $file;
+	}
 
 }
 

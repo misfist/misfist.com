@@ -1,0 +1,59 @@
+// CONTAINERS 
+
+
+// base
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+// GRID (BOURBON NEAT) //
+// so great! read the docs:
+// neat.bourbon.io/docs/
+
+$grid-columns: 6;
+$max-width: em(1200);
+
+
+// MIXINS 
+// read the Bourbon docs for all kinds of well-tested mixins 
+// check there before adding new ones
+// http://bourbon.io/docs/
+
+$mobilescreen: em(480);
+$tabletscreen: em(480 + 1);
+$desktopscreen: em(1020);
+$largescreen: em(1200);
+
+$mobile: new-breakpoint(max-width $mobilescreen);
+$tablet: new-breakpoint(max-width $desktopscreen min-width $tabletscreen);
+$medium: new-breakpoint(min-width $desktopscreen);
+$full: new-breakpoint(min-width $largescreen);
+
+header,
+main,
+footer {
+    @include clearfix;
+    @include outer-container;
+}
+
+section.network-listings {
+  @include media($mobile) {
+      padding-right: .5em;
+      padding-left: .5em;
+    }
+    @include media($medium) {
+      .sites-list {
+        @include span-columns(2);
+      }
+      .posts-list {
+        @include span-columns(4);
+      }
+    }
+}
+
