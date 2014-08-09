@@ -1,0 +1,122 @@
+/* This stylesheet is used to style the public view of the plugin. */
+.explanatory-dictionary-letter-selected {
+	text-decoration: underline;
+}
+
+.explanatory-dictionary-entries {
+	margin: 10px 0;
+}
+
+.explanatory-dictionary-entry-word {
+	font-weight: bold;
+}
+
+.explanatory-dictionary-highlight {
+	position: relative;
+	border-bottom: 1px dashed;
+	cursor: help;
+}
+
+#explanatory-dictionary-tooltip {
+	position: absolute;
+	z-index: 100;
+	left: 0;
+}
+
+#explanatory-dictionary-tooltip:hover {
+	cursor: auto;
+}
+
+#explanatory-dictionary-tooltip {
+	z-index: 99999;
+	cursor: pointer;
+	width: 320px;
+	position: absolute;
+	right: 0;
+	left: -15px;
+	bottom: 35px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 10px #ccc;
+	border-radius: 10px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#explanatory-dictionary-tooltip .explanatory-dictionary-tooltip-top {
+	
+}
+
+#explanatory-dictionary-tooltip .explanatory-dictionary-tooltip-content {
+	display: block;
+	padding: 10px 32px 10px 24px;
+}
+
+#explanatory-dictionary-tooltip .explanatory-dictionary-tooltip-bottom-safe-zone {
+	display: inline-block;
+	width: 100%;
+	height: 19px;
+	background: transparent;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+}
+
+#explanatory-dictionary-tooltip .explanatory-dictionary-tooltip-bottom {
+	width: 0px;
+	height: 0px;
+	border-left: 0 solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #fff;
+	position: absolute;
+	left: 30px;
+	top: -1px;
+	z-index: 201;
+}
+
+#explanatory-dictionary-tooltip .explanatory-dictionary-tooltip-bottom-border {
+	width: 0px;
+	height: 0px;
+	border-left: 0 solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 16px solid #ccc;
+	position: absolute;
+	left: 29px;
+	top: 0;
+	z-index: 200;
+}
+
+#explanatory-dictionary-tooltip {
+	min-height: 50px;
+}
+
+#explanatory-dictionary-tooltip dt {
+	margin: 0 0 0.4em;
+	font-weight: normal;
+}
+
+#explanatory-dictionary-tooltip dd {
+	margin: 0;
+	font-weight: normal;
+}
+
+.explanatory-dictionary-highlight .explanatory-dictionary-highlight {
+	/* Hides definition terms inside definition terms */
+	border-bottom: 0;
+}
+
+.explanatory-dictionary-highlight .explanatory-dictionary-highlight:hover {
+	cursor: pointer;
+}
+
+.explanatory-dictionary-highlight .explanatory-dictionary-highlight span {
+	display: none !important;
+}
+
+#explanatory-dictionary-page-definitions {
+	display: none;
+}
+before{
+	content: "|";
+}

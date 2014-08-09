@@ -1,0 +1,411 @@
+# Copyright (C) 2013 TODO
+# This file is distributed under the same license as the TODO package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Explanatory Dictionary\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/plugin-name\n"
+"POT-Creation-Date: 2013-12-24 11:53+0100\n"
+"PO-Revision-Date: 2013-12-24 11:53+0100\n"
+"Last-Translator: Robert-John van Doesburg <rjvandoesburg@exed.nl>\n"
+"Language-Team: EXED Internet <service@exed.nl>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-explanatory-dictionary.php:411
+msgid "Options"
+msgstr ""
+
+#: class-explanatory-dictionary.php:415
+msgid "Add new"
+msgstr ""
+
+#: class-explanatory-dictionary.php:556 class-explanatory-dictionary.php:622
+msgid "The word you are trying to define already exists"
+msgstr ""
+
+#: class-explanatory-dictionary.php:559 class-explanatory-dictionary.php:625
+#, php-format
+msgid "The synonym for this word is already defined at <i>%s</i> as a synonym"
+msgstr ""
+
+#: class-explanatory-dictionary.php:562 class-explanatory-dictionary.php:628
+#, php-format
+msgid ""
+"You are trying to define a synonym for this word but <i>%s</i> is already "
+"defined as a word"
+msgstr ""
+
+#: class-explanatory-dictionary.php:565 class-explanatory-dictionary.php:631
+#, php-format
+msgid ""
+"The word you are trying to define already exists as a synonym at <i>%s</i>"
+msgstr ""
+
+#: class-explanatory-dictionary.php:904
+msgid "Definitioner"
+msgstr ""
+
+#: views/admin-options.php:25
+msgid "The settings have been reset"
+msgstr ""
+
+#: views/admin-options.php:89
+msgid "The settings have been updated"
+msgstr ""
+
+#: views/admin-options.php:93
+msgid "There was an error verifying the post data"
+msgstr ""
+
+#: views/admin-options.php:115
+msgid "Tooltip Options"
+msgstr ""
+
+#: views/admin-options.php:118
+msgid "Shortcode"
+msgstr ""
+
+#: views/admin-options.php:122
+msgid "Use this shortcode to display the plugin on your page"
+msgstr ""
+
+#: views/admin-options.php:126
+msgid "External CSS file"
+msgstr ""
+
+#: views/admin-options.php:129
+msgid ""
+"Check if you want to use an external css file. If external CSS file is "
+"checked, the style set in the \"Explanatory Dictionary Options\" will be "
+"ignored. To use the style set in \"Explanatory Dictionary Options\", uncheck "
+"this field."
+msgstr ""
+
+#: views/admin-options.php:133
+msgid "Tooltip Width"
+msgstr ""
+
+#: views/admin-options.php:136
+msgid ""
+"This option sets the width (Example: 200px, 100em ...) of the explanation "
+"tooltip."
+msgstr ""
+
+#: views/admin-options.php:140
+msgid "Tooltip Border Size"
+msgstr ""
+
+#: views/admin-options.php:143
+msgid ""
+"This option sets the border size (Example: 1px, 0.8pt, 0.2em ...) of the "
+"explanation tooltip."
+msgstr ""
+
+#: views/admin-options.php:147
+msgid "Tooltip Border Color"
+msgstr ""
+
+#: views/admin-options.php:150
+msgid "Click on the text field to set another border color."
+msgstr ""
+
+#: views/admin-options.php:154
+msgid "Tooltip Background Color"
+msgstr ""
+
+#: views/admin-options.php:157 views/admin-options.php:195
+#: views/admin-options.php:241 views/admin-options.php:258
+msgid "Click on the text field to set another color."
+msgstr ""
+
+#: views/admin-options.php:161
+msgid "Tooltip Border Radius"
+msgstr ""
+
+#: views/admin-options.php:164
+msgid ""
+"This option sets the explanation tooltip border radius (Example: 5px, 2pt, "
+"0.5em ...)."
+msgstr ""
+
+#: views/admin-options.php:168
+msgid "Exclude"
+msgstr ""
+
+#: views/admin-options.php:171
+msgid ""
+"Write here (separate by commas) the pages or posts to exclude (Example: "
+"1,10,25,77 ...)."
+msgstr ""
+
+#: views/admin-options.php:175
+msgid "Limit"
+msgstr ""
+
+#: views/admin-options.php:178
+msgid ""
+"Write here the number of words (words expressions, sentences) for showing "
+"the tooltips per page or post or leave empty for all the words (words "
+"expressions, sentences)."
+msgstr ""
+
+#: views/admin-options.php:182
+msgid "Tooltip Title Options"
+msgstr ""
+
+#: views/admin-options.php:185
+msgid "Title Font Size"
+msgstr ""
+
+#: views/admin-options.php:188 views/admin-options.php:234
+msgid ""
+"This option sets the font size (Example: 15px, 10pt, 5em, 10% ...) of the "
+"explanation tooltip text."
+msgstr ""
+
+#: views/admin-options.php:192
+msgid "Title Text Color"
+msgstr ""
+
+#: views/admin-options.php:199
+msgid "Title Style"
+msgstr ""
+
+#: views/admin-options.php:212
+msgid "Tooltip Content Options"
+msgstr ""
+
+#: views/admin-options.php:216
+msgid "Content Text Align"
+msgstr ""
+
+#: views/admin-options.php:227
+msgid "Select the align of explanation tooltip text."
+msgstr ""
+
+#: views/admin-options.php:231
+msgid "Content Font Size"
+msgstr ""
+
+#: views/admin-options.php:238
+msgid "Content Text Color"
+msgstr ""
+
+#: views/admin-options.php:245
+msgid "Content Padding"
+msgstr ""
+
+#: views/admin-options.php:248
+msgid ""
+"This option sets the explanation tooltip text padding (Example: 5px 10px, "
+"2pt 5pt 3pt 6pt, 0.5em ...) from borders."
+msgstr ""
+
+#: views/admin-options.php:252
+msgid "Other Options"
+msgstr ""
+
+#: views/admin-options.php:255
+msgid "Explaining Word (Words Expression, Sentence) Color"
+msgstr ""
+
+#: views/admin-options.php:262
+msgid "Explaining Word (Words Expression, Sentence) Style"
+msgstr ""
+
+#: views/admin-options.php:275
+msgid "Explanatory Dictionary Alphabet"
+msgstr ""
+
+#: views/admin-options.php:279
+msgid ""
+"Write here (separate by spaces) the alphabet of your explanatory dictionary "
+"(Example: A B C D E F G ...)."
+msgstr ""
+
+#: views/admin-options.php:282
+msgid "If checked the unused letters will not be displayed."
+msgstr ""
+
+#: views/admin-options.php:287
+msgid "Reset"
+msgstr ""
+
+#: views/admin-options.php:287
+msgid "Are you sure you want to reset all settings to default?"
+msgstr ""
+
+#: views/admin-options.php:288
+msgid "Save"
+msgstr ""
+
+#: views/explanatory-dictionary.php:82
+msgid "Reset list"
+msgstr ""
+
+#: views/admin-add.php:38
+msgid "Add a new item"
+msgstr ""
+
+#: views/admin-add.php:46 views/admin-add.php:52 views/admin-add.php:58
+#: views/admin-edit.php:49 views/admin-edit.php:55 views/admin-edit.php:61
+#: views/admin-edit.php:116
+msgid "&larr; Return to the overview"
+msgstr ""
+
+#: views/admin-add.php:50
+msgid "Added the new entry"
+msgstr ""
+
+#: views/admin-add.php:56
+msgid "Error while adding the new entry"
+msgstr ""
+
+#: views/admin-add.php:70 views/admin-edit.php:72
+msgid "Word (word, expression, sentence)"
+msgstr ""
+
+#: views/admin-add.php:75 views/admin-edit.php:77
+msgid "<strong>Required:</strong> The word expression, sentence"
+msgstr ""
+
+#: views/admin-add.php:80 views/admin-list.php:105 views/admin-list.php:114
+#: views/admin-edit.php:82
+msgid "Synonyms and forms"
+msgstr ""
+
+#: views/admin-add.php:85 views/admin-edit.php:87
+msgid ""
+"(optional) Separate by commas the words (words expressions, sentences) which "
+"has the same explanation."
+msgstr ""
+
+#: views/admin-add.php:90 views/admin-list.php:106 views/admin-list.php:115
+#: views/admin-edit.php:92
+msgid "Explanation"
+msgstr ""
+
+#: views/admin-add.php:95 views/admin-edit.php:97
+msgid ""
+"<strong>Required:</strong> The explanation for this word (words expression, "
+"sentence)"
+msgstr ""
+
+#: views/admin-add.php:99
+msgid "Add item"
+msgstr ""
+
+#: views/admin-list.php:63
+msgid "Add New"
+msgstr ""
+
+#: views/admin-list.php:77
+msgid "All"
+msgstr ""
+
+#: views/admin-list.php:78 views/admin-edit.php:102
+msgid "Active"
+msgstr ""
+
+#: views/admin-list.php:79
+msgid "Inactive"
+msgstr ""
+
+#: views/admin-list.php:85 views/admin-list.php:168
+msgid "Bulk Actions"
+msgstr ""
+
+#: views/admin-list.php:86 views/admin-list.php:169
+msgid "Set Active"
+msgstr ""
+
+#: views/admin-list.php:87 views/admin-list.php:170
+msgid "Set Inactive"
+msgstr ""
+
+#: views/admin-list.php:88 views/admin-list.php:143 views/admin-list.php:171
+msgid "Delete"
+msgstr ""
+
+#: views/admin-list.php:90 views/admin-list.php:173
+msgid "Apply"
+msgstr ""
+
+#: views/admin-list.php:94 views/admin-list.php:177
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views/admin-list.php:104 views/admin-list.php:113
+msgid "Word (words expression, sentence)"
+msgstr ""
+
+#: views/admin-list.php:132 views/admin-list.php:137
+msgid "Edit this etry"
+msgstr ""
+
+#: views/admin-list.php:138
+msgid "Edit"
+msgstr ""
+
+#: views/admin-list.php:142
+msgid "Delete this etry"
+msgstr ""
+
+#: views/admin-list.php:142
+msgid "Are you sure you want to delete this entry"
+msgstr ""
+
+#: views/admin-edit.php:42
+msgid "Edit a new item"
+msgstr ""
+
+#: views/admin-edit.php:53
+msgid "The entry was updated"
+msgstr ""
+
+#: views/admin-edit.php:59
+msgid "Error while updateing the entry"
+msgstr ""
+
+#: views/admin-edit.php:107
+msgid "When checked the entry is active"
+msgstr ""
+
+#: views/admin-edit.php:112
+msgid "Edit item"
+msgstr ""
+
+#: classes/template.class.php:80
+msgid "The entry has been deleted"
+msgstr ""
+
+#: classes/template.class.php:84 classes/template.class.php:137
+msgid "An error has occured during deleting"
+msgstr ""
+
+#: classes/template.class.php:102
+msgid "The entries have been set to active"
+msgstr ""
+
+#: classes/template.class.php:106 classes/template.class.php:121
+msgid "An error has occured during the update"
+msgstr ""
+
+#: classes/template.class.php:117
+msgid "The entries have been set to inactive"
+msgstr ""
+
+#: classes/template.class.php:133
+msgid "The entries have been deleted"
+msgstr ""

@@ -1,0 +1,122 @@
+/* Custom fonts */
+.times-txt {
+    font: 16px "Times New Roman", "Palatino Linotype", "URW Palladio L", Georgia, Times, serif; line-height: 1.5;
+}
+.palatino-txt {
+    font: 14px "Palatino Linotype", Palatino, "URW Palladio L", Georgia, "Times New Roman", Times, serif; line-height: 1.5;
+}
+.cambria-txt {
+    font: 16px Cambria, Georgia,  "Book Antiqua", "Times New Roman", serif; line-height: 1.5;
+}
+.verdana-txt {
+    font: 13px Verdana, Geneva, "DejaVu Sans", sans-serif; line-height: 1.538;
+}
+.helvetica-txt {
+    font: 14px "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif; line-height: 1.5;
+}
+
+/* Google fonts - Header*/
+.signika-header h1, .cambria-header h1, .source-header h1, .sansita-header h1, .abril-header h1, .old-header h1, .vollkorn-header h1, .arvo-header h1 {font-size: 30px}
+.signika-header h2, .cambria-header h2, .source-header h2, .sansita-header h2, .abril-header h2, .old-header h2, .vollkorn-header h2, .arvo-header h2 {font-size: 26px}
+.signika-header h3, .cambria-header h3, .source-header h3, .sansita-header h3, .abril-header h3, .old-header h3, .vollkorn-header h3, .arvo-header h3 {font-size: 21px}
+.signika-header h4, .cambria-header h4, .source-header h4, .sansita-header h4, .abril-header h4, .old-header h4, .vollkorn-header h4, .arvo-header h4 {font-size: 18px}
+.signika-header h5, .cambria-header h5, .source-header h5, .sansita-header h5, .abril-header h5, .old-header h5, .vollkorn-header h5, .arvo-header h5 {font-size: 16px}
+.signika-header h6, .cambria-header h6, .source-header h6, .sansita-header h6, .abril-header h6, .old-header h6, .vollkorn-header h6, .arvo-header h6 {font-size: 14px}
+
+.helvetica-txt .post_excerpt, .verdana-txt .post_excerpt {font-style: normal}
+/* times - Header*/
+.times-header h1, .times-header h2, .times-header h3, .times-header h4, .times-header h5, .times-header h6 {
+    font-family: "Times New Roman", Times, "Palatino Linotype", "URW Palladio L", Georgia, serif;
+}
+/* palatino - Header*/
+.palatino-header h1, .palatino-header h2, .palatino-header h3, .palatino-header h4, .palatino-header h5, .palatino-header h6 {
+    font-family: "Palatino Linotype", "URW Palladio L", "Times New Roman", Times, Georgia, serif;
+}
+/* cambria - Header*/
+.cambria-header h1, .cambria-header h2, .cambria-header h3, .cambria-header h4, .cambria-header h5, .cambria-header h6 {
+    font-family: Cambria, Georgia,  "Book Antiqua", "Times New Roman", serif;
+}
+/* verdana - Header*/
+.verdana-header h1, .verdana-header h2, .verdana-header h3, .verdana-header h4, .verdana-header h5, .verdana-header h6 {
+    font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+}
+/* helvetica - Header*/
+.helvetica-header h1, .helvetica-header h2, .helvetica-header h3, .helvetica-header h4, .helvetica-header h5, .helvetica-header h6 {
+    font-family: "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+}
+/* open sans - Header*/
+.open-header h1, .open-header h2, .open-header h3, .open-header h4, .open-header h5, .open-header h6 {
+    font-family: "Open Sans", "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;}
+.open-header h4{font-style: italic} .open-header h5{font-weight: bold}    
+/* sroid sans - Header*/
+.droid-sans-header h1, .droid-sans-header h2, .droid-sans-header h3, .droid-sans-header h4, .droid-sans-header h5, .droid-sans-header h6 {
+    font-family: "Droid Sans", "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+}
+/* droid serif - Header*/
+.droid-serif-header h1, .droid-serif-header h2, .droid-serif-header h3, .droid-serif-header h4, .droid-serif-header h5, .droid-serif-header h6 {
+    font-family: "Droid Serif", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;}  
+/* oswald - Header*/
+.oswald-header h1, .oswald-header h2, .oswald-header h3, .oswald-header h4, .oswald-header h5, .oswald-header h6 {
+    font-family: Oswald, "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;}
+.oswald-header h1, .oswald-header #header h1, .oswald-header #header h2{font-weight: 700; font-size: 30px; font-variant: normal;color: #777}    
+/* ubuntu - Header*/
+.ubuntu-header h1, .ubuntu-header h2, .ubuntu-header h3, .ubuntu-header h4, .ubuntu-header h5, .ubuntu-header h6 {
+    font-family: Ubuntu, "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;}
+.ubuntu-header h1, .ubuntu-header #header h1, .ubuntu-header #header h2{font-weight: 700; font-size: 40px; font-variant: normal;color: #777} 
+/* pt sans - Header*/
+.pt-sans-header h1, .pt-sans-header h2, .pt-sans-header h3, .pt-sans-header h4, .pt-sans-header h5, .pt-sans-header h6 {
+    font-family: "PT Sans", "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+}
+/* pt serif - Header*/
+.pt-serif-header h1, .pt-serif-header h2, .pt-serif-header h3, .pt-serif-header h4, .pt-serif-header h5, .pt-serif-header h6 {
+    font-family: "PT Serif", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;
+}
+/* arvo - Header*/
+.arvo-header h1, .arvo-header h2, .arvo-header h3, .arvo-header h4, .arvo-header h5, .arvo-header h6 {
+    font-family: "Arvo", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif; letter-spacing: 0.03em;
+}
+/* lato - Header*/
+.lato-header h1, .lato-header h2, .lato-header h3, .lato-header h4, .lato-header h5, .lato-header h6 {
+    font-family: "Lato", "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;}
+.lato-header h1, .lato-header #header h1, .lato-header #header h2{font-weight: 700; font-size: 40px; font-variant: normal;color: #777}    
+/* source sans pro - Header*/
+.source-header h1, .source-header h2, .source-header h3, .source-header h4, .source-header h5, .source-header h6 {
+    font-family: "Source Sans Pro", "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif;  color: #666;
+}
+.source-header h1, .source-header #header h1, .source-header #header h2{font-weight: 700; font-variant: normal;color: #777}
+/* signika - Header*/
+.signika-header h1, .signika-header h2, .signika-header h3, .signika-header h4, .signika-header h5, .signika-header h6 {
+    font-family: "Signika", "HelveticaNeue", Arial, 'Helvetica Neue', Helvetica, FreeSans, 'Liberation Sans', 'Nimbus Sans L', sans-serif; 
+}
+/* vollkorn - Header*/
+.vollkorn-header h1, .vollkorn-header h2, .vollkorn-header h3, .vollkorn-header h4, .vollkorn-header h5, .vollkorn-header h6 {
+    font-family: "Vollkorn", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif; line-height: 1em; padding: 0; margin : 0;
+}
+.vollkorn-header h4, .vollkorn-header h5{font-style: italic}
+/* old standard - Header*/
+.old-header h1, .old-header h2, .old-header h3, .old-header h4, .old-header h5, .old-header h6 {
+    font-family: "Old Standard TT", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;
+}
+.old-header h4, .old-header h5{font-style: italic}
+/* cutive - Header*/
+.cutive-header h1, .cutive-header h2, .cutive-header h3, .cutive-header h4, .cutive-header h5, .cutive-header h6 {
+    font-family: "Cutive", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;
+}
+/* amaranth - Header*/
+.amaranth-header h1, .amaranth-header h2, .amaranth-header h3, .amaranth-header h4, .amaranth-header h5, .amaranth-header h6 {
+    font-family: "Amaranth", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif; font-variant: normal;
+}
+/* merriweather - Header*/
+.merriweather-header h1, .merriweather-header h2, .merriweather-header h3, .merriweather-header h4, .merriweather-header h5, .merriweather-header h6 {
+    font-family: "Merriweather", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;
+}
+/* abril - Header*/
+.abril-header h1, .abril-header h2, .abril-header h3, .abril-header h4, .abril-header h5, .abril-header h6 {
+    font-family: "Abril Fatface", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;
+}
+.abril-header h1, .abril-header #header h1, .abril-header #header h2{font-size: 40px; font-variant: normal;color: #555} 
+/* sansita - Header*/
+.sansita-header h1, .sansita-header h2, .sansita-header h3, .sansita-header h4, .sansita-header h5, .sansita-header h6 {
+    font-family: "Sansita One", "Palatino Linotype", "URW Palladio L", Georgia, "Times New Roman", Times, serif;
+}
+

@@ -1,0 +1,818 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: typo-o-graphy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-05 16:14+0100\n"
+"PO-Revision-Date: 2013-05-05 16:14+0100\n"
+"Last-Translator: Tomasz Mazur <tommek77@gmail.com>\n"
+"Language-Team: Web Geeks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: F:\\WWW\\betatest\\wp-content\\themes\\typo-o-graphy\n"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/404.php:4
+msgid "Error 404 - Not Found"
+msgstr "Eroarea 404 - nu a fost găsit"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/404.php:6
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Ne cerem scuze, dar rezultatele nu au fost găsite la Arhiva solicitate. Probabil căutarea va ajuta să găsiţi un post legate."
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/archive.php:4
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Arhivele de zi cu zi: <span>%s</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/archive.php:6
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Arhivele lunare: <span>%s</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/archive.php:8
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Arhivele anual: <span>%s</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/archive.php:11
+#, php-format
+msgid "Categotry Archives: <span>%s</span>"
+msgstr "Arhivele de categorie: <span>%s</span> "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/archive.php:18
+#, php-format
+msgid "Tag Archives: <span>%s</span>"
+msgstr "Tag Archives: <span>%s</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/archive.php:41
+msgid "Archives"
+msgstr "Arhivele"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/comments.php:5
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Acest post este protejată prin parolă. Introduceţi parola pentru vizualizarea comentariilor."
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/comments.php:14
+#, php-format
+msgid "One Response to %2$s"
+msgstr "Unul Răspuns la %2$s"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/comments.php:34
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content-gallery.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-aside.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-audio.php:15
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-chat.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:29
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:24
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-link.php:10
+msgid "No comments yet"
+msgstr "No comments yet"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content-gallery.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-aside.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-audio.php:15
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-chat.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:29
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:24
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-link.php:10
+msgid "1 comment"
+msgstr "1 Comentariu "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content-gallery.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-aside.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-audio.php:15
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-chat.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:29
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:24
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-link.php:10
+#, php-format
+msgid "% comments"
+msgstr "% comments"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content-gallery.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content.php:11
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-aside.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-audio.php:15
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-chat.php:10
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:29
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:24
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-link.php:10
+msgid "Comments are off for this post"
+msgstr "Comentariile sunt închise. "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content-gallery.php:19
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content.php:28
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:16
+msgid "<span>Pages:</span>"
+msgstr "<span>Pages:</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/content.php:39
+#, php-format
+msgid "View all posts by %s &rarr;"
+msgstr "View all posts by %s &rarr;"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/footer.php:22
+msgid "Theme design by"
+msgstr "Tematica design de"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:26
+msgid "Primary Navigation"
+msgstr "Navigare primare"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:27
+msgid "Secondary Navigation"
+msgstr "Secondary Navigation"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:28
+msgid "Footer Navigation"
+msgstr "Footer Navigation"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:56
+msgid "Header"
+msgstr "Header"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:61
+msgid "Header 2"
+msgstr "Header 2"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:79
+msgid "Header Widget Area"
+msgstr "Aria antet Widget"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:81
+msgid "The header widget area"
+msgstr "Zona de widget antet"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:89
+msgid "Sidebar Widget Area"
+msgstr "Zona Widget Perciuni"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:91
+msgid "The sidebar widget area"
+msgstr "Zona de widget perciuni"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:99
+msgid "First Footer Widget Area"
+msgstr "Prima zonă de Widget subsol"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:101
+msgid "The first footer widget area"
+msgstr "Prima zonă widget subsol"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:109
+msgid "Third Footer Widget Area"
+msgstr "Terțe subsol Widget zona"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:111
+msgid "The third footer widget area"
+msgstr "Zona de subsol terțe widget"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:180
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:181
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:182
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:183
+msgid "Image {current} of {total}"
+msgstr "Image {current} of {total}"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:180
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:181
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:182
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:183
+msgid "Previous"
+msgstr "Previous"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:180
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:181
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:182
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:183
+msgid "Next"
+msgstr "Next"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:382
+#, php-format
+msgid "<p>%4$s <em>by</em> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s </a></span></p>"
+msgstr "<p>%4$s <em>by</em> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s </a></span></p>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:384
+#, php-format
+msgid "<p><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"> <time datetime=\"%3$s\" pubdate> %4$s </time></a> <em>by</em> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s </a></span></p>"
+msgstr "<p><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"> <time datetime=\"%3$s\" pubdate> %4$s </time></a> <em>by</em> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s </a></span></p>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:386
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:25
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:20
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Link permanent la %s"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:393
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:394
+msgid ", "
+msgstr ", "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:396
+#, php-format
+msgid "<p>Categories: %1$s, Tags: %2$s </p>"
+msgstr "<p>Categorii: %1$s, Tag: %2$s</p>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:399
+#, php-format
+msgid "<p>Categories: %1$s </p>"
+msgstr "<p>Categorii: %1$s </p>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:420
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:48
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-aside.php:3
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-audio.php:8
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-chat.php:3
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:21
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:15
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-link.php:3
+msgid "Continue reading &rarr;"
+msgstr "Continuaţi lectură →"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:432
+msgid "Syndicate this site using RSS"
+msgstr "Emite acest site folosind RSS"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:432
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:435
+msgid "The latest comments to all posts in RSS"
+msgstr "Cele mai recente comentarii pentru toate posturile în RSS"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:435
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:438
+msgid "http://wordpress.org/"
+msgstr "http://WordPress.org/"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:438
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Powered by WordPress, stat-of--art semantică personale platforma publicare."
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:462
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:521
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:521
+msgid "(Edit)"
+msgstr "(Editare)"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:532
+msgid "Post author"
+msgstr "Post author"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:535
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$ s în %2$ s"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:540
+msgid "Your comment is awaiting moderation."
+msgstr "Comentariu este în aşteptarea moderaţie."
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:545
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:85
+msgid "Edit"
+msgstr "Editare"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/functions.php:549
+msgid "Reply <span>&darr;</span>"
+msgstr "Reply <span>&darr;</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:5
+msgid "&larr; Previous"
+msgstr "&larr; Previous"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:8
+msgid "Next &rarr;"
+msgstr "Next &rarr;"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:19
+#, php-format
+msgid "<p>Published <time datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a>.</p>"
+msgstr "<p>Published <time datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a>.</p>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:64
+#, php-format
+msgid "<li>Title: %s </li>"
+msgstr "<li>Title: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:66
+#, php-format
+msgid "<li>Caption: %s </li>"
+msgstr "<li>Caption: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:68
+#, php-format
+msgid "<li>Copyright: %s </li>"
+msgstr "<li>Copyright: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:70
+#, php-format
+msgid "<li>Credit: %s </li>"
+msgstr "<li>Credit: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:72
+#, php-format
+msgid "<li>Camera: %s </li>"
+msgstr "<li>Camera: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:74
+#, php-format
+msgid "<li>Aperture: %s </li>"
+msgstr "<li>Aperture: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:76
+#, php-format
+msgid "<li>Focal Length: %s </li>"
+msgstr "<li>Focal Length: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:78
+#, php-format
+msgid "<li>ISO: %s </li>"
+msgstr "<li>ISO: %s </li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:80
+#, php-format
+msgid "<li>Shutter Speed: %s s.</li>"
+msgstr "<li>Shutter Speed: %s s.</li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:82
+#, php-format
+msgid "<li>Full size is %s pixels</li>"
+msgstr "<li>Full size is %s pixels</li>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/image.php:82
+msgid "Link to full-size image"
+msgstr "Link la imagine full-size"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-aside.php:14
+msgid "Aside"
+msgstr "Afară"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-audio.php:19
+msgid "Audio"
+msgstr "Audio"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-chat.php:14
+msgid "Chat"
+msgstr "Chat"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-gallery.php:33
+msgid "Gallery"
+msgstr "Galerie"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-image.php:28
+msgid "Image"
+msgstr "Imagine"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-link.php:14
+msgid "Link"
+msgstr "Link-uri "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-none.php:3
+msgid "Nothing Found"
+msgstr "Nu a fost găsit "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-none.php:6
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-quote.php:14
+msgid "Quote"
+msgstr "Quote"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-status.php:15
+msgid "Status"
+msgstr "Status"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/loop-video.php:15
+msgid "Video"
+msgstr "Video"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/page-sidebar.php:22
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/page.php:18
+msgid "Edit This"
+msgstr "Editaţi acest lucru"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/search.php:3
+#, php-format
+msgid "Search Results for: <span>%s</span>"
+msgstr "Rezultatele cautarii pentru: <span>%s</span>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/sidebar.php:10
+msgid "Categories"
+msgstr "Categorii"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:14
+msgid "Link Color"
+msgstr "Link Color"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:27
+msgid "Logo"
+msgstr "Logo"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:44
+msgid "Fonts"
+msgstr "Fonts"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:58
+msgid "Select Text Font:"
+msgstr "Select Text Font:"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:80
+msgid "Select Header Font:"
+msgstr "Select Header Font:"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:120
+msgid "Add language:"
+msgstr "Limba sursă: "
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:136
+msgid "Layout"
+msgstr "Aspect"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:149
+msgid "Select Color Scheme:"
+msgstr "Select Color Scheme:"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:164
+msgid "Select Lightbox Theme:"
+msgstr "Select Lightbox Theme:"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/customizer_register.php:218
+msgid "on"
+msgstr "on"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/typo-widgets.php:53
+msgid "Title:"
+msgstr "Titlu:"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/typo-widgets.php:56
+msgid "\"Flickr\"- ID. <a href=\""
+msgstr "\"Flickr\"- ID. <a href=\""
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/typo-widgets.php:56
+msgid "\" target=\"_blank\">idgettr.com</a>"
+msgstr "\" target=\"_blank\">idgettr.com</a>"
+
+#: F:\WWW\betatest\wp-content\themes\typo-o-graphy/inc/typo-widgets.php:59
+msgid "Number of photo to display:"
+msgstr "Numărul de fotografie pentru a afişa:"
+
+#~ msgid "Customize"
+#~ msgstr "Customize"
+
+#~ msgid "Zoom"
+#~ msgstr "Zoom"
+
+#~ msgid "Search:"
+#~ msgstr "Cautarii:"
+
+#~ msgid "Links"
+#~ msgstr "Link-uri"
+
+#~ msgid "Image Upload (max width 640px)"
+#~ msgstr "Image Upload (max width 640px)"
+
+#~ msgid "<p><em>Author</em>: %3$s</p>"
+#~ msgstr "<p><em>Autor</em>: %3$s</p>"
+
+#~ msgid "Not Found"
+#~ msgstr "Nu a fost găsit"
+
+#~ msgid "Name:"
+#~ msgstr "nume:"
+
+#~ msgid "Link to your image(80x80px):"
+#~ msgstr "Link la image(80x80px) dvs.:"
+
+#~ msgid "Description:"
+#~ msgstr "Descriere:"
+
+#~ msgid "Search..."
+#~ msgstr "Cautarii..."
+
+#~ msgid "Select Text Size:"
+#~ msgstr "Select Text Size:"
+
+#~ msgid "Return to %s"
+#~ msgstr "Reveni la %s"
+
+#~ msgid "<span class=\"meta-nav\">&larr;</span> %s"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+#~ msgid "<li><span class=\"%1$s\">Published:</span> %2$s"
+#~ msgstr "<li><span class=\"%1$s\">Publicat:</span> %2$ s"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Images"
+#~ msgstr "Imagini"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Blog Archives"
+
+#~ msgid "Author Archives: <span>%s</span>"
+#~ msgstr "Arhivele de autor: <span>%s</span>"
+
+#~ msgid "Pages:"
+#~ msgstr "Pagini:"
+
+#~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Continuaţi lectură <span class=\"meta-nav\">→</span> "
+
+#~ msgid "User:"
+#~ msgstr "Utilizator:"
+
+#~ msgid "Number of Tweets to display:"
+#~ msgstr "Numărul de Tweets pentru a afişa:"
+
+#~ msgid "(more...)"
+#~ msgstr "(mai mult...)"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Lăsaţi un comentariu"
+
+#~ msgid "Tags:"
+#~ msgstr "Tag-uri:"
+
+#~ msgid "http://blankcanvas.eu/"
+#~ msgstr "http://blankcanvas.eu/"
+
+#~ msgid "%s <span class=\"says\">says:</span>"
+#~ msgstr "%s <span class=\"says\">spune:</span>"
+
+#~ msgid "Category Archives"
+#~ msgstr "Arhivele de categorie"
+
+#~ msgid "Tag Archives"
+#~ msgstr "Tag Archives"
+
+#~ msgid "HTTP 404: Not Found"
+#~ msgstr "HTTP 404: Nu a întemeia"
+
+#~ msgid "Author Archives: %s"
+#~ msgstr "Archives Autor: %s"
+
+#~ msgid "About %s"
+#~ msgstr "Despre %s"
+
+#~ msgid "More Gallery"
+#~ msgstr "Mai multe Galerie"
+
+#~ msgid "More Images"
+#~ msgstr "Mai multe imagini"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Ne pare rău, nu de posturi potrivit criteriilor."
+
+#~ msgid "Subscribe Rss"
+#~ msgstr "Abonare Rss"
+
+#~ msgid "Facebook profil"
+#~ msgstr "Facebook profil"
+
+#~ msgid "YouTube profil"
+#~ msgstr "YouTube profil"
+
+#~ msgid "Theme Options"
+#~ msgstr "Opţiuni de temă"
+
+#~ msgid "%s Theme Options"
+#~ msgstr "%s opţiuni de temă"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid ""
+#~ "Enter Facebook  account name, <br />for example(http://www.facebook.com/?"
+#~ "ref=logo#!/<strong>mazurtomek</strong>)"
+#~ msgstr ""
+#~ "Introduceţi numele contului Facebook, < br / > de exemplu (http://www."
+#~ "facebook.com/?ref=logo#!/ <strong>mazurtomek</strong>)"
+
+#~ msgid "LastFM"
+#~ msgstr "LastFM"
+
+#~ msgid ""
+#~ "Enter LastFM  account name, <br />for example(http://www.lastfm.pl/user/"
+#~ "<strong>tommek</strong>)"
+#~ msgstr ""
+#~ "Introduceţi numele contului LastFM, < br / > de exemplu (http://www."
+#~ "lastfm.pl/user/ <strong>tommek</strong>)"
+
+#~ msgid "YouTube"
+#~ msgstr "YouTube"
+
+#~ msgid ""
+#~ "Enter YouTube  account name,<br /> for example(http://www.youtube.com/"
+#~ "user/<strong>tommek1977</strong>)"
+#~ msgstr ""
+#~ "Introduceţi numele contului YouTube, < br / > de exemplu (http://www."
+#~ "youtube.com/user/ <strong>tommek1977</strong>)"
+
+#~ msgid "Default Layout "
+#~ msgstr "Aspectul implicit "
+
+#~ msgid "Sidebar on the left side"
+#~ msgstr "Bara laterală pe partea stângă"
+
+#~ msgid "Lightbox"
+#~ msgstr "Lightbox"
+
+#~ msgid ""
+#~ "Turn on the \"lightbox\" effect to your photos (Gallery, Image with the "
+#~ "signature)"
+#~ msgstr " efect fotografiile (Galerie, imagine cu semnătura)"
+
+#~ msgid "http://idgettr.com/"
+#~ msgstr "http://idgettr.com/"
+
+#~ msgid "http://tommek.eu"
+#~ msgstr "http://tommek.eu"
+
+#~ msgid "Single page"
+#~ msgstr "Singură pagină"
+
+#~ msgid "One column"
+#~ msgstr "O coloană"
+
+#~ msgid "← Older posts"
+#~ msgstr "← Older posts"
+
+#~ msgid "Newer posts →"
+#~ msgstr "Mai nou posturi →"
+
+#~ msgid "<span class=\"meta-nav\">←</span> Older Comments"
+#~ msgstr "> ←</span> comentarii mai vechi"
+
+#~ msgid "Newer Comments <span class=\"meta-nav\">→</span>"
+#~ msgstr "> →</span>"
+
+#~ msgid "Options saved"
+#~ msgstr "Opţiuni salvate"
+
+#~ msgid "Save Options"
+#~ msgstr "Opţiuni de salvare"
+
+#~ msgid "\"Flickr\"- ID. <a href=\"http://idgettr.com/\">idgettr.com</a>"
+#~ msgstr ""
+#~ "> idgettr.com</a>\"Flickr\"- identyfikator konta Flickr. <a href=\"http://"
+#~ "idgettr.com/\">idgettr.com</a>"
+
+#~ msgid "Recent Posts"
+#~ msgstr "Recent Posts"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Enter Google Analitics code"
+#~ msgstr "Introduceţi codul de Google Analitics"
+
+#~ msgid "Comments (1)"
+#~ msgstr "Comentarii (1)"
+
+#~ msgid "Comments (%)"
+#~ msgstr "Comentarii (%)"
+
+#~ msgid "Flickr gallery"
+#~ msgstr "Flickr Galerie"
+
+#~ msgid "A widget to enable people to follow you on Twitter"
+#~ msgstr "Un widget pentru a permite persoanelor să te urmeze pe Twitter"
+
+#, fuzzy
+#~ msgid "Stock number:"
+#~ msgstr "Numărul stoc:"
+
+#, fuzzy
+#~ msgid "Your photo (80x80px):"
+#~ msgstr "Fotografia (80x80px):"
+
+#~ msgid "Linkedin profil"
+#~ msgstr "LinkedIn profil"
+
+#~ msgid "Enter Facebook  account name"
+#~ msgstr "Introduceţi numele contului Facebook"
+
+#~ msgid "Enter LastFM  account name"
+#~ msgstr "Introduceţi numele contului LastFM"
+
+#~ msgid " Enter Linkedin  account name"
+#~ msgstr " Introduceţi numele contului Linkedin"
+
+#~ msgid "Enter YouTube  account name"
+#~ msgstr "Introduceţi numele contului YouTube"
+
+#, fuzzy
+#~ msgid "Put your full twitter address here"
+#~ msgstr "Pune adresa completă twitter aici"
+
+#~ msgid "Twitter name"
+#~ msgstr "Numele stare de nervozitate"
+
+#, fuzzy
+#~ msgid "Twitt number:"
+#~ msgstr "Twitt numărul:"
+
+#~ msgid "E-mail"
+#~ msgstr "Poştă electronică"
+
+#~ msgid "LastFM name"
+#~ msgstr "LastFM nume"
+
+#, fuzzy
+#~ msgid "Number of post(max10):"
+#~ msgstr "Numărul de post(max10):"
+
+#~ msgid "Sidebar top"
+#~ msgstr "Top bara laterală"
+
+#~ msgid "Sidebar bottom"
+#~ msgstr "Bara laterală de jos"
+
+#~ msgid "Typo-o-Graphy Options"
+#~ msgstr "Opţiuni typo-o-Graphy"
+
+#~ msgid "<strong>Facebook</strong>"
+#~ msgstr "<strong>Facebook</strong>"
+
+#~ msgid "<strong>Twitter</strong>"
+#~ msgstr "<strong>Stare de nervozitate</strong>"
+
+#~ msgid "<strong>Flickr</strong>"
+#~ msgstr "<strong>Flickr</strong>"
+
+#~ msgid "<strong>Linkedin</strong>"
+#~ msgstr "<strong>LinkedIn</strong>"
+
+#~ msgid "<strong>You Tube</strong>"
+#~ msgstr "<strong>Tu Tube</strong>"
+
+#~ msgid "<strong>LastFm</strong>"
+#~ msgstr "<strong>LastFm</strong>"
+
+#~ msgid "<strong>Name</strong>"
+#~ msgstr "<strong>Numele</strong>"
+
+#~ msgid "Your name."
+#~ msgstr "numele tău."
+
+#~ msgid "<strong>E-mail</strong>"
+#~ msgstr "<strong>Poştă electronică</strong>"
+
+#~ msgid "Your e-mail."
+#~ msgstr "Poşta electronică."
+
+#~ msgid "<strong>Photo</strong>"
+#~ msgstr "<strong>Foto</strong>"
+
+#~ msgid "<strong>Description</strong>"
+#~ msgstr "<strong>Descriere</strong>"
+
+#~ msgid "Past your google analitic code."
+#~ msgstr "Trecut codul analitic google."
+
+#~ msgid "Update Options »"
+#~ msgstr "Opţiuni de actualizare»"
+
+#~ msgid "Tags"
+#~ msgstr "Tag-uri"
+
+#~ msgid "Twitter profil"
+#~ msgstr "Profil de stare de nervozitate"
+
+#~ msgid "Flickr profil"
+#~ msgstr "Flickr profil"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "%1$s Responses to %2$s"
+#~ msgstr "%1$ s răspunsuri la %2$ s"
+
+#~ msgid "Typo-o-Graphy Options."
+#~ msgstr "Opţiuni typo-o-Graphy."

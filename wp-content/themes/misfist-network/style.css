@@ -1,0 +1,54 @@
+/*
+Theme Name:     misfist.com Network Theme
+Theme URI:      http://misfist.com/
+Description:    Child theme of the Netwok Theme
+Author:         Paea
+Author URI:     http://misfist.com/
+Template:       network
+Version:        0.1.0
+*/
+
+/*-------------------------------
+GLOBAL CUSTOM STYLES
+-------------------------------*/
+
+a.comment-reply-link, 
+a.button, 
+input[type="submit"], 
+input[type="button"], 
+ul.button-nav li a, 
+div.generic-button a, 
+ul.button-nav li a,
+#articleBox .page_navigation a.page_link {
+	background: none !important;
+	background-color: #C23229 !important;
+}
+
+.profileBox ul li a,
+#discoveryBox .profileBox a,
+a {
+	color: #C23229 !important;
+}
+
+/*-------------------------------
+HEADER STYLES
+-------------------------------*/
+
+#articleBox h2 a {
+	display: none;
+}
+
+#articleBox h3 a {
+	font-size: 19px;
+    line-height: 19px;
+    margin: 7px 0 0;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+h4.widgettitle {
+	color: #444;
+}
+
+
+

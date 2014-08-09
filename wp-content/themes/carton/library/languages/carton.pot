@@ -1,0 +1,419 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: carton/search.php:9
+msgid " search results for"
+msgstr ""
+
+#. Text in function
+#: carton/content-header.php:24
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:248
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: carton/footer.php:13
+msgid "%s created by %s."
+msgstr ""
+
+#. Text in function
+#: carton/single.php:16
+msgid "%title &rarr;"
+msgstr ""
+
+#. Text in function
+#: carton/single.php:15
+msgid "&larr; %title"
+msgstr ""
+
+#. Text in function
+#: carton/comments.php:39
+msgid "&larr; Older Comments"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:385
+msgid "&larr; Older posts"
+msgstr ""
+
+#. Text in function
+#: carton/single.php:12
+msgid "&larr; Previous Image"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:248
+#: carton/functions.php:272
+#: carton/content-footer.php:9
+msgid "(edit)"
+msgstr ""
+
+#. Text in function
+#: carton/content-header.php:24
+msgid "0 Comments"
+msgstr ""
+
+#. Text in function
+#: carton/content-header.php:24
+msgid "1 Comment"
+msgstr ""
+
+#. Text in echo
+#: carton/404.php:8
+msgid "404 Error"
+msgstr ""
+
+#. Text in function
+#: carton/sidebar.php:6
+msgid "Add your own widgets by going to the %sWidgets admin page%s."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:67
+msgid "Advanced Color Picker"
+msgstr ""
+
+#. Text in echo
+#: carton/sidebar.php:19
+msgid "Archives"
+msgstr ""
+
+#. Text in echo
+#: carton/content-aside.php:9
+msgid "Aside"
+msgstr ""
+
+#. Text in function
+#: carton/archive.php:13
+msgid "Author Archive for %s"
+msgstr ""
+
+#. Text in echo
+#: carton/archive.php:23
+msgid "Blog Archives"
+msgstr ""
+
+#. Text in function
+#: carton/library/preview-pro.php:124
+msgid "Buy %s Now &rarr;"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:84
+msgid "Choose from some of Google Fonts\\' most popular fonts to improve your site\\'s typeface readability and make things look even more amazing."
+msgstr ""
+
+#. Text in echo
+#: carton/comments.php:38
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: carton/comments.php:50
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: carton/footer.php:12
+msgid "Copyright &copy; %s %s. All Rights Reserved."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:89
+msgid "Custom CSS Editor"
+msgstr ""
+
+#. Text in function
+#: carton/archive.php:17
+msgid "Daily Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:104
+msgid "Each page/post has an option to remove both sidebars so you can use the full width of your site to display whatever you want."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:73
+msgid "Easily select one of the eight preset colors or dive even deeper into your customization by using a more specific hex code."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:100
+msgid "Even More Theme Options"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:63
+msgid "Features"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:102
+msgid "First Sidebar"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:103
+msgid "Full Width Posts/Pages"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:78
+msgid "Google Fonts"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:118
+msgid "Import/Export Tool"
+msgstr ""
+
+#. Text in echo
+#: carton/content-link.php:9
+msgid "Link"
+msgstr ""
+
+#. Text in echo
+#: carton/header.php:48
+msgid "Main menu"
+msgstr ""
+
+#. Text in echo
+#: carton/sidebar.php:10
+msgid "Meta"
+msgstr ""
+
+#. Text in function
+#: carton/archive.php:19
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:107
+msgid "Multiple Sidebar Layouts"
+msgstr ""
+
+#. Text in function
+#: carton/comments.php:40
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:385
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#. Text in function
+#: carton/single.php:13
+msgid "Next Image &rarr;"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:102
+msgid "No more posts."
+msgstr ""
+
+#. Text in echo
+#: carton/search.php:39
+msgid "No results were found for your search. Please try again."
+msgstr ""
+
+#. Text in echo
+#: carton/content-none.php:12
+msgid "No results were found. Please try again."
+msgstr ""
+
+#. Text in echo
+#: carton/search.php:35
+#: carton/content-none.php:9
+msgid "Nothing found"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:119
+msgid "Once you\\'ve set up your site exactly how you want, you can easily export the Theme Options and Custom CSS for safe keeping."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:82
+msgid "Over 20 to Choose From"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:102
+msgid "Page %s"
+msgstr ""
+
+#. Text in function
+#: carton/content-footer.php:9
+msgid "Pages:"
+msgstr ""
+
+#. Text in function
+#: carton/content-gallery.php:35
+msgid "Permalink to %s"
+msgstr ""
+
+#. Text in echo
+#: carton/functions.php:272
+msgid "Pingback:"
+msgstr ""
+
+#. Text in echo
+#: carton/single.php:10
+#: carton/functions.php:384
+msgid "Post navigation"
+msgstr ""
+
+#. Text in function
+#: carton/content-status.php:17
+msgid "Posted on %1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: carton/content-header.php:24
+msgid "Posts by %s"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:1
+msgid "Primary Menu"
+msgstr ""
+
+#. Text in function
+#: carton/content-link.php:12
+#: carton/functions.php:274
+#: carton/content.php:7
+#: carton/content-quote.php:11
+#: carton/content-image.php:12
+#: carton/content-status.php:20
+#: carton/content-aside.php:12
+msgid "Read more &rarr;"
+msgstr ""
+
+#. Text in function
+#: carton/library/preview-pro.php:115
+msgid "Shortcodes are awesome and easy to use. That\\'s why %s comes with a bunch, like a slideshow carousel, alert boxes and more."
+msgstr ""
+
+#. Text in echo
+#: carton/header.php:49
+msgid "Skip to content"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:71
+msgid "So Many Colors to Choose From"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:108
+msgid "Sometimes one sidebar just isn\\'t enough, so add a second one and place it where you want."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:94
+msgid "Sometimes the Theme Options don\\'t let you control everything you want. That\\'s where the Custom CSS Editor comes into play."
+msgstr ""
+
+#. Text in function
+#: carton/library/preview-pro.php:72
+msgid "Sometimes the default colors just aren\\'t working for you. In %s you can use the advanced color picker to make sure you get the exact colors you want."
+msgstr ""
+
+#. Text in echo
+#: carton/404.php:11
+msgid "Sorry. We can't seem to find the page you are looking for."
+msgstr ""
+
+#. Text in echo
+#: carton/content-status.php:10
+msgid "Status"
+msgstr ""
+
+#. Text in function
+#: carton/archive.php:15
+msgid "Tag Archive for %s"
+msgstr ""
+
+#. Text in function
+#: carton/content-footer.php:9
+msgid "Tags:"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:93
+msgid "Take Control of Design"
+msgstr ""
+
+#. Text in function
+#: carton/library/preview-pro.php:59
+msgid "Take your site to the next level with %s. Check out some of the advanced features that\\'ll give you more control over your site\\'s layout and design."
+msgstr ""
+
+#. Text in function
+#: carton/library/message-bar.php:39
+msgid "Thanks for choosing %s. Hope you enjoy using it! %s If you want to see some of the advanced options available in %s, %shere\\'s a little preview%s."
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:102
+msgid "This is the sidebar widgetized area. All defaults widgets work great here."
+msgstr ""
+
+#. Text in echo
+#: carton/comments.php:3
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:114
+msgid "Twitter Bootstrap Shortcodes"
+msgstr ""
+
+#. Text in function
+#: carton/library/preview-pro.php:1
+msgid "Upgrade to %s Pro"
+msgstr ""
+
+#. Text in function
+#: carton/library/preview-pro.php:1
+msgid "Upgrade to Pro"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:95
+msgid "Use CSS to style any element without having to worry about losing your changes when you update. All your Custom CSS is safely stored in the database."
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:60
+msgid "View the demo video &rarr;"
+msgstr ""
+
+#. Text in echo
+#: carton/library/preview-pro.php:83
+msgid "Web-safe fonts are a thing of the past, so why not try to spice things up a bit?"
+msgstr ""
+
+#. Text in function
+#: carton/archive.php:21
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#. Text in function
+#: carton/functions.php:254
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in function
+#: carton/content-header.php:24
+msgid "by %s"
+msgstr ""
