@@ -533,46 +533,30 @@ dd {
 .commentlist {
   list-style: none; }
 
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Mixins & Constants Stylesheet
-
-This is where you can take advantage of Sass' great features:
-Mixins & Constants. I won't go in-depth on how they work exactly,
-there are a few articles below that will help do that. What I will
-tell you is that this will help speed up simple changes like
-changing a color or adding CSS3 techniques gradients.
-
-A WORD OF WARNING: It's very easy to overdo it here. Be careful and
-remember less is more.
-
-******************************************************************/
 /*********************
 CLEARFIXIN'
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\000038}}
 .clearfix {
   zoom: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\0000310}}
   .clearfix:before, .clearfix:after {
     content: "";
     display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\0000311}}
   .clearfix:after {
     clear: both; }
 
 /*********************
 TOOLS
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\0000319}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\0000326}}
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
@@ -591,6 +575,42 @@ http://sachagreif.com/sass-color-variables/
 /*********************
 TYPOGRAPHY
 *********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003187}}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003260}}
+.is-hidden {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003264}}
+.fullwidth {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003273}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
 /* 	To embed your own fonts, use this syntax
 	and place your fonts inside the
 	library/fonts folder. For more information
@@ -613,48 +633,21 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000345}}
 span.amp {
-  font-family: "Josefin Slab", Cambria, Times New Roman, Times, serif;
   font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000351}}
 .text-left {
   text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000352}}
 .text-center {
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\0000353}}
 .text-right {
   text-align: right; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003131}}
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003137}}
-.alert-help {
-  border-color: #f0c335;
-  background: #f2ca4d; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003143}}
-.alert-info {
-  border-color: #34699d;
-  background: #3a76b0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003149}}
-.alert-error {
-  border-color: #901416;
-  background: #a61719; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003155}}
-.alert-success {
-  border-color: #f0c335;
-  background: #f2ca4d; }
 
 /*********************
 TRANSITION
@@ -678,107 +671,11 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /*********************
-BUTTONS
-*********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003217}}
-.button, .button:visited {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  border: 1px solid #2a557e;
-  border-top-color: #316495;
-  border-left-color: #316495;
-  padding: 4px 12px;
-  color: white;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: 21px;
-  border-radius: 4px;
-  background-color: #34699d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3a76b0), to(#34699d));
-  background-image: -webkit-linear-gradient(top, #3a76b0, #34699d);
-  background-image: -moz-linear-gradient(top, #3a76b0, #34699d);
-  background-image: -o-linear-gradient(top, #3a76b0, #34699d);
-  background-image: linear, to bottom, #3a76b0, #34699d; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003236}}
-  .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-    color: white;
-    border: 1px solid #2a557e;
-    border-top-color: #214363;
-    border-left-color: #214363;
-    background-color: #2d5c8a;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#34699d), to(#2d5c8a));
-    background-image: -webkit-linear-gradient(top, #34699d, #2d5c8a);
-    background-image: -moz-linear-gradient(top, #34699d, #2d5c8a);
-    background-image: -o-linear-gradient(top, #34699d, #2d5c8a);
-    background-image: linear, to bottom, #34699d, #2d5c8a; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003244}}
-  .button:active, .button:visited:active {
-    background-color: #3a76b0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#34699d), to(#3a76b0));
-    background-image: -webkit-linear-gradient(top, #34699d, #3a76b0);
-    background-image: -moz-linear-gradient(top, #34699d, #3a76b0);
-    background-image: -o-linear-gradient(top, #34699d, #3a76b0);
-    background-image: linear, to bottom, #34699d, #3a76b0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003249}}
-.blue-button, .blue-button:visited {
-  border-color: #2d5c8a;
-  text-shadow: 0 1px 1px #2d5c8a;
-  background-color: #34699d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3a76b0), to(#34699d));
-  background-image: -webkit-linear-gradient(top, #3a76b0, #34699d);
-  background-image: -moz-linear-gradient(top, #3a76b0, #34699d);
-  background-image: -o-linear-gradient(top, #3a76b0, #34699d);
-  background-image: linear, to bottom, #3a76b0, #34699d;
-  box-shadow: inset 0 0 3px #6d9fcf; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003255}}
-  .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-    border-color: #274f76;
-    background-color: #2d5c8a;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#356ca1), to(#2d5c8a));
-    background-image: -webkit-linear-gradient(top, #356ca1, #2d5c8a);
-    background-image: -moz-linear-gradient(top, #356ca1, #2d5c8a);
-    background-image: -o-linear-gradient(top, #356ca1, #2d5c8a);
-    background-image: linear, to bottom, #356ca1, #2d5c8a; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003259}}
-  .blue-button:active, .blue-button:visited:active {
-    background-color: #3a76b0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#34699d), to(#3a76b0));
-    background-image: -webkit-linear-gradient(top, #34699d, #3a76b0);
-    background-image: -moz-linear-gradient(top, #34699d, #3a76b0);
-    background-image: -o-linear-gradient(top, #34699d, #3a76b0);
-    background-image: linear, to bottom, #34699d, #3a76b0; }
-
-/*********************
 ICONS
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_mixins\.scss}line{font-family:\00003169}}
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003111}}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003184}}
-.is-hidden {
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003188}}
-.fullwidth {
-  width: 100%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_config\.scss}line{font-family:\00003197}}
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
 
 /******************************************************************
 Site Name:
@@ -985,18 +882,19 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  margin-bottom: 1.25em; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003255}}
 h3, .h3 {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  font-family: League, sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003260}}
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003265}}
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -1016,14 +914,14 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003293}}
 .nav {
   border: 1px solid #ccc;
   border-bottom: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003297}}
   .nav li {
     /*
     so you really have to rethink your dropdowns for mobile.
@@ -1032,7 +930,7 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003299}}
     .nav li a {
       display: block;
       text-decoration: none;
@@ -1045,7 +943,7 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003333}}
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -1065,14 +963,14 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003404}}
 .byline {
   color: #999;
   font-family: "Josefin Slab", Cambria, Times New Roman, Times, serif;
   font-style: italic; }
 
 /* entry content */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003413}}
 .entry-content {
   /*
   image alignment on a screen this size may be
@@ -1080,40 +978,40 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003448}}
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
     margin-bottom: 1.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003454}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003455}}
   .entry-content img {
     margin: 0 0 1.5em 0;
     max-width: 100%;
     height: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003470}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003471}}
   .entry-content video, .entry-content object {
     max-width: 100%;
     height: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003475}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003476}}
   .entry-content pre {
     background: #eee;
     border: 1px solid #cecece;
     padding: 10px; }
 
 /* end .entry-content */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003484}}
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003490}}
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003495}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003496}}
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
@@ -1123,50 +1021,50 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003530}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003531}}
 .posts-list .meta .post-author {
   display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003539}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003540}}
 .posts-list .news-list {
   margin-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003541}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003542}}
   .posts-list .news-list li {
     margin-bottom: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003545}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003546}}
   .posts-list .news-list p.post-excerpt {
     margin-top: 0;
     margin-bottom: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003555}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003556}}
 .sites-list article.site-entry {
   margin-bottom: 2em; }
 
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003567}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003568}}
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003570}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003571}}
 .pagination {
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003573}}
   .pagination ul {
     display: inline-block;
     white-space: nowrap;
     padding: 0;
     clear: both;
     margin: 1px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003578}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003579}}
     .pagination ul li {
       padding: 0;
       margin: 0;
       float: left;
       display: inline;
       overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003584}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003585}}
       .pagination ul li a, .pagination ul li span {
         margin: 0;
         text-decoration: none;
@@ -1177,16 +1075,16 @@ PAGE NAVI STYLES
         padding: .5em;
         min-width: 1em;
         display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003595}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003596}}
       .pagination ul li span.current {
         font-weight: bold; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003611}}
 .wp-prev-next .prev-link {
   float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003614}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003615}}
 .wp-prev-next .next-link {
   float: right; }
 
@@ -1195,11 +1093,11 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003625}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003626}}
 #comments {
   /* number of comments span */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003642}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003643}}
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1209,7 +1107,7 @@ COMMENT STYLES
   /* end .commentlist .comment_content */
   /* comment reply link */
   /* end .commentlist .comment-reply-link */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003644}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003645}}
   .commentlist li {
     position: relative;
     clear: both;
@@ -1218,66 +1116,66 @@ COMMENT STYLES
     margin-bottom: 1.5em;
     padding: 0.7335em 10px;
     /* end .commentlist li ul.children */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003652}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003653}}
     .commentlist li:last-child {
       margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003656}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003657}}
     .commentlist li ul.children {
       margin: 0;
       /* variations */
       /* change number for different depth */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003674}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003675}}
   .commentlist li[class*=depth-] {
     margin-top: 1.1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003678}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003679}}
   .commentlist li.depth-1 {
     margin-left: 0;
     margin-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003683}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003684}}
   .commentlist li:not(.depth-1) {
     margin-right: -10px;
     margin-left: -10px;
     margin-top: 0;
     padding-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003697}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003698}}
   .commentlist .odd {
     background: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003700}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003701}}
   .commentlist .even {
     background: #fefefe; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003715}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003716}}
   .commentlist .vcard {
     margin-left: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003718}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003719}}
     .commentlist .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003726}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003727}}
     .commentlist .vcard time {
       float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003729}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003730}}
       .commentlist .vcard time a {
         color: #999;
         text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003733}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003734}}
         .commentlist .vcard time a:hover {
           text-decoration: underline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003743}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003744}}
     .commentlist .vcard img.avatar {
       position: absolute;
       left: 10px;
       padding: 2px;
       border: 1px solid #cecece;
       background: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003768}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003769}}
   .commentlist .comment_content {
     margin-left: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003771}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003772}}
     .commentlist .comment_content p {
       margin: 0.7335em 0 1.5em;
       font-size: 1em;
       line-height: 1.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003780}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003781}}
   .commentlist .comment-reply-link {
     text-decoration: none;
     float: right;
@@ -1288,7 +1186,7 @@ COMMENT STYLES
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.9em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003792}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003793}}
     .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
       opacity: 1; }
 
@@ -1296,23 +1194,23 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003804}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003805}}
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003808}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003809}}
   .respond-form form {
     margin: 0.75em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003811}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003812}}
     .respond-form form li {
       list-style-type: none;
       clear: both;
       margin-bottom: 0.7335em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003817}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003818}}
       .respond-form form li label,
       .respond-form form li small {
         display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003825}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003826}}
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url],
@@ -1322,13 +1220,13 @@ COMMENT FORM STYLES
       border: 2px solid #cecece;
       line-height: 1.5em;
       /* form validation */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003831}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003832}}
       .respond-form form input[type=text]:focus,
       .respond-form form input[type=email]:focus,
       .respond-form form input[type=url]:focus,
       .respond-form form textarea:focus {
         background: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003836}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003837}}
       .respond-form form input[type=text]:invalid,
       .respond-form form input[type=email]:invalid,
       .respond-form form input[type=url]:invalid,
@@ -1340,13 +1238,13 @@ COMMENT FORM STYLES
         -moz-box-shadow: none;
         -ms-box-shadow: none;
         box-shadow: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003849}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003850}}
     .respond-form form input[type=text],
     .respond-form form input[type=email],
     .respond-form form input[type=url] {
       max-width: 400px;
       min-width: 250px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003854}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003855}}
     .respond-form form textarea {
       resize: none;
       width: 97.3%;
@@ -1354,33 +1252,33 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003867}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003868}}
 #comment-form-title {
   margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003880}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003881}}
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003885}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003886}}
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003901}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003902}}
 .widget ul li {
   /* deep nesting */ }
 
 /*********************
 FOOTER STYLES
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003922}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003923}}
 .footer {
   clear: both;
   /*
@@ -1393,7 +1291,7 @@ FOOTER STYLES
   view.
   */
   /* end .footer-links */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003945}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003946}}
   .footer .copyleft img {
     height: 35px;
     width: auto; }
@@ -1401,17 +1299,60 @@ FOOTER STYLES
 /*********************
 HOME STYLES
 *********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003959}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003960}}
+.home header.header {
+  background: #a61719; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003962}}
+  .home header.header a, .home header.header a:link {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003966}}
 .home header a.item-image {
   display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003961}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003968}}
   .home header a.item-image img {
-    width: auto;
+    width: 100%;
     max-width: 21.875em;
     max-height: 12.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003967}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003974}}
 .home header a.no-image {
   display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003978}}
+.home h2.nlposts-ulist-wtitle {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  color: #565656; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003983}}
+.home h2, .home h2.nlposts-ulist-wtitle {
+  margin: 1.25em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003992}}
+.home .sites-list header {
+  margin-bottom: 0.625em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\00003995}}
+.home .sites-list article {
+  border-color: #cfcfcf;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1.25em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\000031004}}
+.home .posts-list li.nlposts-ulist-litem {
+  border-bottom-color: #cfcfcf;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\000031010}}
+  .home .posts-list li.nlposts-ulist-litem .nlposts-ulist-thumbnail-litem .thumbnail a > img {
+    float: left;
+    margin: 0 0.625em 0.625em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\000031016}}
+.home .posts-list .nlposts-ulist-excerpt li {
+  margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\000031020}}
+.home .posts-list .nlposts-caption {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_base\.scss}line{font-family:\000031026}}
+.nlposts-ulist-container .thumbnails > li {
+  float: inherit !important; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\000037}}
 html,
@@ -1422,7 +1363,7 @@ body {
   padding: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\0000340}}
-header,
+header #inner-header,
 main,
 footer {
   *zoom: 1;
@@ -1431,7 +1372,7 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
-  header:before, header:after,
+  header #inner-header:before, header #inner-header:after,
   main:before,
   main:after,
   footer:before,
@@ -1439,12 +1380,12 @@ footer {
     content: " ";
     display: table; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
-  header:after,
+  header #inner-header:after,
   main:after,
   footer:after {
     clear: both; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
-  header:before, header:after,
+  header #inner-header:before, header #inner-header:after,
   main:before,
   main:after,
   footer:before,
@@ -1452,18 +1393,13 @@ footer {
     content: " ";
     display: table; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
-  header:after,
+  header #inner-header:after,
   main:after,
   footer:after {
     clear: both; }
 
-@media screen and (max-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\0000345}}
-  section.network-listings {
-    padding-right: .5em;
-    padding-left: .5em; } }
 @media screen and (min-width: 63.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\0000348}}
   section.network-listings .sites-list {
     display: block;
     float: left;
@@ -1472,7 +1408,7 @@ footer {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
     section.network-listings .sites-list:last-child {
       margin-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/misfist\.com\/wp-content\/themes\/network-custom\/library\/scss\/_layout\.scss}line{font-family:\0000351}}
   section.network-listings .posts-list {
     display: block;
     float: left;

@@ -879,3 +879,7 @@ article.comment {
 .sharedaddy {
 	clear: both;
 }
+
+#header-image {
+	display: none;
+}

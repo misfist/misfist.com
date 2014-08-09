@@ -35,7 +35,7 @@ $tablet: new-breakpoint(max-width $desktopscreen min-width $tabletscreen);
 $medium: new-breakpoint(min-width $desktopscreen);
 $full: new-breakpoint(min-width $largescreen);
 
-header,
+header #inner-header,
 main,
 footer {
     @include clearfix;
@@ -43,17 +43,14 @@ footer {
 }
 
 section.network-listings {
-  @include media($mobile) {
-      padding-right: .5em;
-      padding-left: .5em;
+  @include media($mobile) {}
+  @include media($medium) {
+    .sites-list {
+      @include span-columns(2);
     }
-    @include media($medium) {
-      .sites-list {
-        @include span-columns(2);
-      }
-      .posts-list {
-        @include span-columns(4);
-      }
+    .posts-list {
+      @include span-columns(4);
     }
+  }
 }
 

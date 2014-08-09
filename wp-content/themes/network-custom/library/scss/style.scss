@@ -21,10 +21,10 @@ of the styles inside media queries.
 // import normalize
 @import "normalize";
 
+@import "config";
+
 // import mixins
 @import "mixins";
-
-@import "config";
 
 // styles in base.scss
 @import "base";

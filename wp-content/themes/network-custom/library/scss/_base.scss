@@ -19,7 +19,7 @@ body {
 	font-family: $sans-serif;
 	font-size: $base-font-size;
 	line-height: 1.5;
-	color: #565656;
+	color: $text-color;
 }
 
 /********************
@@ -246,14 +246,15 @@ h1, .h1 {
 	line-height: 1.333em;
 }
 
-h2, .h2 {
+h2, .h2  {
 	font-size: 1.75em;
 	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	margin-bottom: em(20);
 }
 
 h3, .h3 {
 	font-size: 1.125em;
+	font-family: $header-font-family;
 }
 
 h4, .h4 {
@@ -956,10 +957,16 @@ HOME STYLES
 
 .home {
 	header {
+		&.header {
+			background: $primary-color;
+			a, a:link {
+				color: $white;
+			}
+		}
 		a.item-image {
 			display: block;
 			img {
-				width: auto;
+				width: 100%;
 				max-width: em(350);
 				max-height: em(200);
 			}
@@ -968,5 +975,54 @@ HOME STYLES
 			display: none;
 		}
 	}
+	h2.nlposts-ulist-wtitle {
+		font-size: 1.75em;
+		line-height: 1.4em;
+		color: $text-color;
+	}
+	h2, h2.nlposts-ulist-wtitle {
+		margin: em(20) 0;
+	}
+	.sites-list,
+	.posts-list {
+		article,
+		li {}
+	}
+	.sites-list {
+		header {
+			margin-bottom: em(10);
+		}
+		article {
+			border: {
+				@include standard-border;
+			}
+			padding: em(20);
+		}
+	}
+
+	.posts-list {
+		li.nlposts-ulist-litem {
+			border-bottom: {
+				@include standard-border;
+			}
+			width: 100%;
+			.nlposts-ulist-thumbnail-litem .thumbnail a {
+				&>img {
+					float: left;
+					margin: 0 em(10) em(10) 0;
+				}
+			}
+		}
+		.nlposts-ulist-excerpt li {
+			margin-bottom: 0;
+		}
+
+		.nlposts-caption {
+			width: 100%;
+		}
+	}
 }
 
+.nlposts-ulist-container .thumbnails > li {
+	float: inherit !important;
+}
