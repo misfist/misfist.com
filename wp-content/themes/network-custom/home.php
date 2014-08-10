@@ -57,12 +57,12 @@ if ( ! function_exists( 'is_plugin_active_for_network' ) )
 
 							<article id="site-<?php echo $site_id; ?>" itemscope class="site-entry">
 								<header>
-									<h3 class="site-title" itemprop="site-name"><a href="<?php echo $site_details->path; ?>" title="<?php echo $site_details->blogname; ?>"><?php echo $site_details->blogname; ?></a>
+									<h3 class="site-title" itemprop="site-name"><a href="<?php echo $site_details->domain . $site_details->path; ?>" title="<?php echo $site_details->blogname; ?>"><?php echo $site_details->blogname; ?></a>
 									</h3>
 									<?php
 										if($header) {
 									?>
-									<a href="<?php echo $site_details->path; ?>" title="<?php echo $site_details->blogname; ?>" class="item-image <?php if(!$header) { echo 'no-image'; } ?>" ><img src="<?php echo $header; ?>"></a>
+									<a href="<?php echo $site_details->domain . $site_details->path; ?>" title="<?php echo $site_details->blogname; ?>" class="item-image <?php if(!$header) { echo 'no-image'; } ?>" ><img src="<?php echo $header; ?>"></a>
 									<?php } ?>
 								</header>
 								<section class="site-body">
