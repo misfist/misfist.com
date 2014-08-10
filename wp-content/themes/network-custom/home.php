@@ -93,12 +93,14 @@ if ( ! function_exists( 'is_plugin_active_for_network' ) )
 							'auto_excerpt'  => 'true',
 							'full_meta'		=> 'true',
 							// 'category'         => 'news',
-							'number_posts'     => 5,
+							'number_posts'     => 10,
 							'wrapper_list_css' => 'news-list',
 							'wrapper_block_css'=> 'module row news', //The wrapper classe
 							'instance'         => 'news-module', //The wrapper ID
 							'thumbnail' 		=> 'true',
-							 'ignore_blog' 		=> '3, 1',
+							'ignore_blog' 		=> '3, 1',
+							'use_pub_date' 		=> 'true',
+							'excerpt_length'	=> 150,
 							);
 							// Execute
 							$recent_posts = network_latest_posts($parameters);
