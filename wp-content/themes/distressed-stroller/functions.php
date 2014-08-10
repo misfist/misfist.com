@@ -341,4 +341,10 @@ case "checkbox":
 /* ADD MENU */
 add_action('admin_menu', 'mytheme_add_admin'); 
 /* END ADD MENU */
+
+
+/************* THEME SUPPORT *********************/
+
+add_theme_support( 'custom-header' );
+
 ?>
