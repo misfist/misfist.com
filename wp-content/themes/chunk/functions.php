@@ -35,13 +35,13 @@ function chunk_setup() {
 	add_theme_support( 'custom-background' );
 
 
-	$headerdefaults = array(
-		'width'                  => 0,
-		'height'                 => 0,
-		'flex-height'            => true,
-		'flex-width'             => true,
-	);
-	add_theme_support( 'custom-header', $headerdefaults );
+	// $headerdefaults = array(
+	// 	'width'                  => 0,
+	// 	'height'                 => 0,
+	// 	'flex-height'            => true,
+	// 	'flex-width'             => true,
+	// );
+	// add_theme_support( 'custom-header', $headerdefaults );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.

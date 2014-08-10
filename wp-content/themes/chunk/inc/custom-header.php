@@ -37,8 +37,8 @@ function chunk_custom_header_setup() {
 	$args = array(
 		'default-image'          => '',
 		'default-text-color'     => '000',
-		'width'                  => 800,
-		'height'                 => 140,
+		'width'                  => 0,
+		'height'                 => 0,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'chunk_header_style',
 		'admin-head-callback'    => 'chunk_admin_header_style',
