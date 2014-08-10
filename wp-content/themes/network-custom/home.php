@@ -37,7 +37,7 @@ if ( ! function_exists( 'is_plugin_active_for_network' ) )
 						<?php// comments_template(); ?>
 					</article>
 
-					<?php $sites = wp_get_sites('offset=1,archived=0'); // Set up variable that holds array of sites ?>
+					<?php $sites = wp_get_sites('offset=1&archived=0&deleted=0'); // Set up variable that holds array of sites ?>
 
 					<section class="network-listings">
 
