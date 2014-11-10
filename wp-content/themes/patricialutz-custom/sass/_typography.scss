@@ -9,9 +9,9 @@ html {
 	@include breakpoint(small) {
 		font-size: $base-size - 2;
 	}
-	// @include breakpoint(xsmall) {
-	// 	font-size: $base-size - 4;
-	// }
+	@include breakpoint(xsmall) {
+		font-size: $base-size - 3;
+	}
 }
 
 h1,

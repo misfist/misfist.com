@@ -3170,6 +3170,10 @@ html {
     /* line 4, sass/_typography.scss */
     html {
       font-size: 14px; } }
+  @media (max-width: 480px) {
+    /* line 4, sass/_typography.scss */
+    html {
+      font-size: 13px; } }
 
 /* line 17, sass/_typography.scss */
 h1,
