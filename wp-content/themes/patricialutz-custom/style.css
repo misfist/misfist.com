@@ -2474,12 +2474,15 @@ header {
   height: auto;
   margin: 0 0 30px;
   padding-top: 25px;
-  text-align: center;
-  /*width: 800px;*/ }
-  /* line 14, sass/_footer.scss */
+  text-align: center; }
+  /* line 13, sass/_footer.scss */
   #footer a {
     color: #cf0f00;
     text-decoration: none; }
+    /* line 16, sass/_footer.scss */
+    #footer a img {
+      height: 50px;
+      width: auto; }
 
 /* =Menu
 ----------------------------------------------- */

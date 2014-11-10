@@ -9,10 +9,13 @@
   height: auto;
   margin: 0 0 30px;
   padding-top: 25px;
-  text-align: center;
-  /*width: 800px;*/
+  text-align: center;  
   a {
     color: $red;
     text-decoration: none;
+    img {
+      height: 50px;
+      width: auto;
+    }
   }
 }
