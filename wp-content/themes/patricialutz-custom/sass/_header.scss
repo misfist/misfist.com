@@ -69,6 +69,7 @@ header {
     }
     @include breakpoint(small) {
       right: 10px;
+      color: $gray02;
     }
   }
 
