@@ -12,7 +12,7 @@
 	?>
 
 	<footer id="footer">
-		<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank"><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="Creative Commons - Non-commercial, Share alike" /></a><br />
+		<a href="http://www.gnu.org/copyleft/gpl.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/gpl3.png" alt="GPL3 - Free as in Freedom" /></a><br />
 		[<a href="https://github.com/misfist/patricialutz.com" target="_blank">Source</a>]
 	</footer>
 
