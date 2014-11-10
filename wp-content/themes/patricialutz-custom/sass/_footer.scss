@@ -1,0 +1,18 @@
+/* =Footer
+----------------------------------------------- */
+
+#footer {
+  clear: both;
+  color: $gray07;
+  font-size: 11px;
+  font-weight: bold;
+  height: auto;
+  margin: 0 0 30px;
+  padding-top: 25px;
+  text-align: center;
+  /*width: 800px;*/
+  a {
+    color: $red;
+    text-decoration: none;
+  }
+}

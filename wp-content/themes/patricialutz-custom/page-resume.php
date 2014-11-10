@@ -7,7 +7,7 @@
 
  get_header(); ?>
 
-    <div id="contents">
+    <main id="contents">
         
         <?php
         $args = array(
@@ -21,33 +21,25 @@
             foreach ($cats as $cat) {
                 // setup the cateogory ID
                 $cat_id= $cat->term_id;
-                // Make a header for the category
-                echo "<div ";
-                echo post_class();
-                echo ">";
-                echo "<div class='entry-meta'>";
-                echo "<div class='date'><h1>" .$cat->name. "</h1></div>";   
-                echo "</div>";   
+                // Make a header for the category ?>
+
+                <section <?php post_class() ?> >
+                    <aside class="entry-meta">
+                        <h1><?php echo $cat->name ?></h1>
+                    </aside>
             
+                <?php
                 // create a custom wordpress query
                 query_posts("cat=$cat_id&post_per_page=100&orderby=date&order=DESC");
                 // start the wordpress loop!
                 if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                <div class="main">
-                    <?php // create our link now that the post is setup ?>
-                    <h2 class="entry-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                    <div class="entry-content">
-                    <?php the_content(); ?>
-                    </div>
-                    <?php the_tags( '<span class="tag-links"><strong>' . __( 'Tagged', 'chunk' ) . '</strong> ', ', ', '</span>' ); ?>
-                </div>
+               <?php get_template_part( 'content', get_post_format() ); ?>
 
                 <?php endwhile; endif; // done our wordpress loop. Will start again for each category ?>
-            </div>
+            </section>
             <?php } // done the foreach statement ?>
 
-        </div>
-    </div>
+    </main>
  
  <?php get_footer(); ?>

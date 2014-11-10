@@ -11,10 +11,10 @@
 		get_sidebar( 'footer' );
 	?>
 
-	<div id="footer">
+	<footer id="footer">
 		<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" target="_blank"><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="Creative Commons - Non-commercial, Share alike" /></a><br />
 		[<a href="https://github.com/misfist/patricialutz.com" target="_blank">Source</a>]
-	</div>
+	</footer>
 
 </div>
 

@@ -1,0 +1,135 @@
+/* =Header
+----------------------------------------------- */
+
+header {
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0) 80px);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0) 80px);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: $white;
+  border-bottom: 1px solid $gray03;
+  text-align: center;
+
+  .wrap {
+    width: 800px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    @include breakpoint(small) {
+        width: 100%;
+    }
+  }
+
+  #site-title {
+    padding: .25em 0;
+    color: $black;
+    // font-family: $header-font;
+    font-size: 5rem;
+    @include breakpoint(small) {
+      font-size: 4rem;
+    }
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    a {
+      color: $black;
+      letter-spacing: 1px;
+      text-decoration: none;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  #site-description {
+    background: $gray01;
+    background-image: -webkit-linear-gradient($gray01, $gray02);
+    background-image: -moz-linear-gradient($gray01, $gray02);
+    border-radius: 3px;
+    color: $gray06;
+    display: inline-block;
+    font-size: 1rem;
+    // margin-top: 0;
+    padding: 6px 10px;
+  }
+
+  .social-links {
+    position: absolute;
+    display: inline;
+    top: 20px;
+    right: 0;
+    a {
+      font-size: 1.5rem;
+      color: $gray04;
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+    @include breakpoint(small) {
+      right: 10px;
+    }
+  }
+
+  &.shrink {
+    background-color: $black;
+    #site-title,
+    #site-description {
+      display: inline-block;
+    }
+    #site-title {
+      font-size: 3rem;
+      color: $white;
+      a {
+        color: $white;
+      }
+      @include breakpoint(small) {
+        font-size: 2.5rem;
+      }
+    }
+    #site-description {
+      font-size: .75rem;
+    }
+  }
+}
+
+
+
+#menu {
+  border-bottom: 1px solid $gray02;
+  border-top: 1px solid $gray02;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: right;
+  width: 800px;
+  #header-image a {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+  a {
+    color: $gray06;
+    font-family: $header-font;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 4px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: $black;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    float: right;
+    position: relative;
+  }
+}
+

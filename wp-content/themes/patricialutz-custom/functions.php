@@ -150,6 +150,8 @@ add_action( 'wp_enqueue_scripts', 'chunk_fonts' );
 function chunk_scripts() {
 	if ( ! is_singular() || ( is_singular() && 'audio' == get_post_format() ) )
 		wp_enqueue_script( 'audio-player', get_template_directory_uri() . '/js/audio-player.js', array( 'jquery' ), '20110823' );
+		wp_register_script( 'cdnjquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js');
+		wp_enqueue_script( 'cdnjquery' );
 }
 add_action( 'wp_enqueue_scripts', 'chunk_scripts' );
 

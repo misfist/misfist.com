@@ -21,15 +21,32 @@
 <body <?php body_class(); ?>>
 
 <div id="container">
-	<div class="gdlb-widget-badge">
-		<a target="_blank" href="http://www.linkedin.com/in/patricialutz">
-		<img border="0" src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.gif" alt="Patricia Lutz, PMP">
-		</a>
-	</div>
-	<div id="header">
-		<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-	</div>
+	<script>
+		jQuery(function(){
+		 var shrinkHeader = 300;
+		  jQuery(window).scroll(function() {
+		    var scroll = getCurrentScroll();
+		      if ( scroll >= shrinkHeader ) {
+		           jQuery('.header').addClass('shrink');
+		        }
+		        else {
+		            jQuery('.header').removeClass('shrink');
+		        }
+		  });
+		function getCurrentScroll() {
+		    return window.pageYOffset;
+		    }
+		});
+	</script>
+	<header id="header" class="header">
+		<div class="wrap">
+			<div class="social-links">
+				<a target="_blank" href="http://www.linkedin.com/in/patricialutz"><i class="fa fa-linkedin-square"></i></a>
+			</div>
+			<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+		</div>
+	</header>
 
 	<div id="menu">
 		<?php
