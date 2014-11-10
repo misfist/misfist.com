@@ -42,6 +42,7 @@
 		<div class="wrap">
 			<div class="social-links">
 				<a target="_blank" href="http://www.linkedin.com/in/patricialutz"><i class="fa fa-linkedin-square"></i></a>
+				<a onclick="window.print(); return false;" rel="nofollow" href="http://www.printfriendly.com/print?url=http%3A%2F%2Fpatricia-lutz.com%2F"><i class="fa fa-print"></i></a>
 			</div>
 			<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>

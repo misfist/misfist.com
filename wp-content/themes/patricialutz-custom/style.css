@@ -2453,6 +2453,10 @@ header {
     float: right;
     position: relative; }
 
+/* line 136, sass/_header.scss */
+.printfriendly {
+  display: none; }
+
 /* =Footer
 ----------------------------------------------- */
 /* line 4, sass/_footer.scss */
