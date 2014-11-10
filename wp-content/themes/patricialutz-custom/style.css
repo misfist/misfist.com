@@ -2393,31 +2393,36 @@ header {
     @media (max-width: 799px) {
       /* line 57, sass/_header.scss */
       header .social-links {
+        top: 89px;
         right: 10px;
         color: #ddd; } }
-  /* line 76, sass/_header.scss */
+    @media (max-width: 480px) {
+      /* line 57, sass/_header.scss */
+      header .social-links {
+        display: none; } }
+  /* line 83, sass/_header.scss */
   header.shrink {
     background-color: #000; }
-    /* line 78, sass/_header.scss */
+    /* line 85, sass/_header.scss */
     header.shrink #site-title,
     header.shrink #site-description {
       display: inline-block; }
-    /* line 82, sass/_header.scss */
+    /* line 89, sass/_header.scss */
     header.shrink #site-title {
       font-size: 3rem;
       color: #fff; }
-      /* line 85, sass/_header.scss */
+      /* line 92, sass/_header.scss */
       header.shrink #site-title a {
         color: #fff; }
       @media (max-width: 799px) {
-        /* line 82, sass/_header.scss */
+        /* line 89, sass/_header.scss */
         header.shrink #site-title {
           font-size: 2.5rem; } }
-    /* line 92, sass/_header.scss */
+    /* line 99, sass/_header.scss */
     header.shrink #site-description {
       font-size: .75rem; }
 
-/* line 100, sass/_header.scss */
+/* line 107, sass/_header.scss */
 #menu {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
@@ -2425,14 +2430,14 @@ header {
   padding: 10px;
   text-align: right;
   width: 800px; }
-  /* line 107, sass/_header.scss */
+  /* line 114, sass/_header.scss */
   #menu #header-image a {
     margin: 0;
     padding: 0; }
-  /* line 111, sass/_header.scss */
+  /* line 118, sass/_header.scss */
   #menu img {
     margin-bottom: 10px; }
-  /* line 114, sass/_header.scss */
+  /* line 121, sass/_header.scss */
   #menu a {
     color: #666;
     font-family: Oswald, sans-serif;
@@ -2441,20 +2446,20 @@ header {
     padding: 4px 0;
     text-decoration: none;
     text-transform: uppercase; }
-    /* line 122, sass/_header.scss */
+    /* line 129, sass/_header.scss */
     #menu a:hover {
       color: #000; }
-  /* line 126, sass/_header.scss */
+  /* line 133, sass/_header.scss */
   #menu ul {
     list-style: none;
     margin: 0;
     padding-left: 0; }
-  /* line 131, sass/_header.scss */
+  /* line 138, sass/_header.scss */
   #menu li {
     float: right;
     position: relative; }
 
-/* line 137, sass/_header.scss */
+/* line 144, sass/_header.scss */
 .printfriendly {
   display: none; }
 

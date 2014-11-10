@@ -68,8 +68,15 @@ header {
       }
     }
     @include breakpoint(small) {
+      top: 89px;
       right: 10px;
       color: $gray02;
+      // a {
+      //   display: block;
+      // }
+    }
+    @include breakpoint(xsmall) {
+      display: none;
     }
   }
 
