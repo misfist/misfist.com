@@ -2275,7 +2275,8 @@ header {
 #contents {
   width: 800px;
   height: auto;
-  margin: 167px auto 0  auto;
+  margin: 0  auto;
+  padding-top: 167px;
   padding-bottom: 10px; }
   @media (max-width: 799px) {
     /* line 38, sass/_layout.scss */
@@ -2285,38 +2286,38 @@ header {
 
 /* =Containers
 ----------------------------------------------- */
-/* line 52, sass/_layout.scss */
+/* line 53, sass/_layout.scss */
 main {
   height: auto;
   clear: both;
   position: relative; }
-  /* line 54, sass/_layout.scss */
+  /* line 55, sass/_layout.scss */
   main section article {
     float: right;
     width: 580px;
     border-left: 1px solid #aaa;
     padding-top: 1.3em; }
-  /* line 60, sass/_layout.scss */
+  /* line 61, sass/_layout.scss */
   main section aside {
     float: left;
     width: 190px;
     height: 100%;
     padding-top: 1em; }
   @media (max-width: 799px) {
-    /* line 68, sass/_layout.scss */
+    /* line 69, sass/_layout.scss */
     main section article,
     main section aside {
       float: none;
       width: 100%;
       padding-left: 0; }
-    /* line 74, sass/_layout.scss */
+    /* line 75, sass/_layout.scss */
     main section article {
       border-left: none !important; }
-    /* line 77, sass/_layout.scss */
+    /* line 78, sass/_layout.scss */
     main section aside {
       margin-left: 0;
       text-align: center; } }
-  /* line 86, sass/_layout.scss */
+  /* line 87, sass/_layout.scss */
   main:after {
     clear: both;
     content: ".";
