@@ -97,9 +97,10 @@ if ( ! function_exists( 'is_plugin_active_for_network' ) )
 							'wrapper_list_css' => 'news-list',
 							'wrapper_block_css'=> 'module row news', //The wrapper classe
 							'instance'         => 'news-module', //The wrapper ID
-							'thumbnail' 		=> 'true',
+							'thumbnail' 		=> true,
+                            'sort_by_date'      => true,
 							'ignore_blog' 		=> '3, 1',
-							'use_pub_date' 		=> 'true',
+							'use_pub_date' 		=> true,
 							'excerpt_length'	=> 150,
 							);
 							// Execute
