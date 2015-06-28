@@ -1,10 +1,10 @@
 === Which Template ===
-Contributors: MMDeveloper
+Contributors: MMDeveloper, The Marketing Mix Osborne Park Perth
 Donate link: 
 Tags: plugin, template, page, which, admin
 Requires at least: 3.3
-Tested up to: 3.9
-Stable tag: 3.0
+Tested up to: 4.0
+Stable tag: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,9 +15,12 @@ Work out which template your page is currently looking at.
 It's really difficult to find out which template your page is using, especially when your looking at the front-end of your site. With this plugin it makes it much easier. When you view your site, you will see an admin menu item called, "Template file: ...". If you click on this link, you will be navigated to the template in a new tab. This plugin will save you hours of time.
 
 
+Built by The Marketing Mix Perth: http://www.marketingmix.com.au
+
+
 == Installation ==
 
-1) Install WordPress 3.9 or higher
+1) Install WordPress 4.0 or higher
 
 2) Download the latest from:
 
@@ -28,7 +31,14 @@ http://wordpress.org/extend/plugins/which-template
 4) Activate the plugin.
 
 
+Built by The Marketing Mix Perth: http://www.marketingmix.com.au
+
+
 == Changelog ==
+
+= 4.0 =
+
+* You can now see which header, footer and sidebar template your using on your page.
 
 = 3.0 =
 
@@ -43,6 +53,10 @@ http://wordpress.org/extend/plugins/which-template
 * Initial Commit
 
 == Upgrade notice ==
+
+= 4.0 =
+
+* You can now see which header, footer and sidebar template your using on your page.
 
 = 3.0 =
 

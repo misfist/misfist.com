@@ -1,9 +1,9 @@
 === Explanatory Dictionary ===
-Contributors: exed internet, s_ruben
+Contributors: exed internet, rjvandoesburg
 Tags: explanatory dictionary, dictionary, vocabulary, glossary, lexicon, explain, explanation, tooltips, descriptions
 Requires at least: 3.5.0
-Tested up to: 3.8.0
-Stable tag: 4.0.2
+Tested up to: 4.0.0
+Stable tag: 4.1.5
 
 This plugin is used when there are words, words expressions or sentences to be explained via tooltips in the posts or pages of your wordpress blog.
 
@@ -12,14 +12,16 @@ This plugin is used when there are words, words expressions or sentences to be e
 This plugin is used when there are some words, words expressions or sentences to be explained in the posts or pages of your wordpress blog. It will help the visitors to read the explanations of the words (words expressions, sentences) you need via tooltips. It can also be used as a glossary.
 
 = Contact =
-In case of suggestions or improvements please contact EXED at service@exed.nl, or through the GitHub repository (see below).
+In case of suggestions or improvements please contact EXED at service@exed.nl.
 
 = More information =
 Read the following items for more information:
 
-* Follow EXED internet on [Facebook](https://www.facebook.com/EXEDInternet), [Twitter](https://twitter.com/exedinternet) and our [blog](http://blog.exed.nl) *(Dutch only)*
-* Other WordPress Plugins by EXED internet. - http://profiles.wordpress.org/exed-internet/
-* EXED internet official website - [http://www.exed.nl](http://www.exed.nl?utm_source=wordpress&utm_medium=social%2Bmedia)
+* Follow EXED internet on [Facebook](https://www.facebook.com/MixComMediaGroup), [Twitter](https://twitter.com/MixComMedia) and our [blog](https://mixcom.nl/blog) *(Dutch only)*
+* Other WordPress Plugins by EXED internet - http://profiles.wordpress.org/exed-internet/
+* EXED internet official website - [https://mixcom.nl/online](https://mixcom.nl/online?utm_source=wordpress&utm_medium=social%2Bmedia)
+
+Special thanks to [Ruben Sargsyan](http://profiles.wordpress.org/s_ruben/) for the initial set-up of the plugin
 
 == Installation ==
 
@@ -30,6 +32,11 @@ Read the following items for more information:
 = Also =
 
 * To show all words (words expressions, sentences) with their explanations like a glossary in a post or a page, add [explanatory-dictionary] in it.
+
+** To only show words starting with a certain letter use the shortcode like this [explanatory-dictionary letter="a"]
+
+** To only show a single dictionary use the shortcode like this [explanatory-dictionary dictionary="dictionary-1"]
+
 * To exclude the words (words expressions, sentences) from being explained by getting those words (words expressions, sentences) into [no-explanation][/no-explanation] tags.
 
 == Screenshots ==
@@ -40,6 +47,37 @@ Read the following items for more information:
 3. Explanatory Dictionary Overview on page
 
 == Changelog ==
+
+= 4.1.5 =
+* Added a new option to say if you want to search agressive (this helps with quotes an dicritics  but can also cause parts of words to show a pop-up)
+* Added the execution of shortcodes inside the tooltip content (however the content is static so it won't work on dynamic shortcode content)
+* Bugfix: Glossary doesn't show words on custom alphabet
+
+= 4.1.4 =
+* Fixed plugin clash that made editing a page/post impossible
+* Added a new option to say if you want to style how the terms look like (instead of using the few options available) 
+* Fixed a typo in a directory
+
+= 4.1.3 =
+* Fixed sorting the dictionary overview alphabetically 
+
+= 4.1.2 =
+* Fixed words disappearing 
+
+= 4.1.1 =
+* Added a link in old settings to migrate your old data
+
+= 4.1.0 =
+* This update will reset all your settings
+* There is a known new bug that makes quotes stop working, a workaround for now is copying the word from the frontend and using that as the title for the term (wordpress converts quotes making it difficult to swap the text around)
+* Made the content a custom post type
+* Use a custom template to style the dictionary page how you want it
+* Filter the custom post type on the search page to create your own layout
+* Bugfix: Tooltip getting cut of
+* Bugfix: Shortcodes not working as intended
+* Bugfix: Limit not working
+* Bugfix: Exclude not working
+
 
 = 4.0.2 =
 * New icon so it looks cooler witht the new admin layout
@@ -116,6 +154,9 @@ Read the following items for more information:
 * First release.
 
 == Upgrade Notice ==
+
+= 4.1.0 =
+Please not that all settings will be reset, the data will be converted to a custom post type but will still be accessible to view.
 
 = 4.0.2 =
 * New icon so it looks cooler witht the new admin layout
