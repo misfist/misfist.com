@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: Reveal IDs
-Version: 1.4.5
+Version: 1.4.6
 Plugin URI: http://www.schloebe.de/wordpress/reveal-ids-for-wp-admin-25-plugin/
 Description: Reveals hidden IDs in Admin interface that have been removed with WordPress 2.5 (formerly known as Entry IDs in Manage Posts/Pages View for WP 2.5). See <a href="options-general.php?page=reveal-ids-for-wp-admin-25/reveal-ids-for-wp-admin-25.php">options page</a> for information.
 Author: Oliver Schl&ouml;be
@@ -9,7 +9,7 @@ Author URI: http://www.schloebe.de/
 Text Domain: reveal-ids-for-wp-admin-25
 Domain Path: /languages
 
-Copyright 2008-2013 Oliver Schlöbe (email : scripts@schloebe.de)
+Copyright 2008-2015 Oliver Schlöbe (email : scripts@schloebe.de)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 /**
  * Define the plugin version
  */
-define("RIDWPA_VERSION", "1.4.5");
+define("RIDWPA_VERSION", "1.4.6");
 
 /**
  * Define the plugin path slug
@@ -97,38 +97,6 @@ class RevealIDsForWPAdmin {
 		
 		add_action('admin_menu', array(&$this, 'add_option_menu'));
 		add_action('admin_menu', array(&$this, 'default_settings'));
-		
-		/**
-		 * @since 1.3.0
-		 * @uses RevealIDsForWPAdmin::get_resource_url() to display
-		 */
-		if( isset($_GET['resource']) && !empty($_GET['resource'])) {
-			# base64 encoding
-			$resources = array(
-				'clipboard.gif' =>
-				'R0lGODlhCgAKAKIAADMzM//M/93d3ZCQkGZmZv///wAAAAAAAC'.
-				'H5BAEHAAEALAAAAAAKAAoAAAMgGBozq4OQUqQLU8qqiPgg0YHh'.
-				'SAoidqImmXpnOgB07SQAOw=='.
-			'');
-		 
-			if(array_key_exists($_GET['resource'], $resources)) {
-		 
-				$content = base64_decode($resources[ $_GET['resource'] ]);
-		 
-				$lastMod = filemtime(__FILE__);
-				$client = ( isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) ? $_SERVER['HTTP_IF_MODIFIED_SINCE'] : false );
-				if (isset($client) && (strtotime($client) == $lastMod)) {
-					header('Last-Modified: '.gmdate('D, d M Y H:i:s', $lastMod).' GMT', true, 304);
-					exit;
-				} else {
-					header('Last-Modified: '.gmdate('D, d M Y H:i:s', $lastMod).' GMT', true, 200);
-					header('Content-Length: '.strlen($content));
-					header('Content-Type: image/' . substr(strrchr($_GET['resource'], '.'), 1) );
-					echo $content;
-					exit;
-				}
-			}
-		}
 	}
 	
 	
@@ -339,8 +307,7 @@ class RevealIDsForWPAdmin {
 	 */
 	function add_option_menu() {
 		if ( current_user_can('switch_themes') && function_exists('add_submenu_page') ) {
-			$menutitle = '<img src="' . $this->get_resource_url('clipboard.gif') . '" alt="" />' . ' ';
-			$menutitle .= __('Reveal IDs', 'reveal-ids-for-wp-admin-25');
+			$menutitle = __('Reveal IDs', 'reveal-ids-for-wp-admin-25');
 	 
 			add_submenu_page('options-general.php', __('Reveal IDs', 'reveal-ids-for-wp-admin-25'), $menutitle, 'manage_options', __FILE__, array(&$this, 'options_page'));
 		}
@@ -410,19 +377,6 @@ class RevealIDsForWPAdmin {
 		</div>
  	</div>
 	<?php
-	}
- 
-
-	/**
-	 * Display Images/Icons base64-encoded
-	 * 
-	 * @since 1.3.0
-	 * @author scripts@schloebe.de
-	 * @param $resourceID
-	 * @return $resourceURL
-	 */
-	function get_resource_url( $resourceID ) {
-		return trailingslashit( admin_url() ) . '?resource=' . $resourceID;
 	}
 	
 	
