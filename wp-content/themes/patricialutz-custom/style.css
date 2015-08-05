@@ -1,14 +1,15 @@
-@charset "UTF-8";
-/*
+﻿/*
 Theme Name: Patricia Lutz Custom
-Author: Patricia Lutz
-Author URI: http://patricialutz.com
-Description: A customized theme based on the Chunk theme by <a href="http://automattic.com/" target="_blank">Automattic</a>.
-License: Creative Commons - Attribution-NonCommercial-ShareAlike
-License URI: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
-Tags: light, white, fixed-width, one-column, custom-background, custom-header, custom-menu, post-formats, rtl-language-support, sticky-post, translation-ready
-*/
+Theme URI: https://github.com/misfist/patricia-lutz.com
+Author: Pea
+Author URI: http://patricia-lutz.com
+Description: Custom theme based on Chunk
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, white, red, translation-ready
+Text Domain: patricia-lutz-custom
+Version: 1
 
-/*
-* This theme uses SASS which is compiled to CSS at css/style.css
-/* 
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/

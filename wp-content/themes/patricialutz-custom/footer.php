@@ -13,7 +13,7 @@
 
 	<footer id="footer">
 		<a href="http://www.gnu.org/copyleft/gpl.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/gpl3.png" alt="GPL3 - Free as in Freedom" /></a><br />
-		[<a href="https://github.com/misfist/patricia-lutz.com.git" target="_blank">Source</a>]
+		[<a href="https://github.com/misfist/patricialutz.com" target="_blank">Source</a>]
 	</footer>
 
 </div>
