@@ -13,8 +13,9 @@
 	 *
 	 * If there are no widgets, then let's bail early.
 	 */
-	if ( ! is_active_sidebar( 'sidebar-1' ) )
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		return;
+	}
 	// If we get this far, we have widgets. Let do this.
 ?>
 <div id="widgets">
