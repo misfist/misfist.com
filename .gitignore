@@ -5,6 +5,8 @@
 *.gz
 .DS_Store
 
+.sass-cache
+
 downloads
 favicon.gif
 favicon.ico
