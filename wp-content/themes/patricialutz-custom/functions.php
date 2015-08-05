@@ -31,6 +31,7 @@ add_theme_support( 'automatic-feed-links' );
  */
 register_nav_menus( array(
 	'primary' => __( 'Main Menu', 'chunk' ),
+	'social' => __( 'Social Menu', 'chunk' ),
 ) );
 
 /**
@@ -61,6 +62,15 @@ function chunk_widgets_init() {
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Social', 'chunk' ),
+		'id' => 'sidebar-social',
+		'before_widget' => '<div class="social-links">',
+		'after_widget' => "</div>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
@@ -148,12 +158,20 @@ add_action( 'wp_enqueue_scripts', 'chunk_fonts' );
  * Audio player.
  */
 function chunk_scripts() {
-	if ( ! is_singular() || ( is_singular() && 'audio' == get_post_format() ) )
+
+	wp_register_script( 'pea-theme-custom', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '', true );
+
+	if ( ! is_singular() || ( is_singular() && 'audio' == get_post_format() ) ) {
 		wp_enqueue_script( 'audio-player', get_template_directory_uri() . '/js/audio-player.js', array( 'jquery' ), '20110823' );
 		wp_register_script( 'cdnjquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js');
 		wp_enqueue_script( 'cdnjquery' );
+	}
+
+	//wp_enqueue_script( 'pea-theme-custom');
+
 }
 add_action( 'wp_enqueue_scripts', 'chunk_scripts' );
+
 
 function chunk_add_audio_support() {
 	if ( ! is_singular() || ( is_singular() && 'audio' == get_post_format() ) ) {
