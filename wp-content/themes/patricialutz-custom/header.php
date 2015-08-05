@@ -24,35 +24,11 @@
 <body <?php body_class(); ?>>
 
 <div id="container">
-	<script>
-		jQuery(document).ready(function($) {
-			var shrinkHeader = 300;
-
-			$(window).scroll(function() {
-			var scroll = getCurrentScroll();
-			
-			if ( scroll >= shrinkHeader ) {
-				$('.header').addClass('shrink');
-			}
-			else {
-				$('.header').removeClass('shrink');
-			}
-			});
-
-			function getCurrentScroll() {
-				return window.pageYOffset;
-			}
-		});
-	</script>
-
 
 	<header id="header" class="header">
 		<div class="wrap">
-			<!-- <div class="social-links"> -->
-				<?php dynamic_sidebar( 'sidebar-social' ); ?>
-				<!-- <a target="_blank" href="http://www.linkedin.com/in/patricialutz"><i class="fa fa-linkedin-square"></i></a>
-				<a onclick="window.print(); return false;" rel="nofollow" href="http://www.printfriendly.com/print?url=http%3A%2F%2Fpatricia-lutz.com%2F"><i class="fa fa-print"></i></a>
-			</div> -->
+			<?php dynamic_sidebar( 'sidebar-social' ); ?>
+
 			<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
