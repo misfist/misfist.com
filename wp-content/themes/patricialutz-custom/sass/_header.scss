@@ -71,9 +71,6 @@ header {
       top: 89px;
       right: 10px;
       color: $gray02;
-      // a {
-      //   display: block;
-      // }
     }
     @include breakpoint(xsmall) {
       display: none;
@@ -97,11 +94,17 @@ header {
       }
     }
     #site-description {
-      font-size: .75rem;
+      background-color: transparent;
+      background-image: none;
+      background-image: none;
+      border-radius: 0;
+      color: $white;
+    }
+    .social-links {
+      top: 10px;
     }
   }
 }
-
 
 
 #menu {
