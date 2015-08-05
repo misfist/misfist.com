@@ -159,7 +159,8 @@ add_action( 'wp_enqueue_scripts', 'chunk_fonts' );
  */
 function chunk_scripts() {
 
-	wp_register_script( 'pea-theme-custom', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '', true );
+	wp_register_style( 'patricia-lutz-custom', get_template_directory_uri() . '/css/style.css' );
+	wp_register_script( 'patricia-lutz-custom', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '', true );
 
 	if ( ! is_singular() || ( is_singular() && 'audio' == get_post_format() ) ) {
 		wp_enqueue_script( 'audio-player', get_template_directory_uri() . '/js/audio-player.js', array( 'jquery' ), '20110823' );
@@ -167,7 +168,8 @@ function chunk_scripts() {
 		wp_enqueue_script( 'cdnjquery' );
 	}
 
-	wp_enqueue_script( 'pea-theme-custom');
+	wp_enqueue_style( 'patricia-lutz-custom' );
+	wp_enqueue_script( 'patricia-lutz-custom' );
 
 }
 add_action( 'wp_enqueue_scripts', 'chunk_scripts' );
