@@ -167,7 +167,7 @@ function chunk_scripts() {
 		wp_enqueue_script( 'cdnjquery' );
 	}
 
-	//wp_enqueue_script( 'pea-theme-custom');
+	wp_enqueue_script( 'pea-theme-custom');
 
 }
 add_action( 'wp_enqueue_scripts', 'chunk_scripts' );
