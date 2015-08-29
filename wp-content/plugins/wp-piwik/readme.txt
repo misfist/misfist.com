@@ -2,8 +2,8 @@
 
 Contributors: Braekling
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.2
+Tested up to: 4.2.4
+Stable tag: 1.0.3
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6046779
 Tags: statistics, stats, analytics, piwik, wpmu
 
@@ -15,13 +15,11 @@ This plugin adds a Piwik stats site to your WordPress dashboard. It's also able 
 
 To use this plugin you will need your own Piwik instance. If you do not already have a Piwik setup, you have two simple options: use either [Self-hosted](http://piwik.org/) or [Cloud-hosted](http://piwik.org/hosting/). 
 
-**Requirements:** PHP 5.4 (or higher), WordPress 4.0 (or higher), Piwik 2.9 (or higher)
+**Requirements:** PHP 5.4 (or higher), WordPress 4.0 (or higher), Piwik 2.9 (or higher; 2.14.1 or higher recommended)
  
-**Languages:** English, French, German, Portuguese (Brazil). Partially supported: Albanian, Azerbaijani, Belarusian, Chinese (simplified), Dutch, Greek, Italian, Lithuanian, Norwegian, Persian, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian
+**Languages:** English, Dutch, French, German, Greek, Hungarian, Italian, Portuguese (Brazil). Partially supported: Albanian, Azerbaijani, Belarusian, Chinese (simplified), Lithuanian, Norwegian, Persian, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian
 
 **Note:** If you vote "It's broken", please tell me about your problem. It's hard to fix a bug I don't know about! ;-)
-
-*This plugin is not created or provided by the Piwik project team.*
 
 = Shortcodes =
 You can use following shortcodes if activated:
@@ -41,7 +39,7 @@ is equal to *[wp-piwik module="overview" title="" period="day" date="yesterday"]
 = Credits =
 
 * Graphs powered by [jqPlot](http://www.jqplot.com/) (GPL 2.0 and MIT) and  and [jQuery Sparklines](http://omnipotent.net/jquery.sparkline/) (New BSD License).
-* Donations: Marco L., Rolf W., Tobias U., Lars K., Donna F., Kevin D., Ramos S., Thomas M., John C., Andreas G., Ben M., Myra R. I., Carlos U. R.-S., Oleg I., M. N., Daniel K., James L., Jochen K., Cyril P., Thomas K., the Piwik team itself, and all people flattering this.
+* Donations: Marco L., Rolf W., Tobias U., Lars K., Donna F., Kevin D., Ramos S., Thomas M., John C., Andreas G., Ben M., Myra R. I., Carlos U. R.-S., Oleg I., M. N., Daniel K., James L., Jochen K., Cyril P., Thomas K., Patrik K., Zach, Sebastian W., the Piwik team itself, and all people flattering this.
 * All users who send me mails containing criticism, commendation, feature requests and bug reports - you help me to make WP-Piwik much better!
 
 Thank you all!
@@ -118,9 +116,21 @@ Add WP-Piwik to your /wp-content/plugins folder and enable it as [Network Plugin
 
 == Upgrade Notice ==
 
-This is a full refactored version of WP-Piwik. Please check your settings after updating and make sure everything is working as expected. If you want to upgrade from 0.8.x, please install 0.9.9.18 first: https://downloads.wordpress.org/plugin/wp-piwik.0.9.9.18.zip
+After several changes related to Piwik 2.14.1 and to prepare Piwik 3, I recommend to create a backup of your current system before updating Piwik and/or WP-Piwik. If you want to upgrade WP-Piwik from 0.8.x, please install 0.9.9.18 first: https://downloads.wordpress.org/plugin/wp-piwik.0.9.9.18.zip
 
 == Changelog ==
+
+= 1.0.3 =
+* Several language updates.
+* Switch to JSON renderer (Piwik 3 compatibility preparation)
+* Workaround: PHP API will work with Piwik 2.14+, see https://github.com/piwik/piwik/issues/8311 for further information.
+* Feature: Heartbeat timer support
+* Feature: Expanded token & URL/path input fields
+* Bugfix: Site duplication fix.
+* Bugfix: Avoid notice on empty overview response.
+* Bugfix: Return request error responses.
+* Bugfix: Opt-out URL fixed.
+* Bugfix: Capabilities: "Do not track"-filter and "show stats"-limit will work on multisites as expected again.
 
 = 1.0.2 =
 * Several language updates.

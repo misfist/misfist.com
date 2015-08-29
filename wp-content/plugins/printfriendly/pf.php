@@ -5,11 +5,14 @@ Plugin Name: Print Friendly and PDF
 Plugin URI: http://www.printfriendly.com
 Description: PrintFriendly & PDF button for your website. Optimizes your pages and brand for print, pdf, and email.
 Name and URL are included to ensure repeat visitors and new visitors when printed versions are shared.
-Version: 3.4.0
+Version: 3.4.4
 Author: Print Friendly
 Author URI: http://www.PrintFriendly.com
 
 Changelog :
+3.4.4 - Removed page content selection option - Wordpress Standard/Strict
+3.4.2 - Fixed the issue occured due to new changes made in the page content selection options
+3.4.1 - Improved page content selection options
 3.4.0 - Fixed the admin javascript error and increased plugin text boxes size
 3.3.10 - Implemented both Classic Google Analytics and Google Universal Analytics code.
 3.3.9 - Removed the functionality that opens new window when JavaScript is disabled.
@@ -127,6 +130,14 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
       if ( ! is_array( $this->options ) )
         $this->set_defaults();
 
+      /**
+       * Set page content selection option "Wordpress Standard/Strict" to "WP Template"        
+       */
+      if( isset( $this->options['pf_algo'] ) && $this->options['pf_algo'] == 'ws' ){
+        $this->options['pf_algo'] = 'wp';
+        update_option( $this->option_name, $this->options );
+      }
+
       // If the version number doesn't match, upgrade
       if ( $this->db_version > $this->options['db_version'] )
         $this->upgrade();
@@ -138,9 +149,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
         add_filter( 'the_excerpt', array( &$this, 'show_link' ) );
       }
     
-    if($this->use_wp_content_hook()) {
-        add_action('the_content', array(&$this, 'add_pf_content_class_around_content_hook'));
-    }
+      add_action('the_content', array(&$this, 'add_pf_content_class_around_content_hook'));
 
       if ( is_admin() ) {
         // Hook into init for registration of the option and the language files
@@ -160,16 +169,6 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
     }
     }
 
-
-  /**
-  * Returns true if WP content hooks are to used to find content
-  * @since 3.2.8
-  *
-  **/
-    function use_wp_content_hook() {
-    return (isset($this->options['pf_algo']) && $this->options['pf_algo'] == 'wp');
-  }
-  
   /**
   * Adds wraps content in pf-content class to help Printfriendly algo determine the content
   * 
@@ -177,12 +176,16 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
   *
   **/
   function add_pf_content_class_around_content_hook($content = false) {
-    if($content && !$this->print_only_override($content)) {
-      add_action( 'wp_footer', array( &$this, 'print_script_footer' ));
-      return '<div class="pf-content">'.$content.'</div>';
-      }   
-    else
-      return $content;
+
+    if( isset($this->options['pf_algo']) &&
+	$content && 
+	$this->options['pf_algo'] == 'wp' &&
+       !$this->print_only_override($content) ) {
+        add_action( 'wp_footer', array( &$this, 'print_script_footer' ));
+        return '<div class="pf-content">'.$content.'</div>';
+    } else {
+        return $content;
+    }
   }
 
   /**
@@ -290,7 +293,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
 
 ?>
       <script type="text/javascript">
-    
+
           var pfHeaderImgUrl = '<?php echo esc_js(esc_url_raw($image_url)); ?>';
           var pfHeaderTagline = '<?php echo esc_js($tagline); ?>';
           var pfdisableClickToDel = '<?php echo esc_js($this->options['click_to_delete']); ?>';
@@ -325,11 +328,11 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
      */
     function show_link( $content = false ) {
       $is_manual = $this->is_manual();
+
       if( !$content && !$is_manual )
         return "";
 
-
-    $button = $this->getButton();
+      $button = $this->getButton();
       if ( $is_manual )
       {
         // Hook the script call now, so it only get's loaded when needed, and need is determined by the user calling pf_button
@@ -374,6 +377,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
     }
      $js_enabled = $this->js_enabled();
      $analytics_code = "";
+     $onclick = '';
      
       if ( $this->google_analytics_enabled() ) {
           $title_var = "NULL";
@@ -733,8 +737,8 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
         'password_protected' => 'no',
         'javascript' => 'yes',
         'custom_css_url' => '',
-    'enable_google_analytics' => 'no',
-    'pf_algo' => 'wp'
+        'enable_google_analytics' => 'no',
+        'pf_algo' => 'wp'
 //        'category_ids' => array('all'),
       );
 
@@ -1120,6 +1124,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
      */
     function config_page() {
 
+
       // Since WP 3.2 outputs these errors by default, only display them when we're on versions older than 3.2 that do support the settings errors.
       global $wp_version;
       if(version_compare($wp_version, '3.2', '<' ) && $this->wp_version_gt30() )
@@ -1167,7 +1172,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
               <div id="custom-img">
                 <?php _e( "Enter Image URL", $this->hook ); ?><br>
                 <input id="custom_image" type="text" class="clear regular-text" size="30" name="<?php echo $this->option_name; ?>[custom_image]" value="<?php $this->val( 'custom_image' ); ?>" />
-                <div class="description"><?php _e( "Ex: http://www.example.com/<br>Ex: /wp/wp-content/uploads/example.png)", $this->hook ); ?>
+                <div class="description"><?php _e( "Ex: http://www.example.com/<br>Ex: /wp/wp-content/uploads/example.png", $this->hook ); ?>
                 </div>
               </div>
               <div id="pf-custom-button-error"></div>
@@ -1312,13 +1317,16 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
               </select>
             </label>
             <label for="pdf">
-              <?php _e( "PDF", $this->hook ); ?>
-              <select name="<?php echo $this->option_name; ?>[pdf]" id="pdf">
+              <span class="alignleft"><?php _e( "PDF", $this->hook ); ?></span>
+              <select name="<?php echo $this->option_name; ?>[pdf]" id="pdf" class="alignleft clear">
                 <option value="0" <?php selected( $this->options['pdf'], '0' ); ?>><?php _e( "Allow", $this->hook ); ?></option>
                 <option value="1" <?php selected( $this->options['pdf'], '1' ); ?>><?php _e( "Not Allow", $this->hook ); ?></option>
               </select>
+              <p class="alignleft">
+                  <h4 class="alignleft notice"><abbr class="required"><?php _e( "Developer Note: ", $this->hook ); ?></abbr><?php _e( "On localhost the images can not be included in the PDF. Once the website is live/public images will be included in the PDF.", $this->hook ); ?></h4>
+              </p>
             </label>
-            <label for="print">
+            <label for="print" class="clear">
               <?php _e( "Print", $this->hook ); ?>
               <select name="<?php echo $this->option_name; ?>[print]" id="print">
                 <option value="0" <?php selected( $this->options['print'], '0' ); ?>><?php _e( "Allow", $this->hook ); ?></option>
@@ -1370,8 +1378,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
     
         <label for="pf-algo-usage"><?php _e( 'My Page Content Selected By:', $this->hook ); ?>  <span class="description no-italics" ><?php _e( 'Change this setting if your content is not showing in the preview.', $this->hook ); ?></span><br>
           <select id="pf-algo-usage" name="<?php echo $this->option_name; ?>[pf_algo]">
-            <option value="wp" <?php $this->selected( 'pf_algo', 'wp' ); ?>> <?php _e( 'WP "the_content" filter
-      ', $this->hook ); ?></option>
+            <option value="wp" <?php $this->selected( 'pf_algo', 'wp' ); ?>> <?php _e( 'WP Template', $this->hook ); ?></option>
             <option value="pf" <?php $this->selected( 'pf_algo', 'pf' ); ?>> <?php _e( "Content Algorithm", $this->hook ); ?></option>
           </select>
         </label>

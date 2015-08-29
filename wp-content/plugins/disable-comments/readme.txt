@@ -1,9 +1,9 @@
 === Disable Comments ===
 Contributors: solarissmoke
-Donate link: http://rayofsolaris.net/donate.php
+Donate link: http://www.rayofsolaris.net/donate/
 Tags: comments, disable, global
-Requires at least: 3.6
-Tested up to: 4.2
+Requires at least: 3.8
+Tested up to: 4.3
 Stable tag: trunk
 
 Allows administrators to globally disable comments on their site. Comments can be disabled according to post type. Multisite friendly.
@@ -81,6 +81,10 @@ These definitions can be made either in your main `wp-config.php` or in your the
 
 == Changelog ==
 
+= 1.3.2 =
+* Compatibility updates and code refactoring for WordPress 4.3
+* Adding a few new translations
+
 = 1.3.1 =
 * Change the behaviour for comment feed requests. This removes a potential security issue.
 
@@ -136,7 +140,7 @@ These definitions can be made either in your main `wp-config.php` or in your the
 * Now supports Network Activation - disable comments on your entire multi-site network.
 * Simplified settings page.
 
-= 0.6 = 
+= 0.6 =
 * Add "persistent mode" to deal with themes that don't use filterable comment status checking.
 
 = 0.5 =
