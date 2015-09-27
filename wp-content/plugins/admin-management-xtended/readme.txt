@@ -2,8 +2,8 @@
 Contributors: Alphawolf
 Donate link: http://www.schloebe.de/donate/
 Tags: admin, ajax, management, cms, post, pages, category, inline, media, revision, link, bookmark, drag-and-drop, drag drop
-Requires at least: 3.2
-Tested up to: 4.2.9999
+Requires at least: 4.3
+Tested up to: 4.3.9999
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -104,6 +104,12 @@ Please visit [the official website](http://www.schloebe.de/wordpress/admin-manag
 4. Installation finished.
 
 == Changelog ==
+
+= 2.4.0 =
+* NEW: Localization update (sl_SI)
+* FIXED: Improved compatibility with WordPress 4.3, specifically for Drag'n'Drop feature
+* FIXED: Code cleanup and improvements
+* FIXED: Required version dumped to WP 4.3
 
 = 2.3.9.4 =
 * NEW: Localization update (sr_RS)

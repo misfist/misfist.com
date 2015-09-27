@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Admin Management Xtended
-Version: 2.3.9.4
+Version: 2.4.0
 Plugin URI: http://www.schloebe.de/wordpress/admin-management-xtended-plugin/
 Description: <strong>WordPress 3.2+ only.</strong> Extends admin functionalities by introducing: toggling post/page visibility inline, changing page order with drag'n'drop, inline category management, inline tag management, changing publication date inline, changing post slug inline, toggling comment status open/closed, hide draft posts, change media order, change media description inline, toggling link visibility, changing link categories
 Author: Oliver Schl&ouml;be
@@ -53,12 +53,12 @@ function ame_is_plugin_active( $plugin_filename ) {
 /**
  * Define the plugin version
  */
-define("AME_VERSION", "2.3.9.4");
+define("AME_VERSION", "2.4.0");
 
 /**
- * Define the global var AMEISWP32, returning bool if WP 3.2 or higher is running
+ * Define the global var AMEISWP43, returning bool if WP 4.3 or higher is running
  */
-define('AMEISWP32', version_compare($GLOBALS['wp_version'], '3.1.999', '>'));
+define('AMEISWP43', version_compare($GLOBALS['wp_version'], '4.2.999', '>'));
 
 /**
  * Define the global var ISINSTBTM, returning bool
@@ -113,7 +113,7 @@ class AdminManagementXtended {
 			add_action('admin_notices', array(&$this, 'wpBTMIncompCheck'));
 		}
 
-		if ( !AMEISWP32 ) {
+		if ( !AMEISWP43 ) {
 			add_action('admin_notices', array(&$this, 'wpVersionFailed'));
 			return;
 		}
@@ -208,13 +208,13 @@ class AdminManagementXtended {
 	/**
  	* Checks for the version of WordPress,
  	* and adds a message to inform the user
- 	* if WP version is >= 3.2 which isnt supported
+ 	* if WP version is >= 4.3 which isnt supported
  	*
- 	* @since 2.2.3
+ 	* @since 2.4.0
  	* @author scripts@schloebe.de
  	*/
 	function wpVersionFailed() {
-		echo "<div id='wpversion27failedmessage' class='error fade'><p>" . sprintf(__("<strong>Admin Management Xtended</strong> 2.2.3 and above require at least WordPress 3.2! If you're still using a WP version prior to 3.2, please <a href='%s'>use Admin Management Xtended version 2.1.5</a>! Consider updating to the latest WP version for your own safety!", 'admin-management-xtended'), 'http://downloads.wordpress.org/plugin/admin-management-xtended.2.1.5.zip') . "</p></div>";
+		echo "<div id='amewpversionfailedmessage' class='error fade'><p>" . sprintf(__("<strong>Admin Management Xtended</strong> 2.4.0 and above require at least WordPress 4.3! If you're still using a WP version prior to 4.3, please <a href='%s'>use Admin Management Xtended version 2.3.9.4</a>! Consider updating to the latest WP version for your own safety!", 'admin-management-xtended'), 'https://downloads.wordpress.org/plugin/admin-management-xtended.zip') . "</p></div>";
 	}
 
 	/**
