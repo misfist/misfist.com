@@ -8,7 +8,7 @@
 	<div id="footer">
 		<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'chunk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'chunk' ), 'WordPress' ); ?></a>
 		<span class="sep"> | </span>
-		<?php printf( __( 'Theme: %1$s by %2$s.', 'chunk' ), 'Chunk', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+		<?php printf( __( 'Theme: %1$s by %2$s.', 'chunk' ), 'Chunk', '<a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>' ); ?>
 	</div>
 
 </div>

@@ -20,13 +20,6 @@
 /**
  * Setup the WordPress core custom header feature.
  *
- * Use add_theme_support to register support for WordPress 3.4+
- * as well as provide backward compatibility for previous versions.
- * Use feature detection of wp_get_theme() which was introduced
- * in WordPress 3.4.
- *
- * @todo Rework this function to remove WordPress 3.4 support when WordPress 3.6 is released.
- *
  * @uses chunk_header_style()
  * @uses chunk_admin_header_style()
  * @uses chunk_admin_header_image()
@@ -34,28 +27,16 @@
  * @package Chunk
  */
 function chunk_custom_header_setup() {
-	$args = array(
+	add_theme_support( 'custom-header', apply_filters( 'chunk_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000',
-		'width'                  => 0,
-		'height'                 => 0,
+		'width'                  => 800,
+		'height'                 => 140,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'chunk_header_style',
 		'admin-head-callback'    => 'chunk_admin_header_style',
-	);
-
-	$args = apply_filters( 'chunk_custom_header_args', $args );
-
-	if ( function_exists( 'wp_get_theme' ) ) {
-		add_theme_support( 'custom-header', $args );
-	} else {
-		// Compat: Versions of WordPress prior to 3.4.
-		define( 'HEADER_TEXTCOLOR',    $args['default-text-color'] );
-		define( 'HEADER_IMAGE',        $args['default-image'] );
-		define( 'HEADER_IMAGE_WIDTH',  $args['width'] );
-		define( 'HEADER_IMAGE_HEIGHT', $args['height'] );
-		add_custom_image_header( $args['wp-head-callback'], $args['admin-head-callback'] );
-	}
+		'admin-preview-callback' => 'chunk_admin_header_image',
+	) ) );
 }
 add_action( 'after_setup_theme', 'chunk_custom_header_setup' );
 

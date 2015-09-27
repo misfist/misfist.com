@@ -34,21 +34,18 @@ function chunk_setup() {
 	 */
 	add_theme_support( 'custom-background' );
 
-
-	// $headerdefaults = array(
-	// 	'width'                  => 0,
-	// 	'height'                 => 0,
-	// 	'flex-height'            => true,
-	// 	'flex-width'             => true,
-	// );
-	// add_theme_support( 'custom-header', $headerdefaults );
-
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Main Menu', 'chunk' ),
 	) );
+
+	/**
+	 * Add support for Eventbrite.
+	 * See: https://wordpress.org/plugins/eventbrite-api/
+	 */
+	add_theme_support( 'eventbrite' );
 }
 add_action( 'after_setup_theme', 'chunk_setup' );
 
@@ -85,9 +82,8 @@ add_action( 'widgets_init', 'chunk_widgets_init' );
 function chunk_general_scripts() {
 	wp_enqueue_style( 'chunk-style', get_stylesheet_uri() );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'chunk_general_scripts' );
 
@@ -122,11 +118,10 @@ add_action( 'wp_enqueue_scripts', 'chunk_scripts' );
  * Custom Classes
  */
 function chunk_body_classes( $classes ) {
-	if ( is_multi_author() ) {
+	if ( is_multi_author() )
 		$classes[] = 'multiple-authors';
-	} else {
+	else
 		$classes[] = 'single-author';
-	}
 
 	return $classes;
 }
@@ -137,11 +132,10 @@ add_filter( 'body_class', 'chunk_body_classes' );
  */
 function chunk_date() {
 	$date_format = get_option( 'date_format' );
-	if ( 'F j, Y' == $date_format ) :
+	if ( 'F j, Y' == $date_format )
 		the_time( 'M d Y' );
-	else:
+	else
 		the_time( $date_format );
-	endif;
 }
 
 /**
@@ -214,11 +208,9 @@ if ( ! function_exists( 'the_post_format_audio' ) ) :
 /**
  * Shiv for the_post_format_audio().
  *
- * the_post_format_audio() was introduced to WordPress in version 3.6. To
- * provide backward compatibility with previous versions, we will define our
+ * the_post_format_audio() is part of a core plugin. To provide backward
+ * compatibility with previous versions, we will define our
  * own version of this function.
- *
- * @todo Remove this function when WordPress 3.8 is released.
  *
  * @param string $name The name of the shortcode.
  * @return bool True if shortcode exists; False otherwise.
@@ -271,16 +263,22 @@ function chunk_add_audio_support() {
 }
 
 /**
+ * Remove the separator from Eventbrite events meta.
+ */
+add_filter( 'eventbrite_meta_separator', '__return_false' );
+
+/**
  * Implement the Custom Header feature
  */
-require( get_template_directory() . '/inc/custom-header.php' );
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Load up our functions for grabbing content from posts
  */
-require( get_template_directory() . '/content-grabbers.php' );
+require get_template_directory() . '/content-grabbers.php';
 
 /**
  * Load Jetpack compatibility file.
  */
-require( get_template_directory() . '/inc/jetpack.php' );
+if ( file_exists( get_template_directory() . '/inc/jetpack.php' ) )
+	require get_template_directory() . '/inc/jetpack.php';

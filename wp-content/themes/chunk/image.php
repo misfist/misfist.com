@@ -22,8 +22,8 @@ get_header(); ?>
 										wp_get_attachment_url(),
 										$metadata['width'],
 										$metadata['height'],
-										get_permalink( $post->post_parent ),
-										get_the_title( $post->post_parent )
+										esc_url( get_permalink( $post->post_parent ) ),
+										esc_html( get_the_title( $post->post_parent ) )
 									);
 								?>
 						</span>
@@ -34,7 +34,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="main">
-						<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'chunk' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+						<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 						<div class="entry-content">
 							<?php
 								/**

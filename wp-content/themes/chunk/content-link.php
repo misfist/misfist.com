@@ -11,7 +11,7 @@
 		<div class="comments"><?php comments_popup_link( __( 'Leave a comment', 'chunk' ), __( '1 Comment', 'chunk' ), __( '% Comments', 'chunk' ) ); ?></div>
 		<?php endif; ?>
 		<span class="cat-links"><?php the_category( ', ' ); ?></span>
-		<span class="entry-format"><a href="<?php echo esc_url( get_post_format_link( get_post_format() ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'All %s posts', 'chunk' ), get_post_format_string( get_post_format() ) ) ); ?>"><?php echo get_post_format_string( get_post_format() ); ?></a></span>
+		<span class="entry-format"><a href="<?php echo esc_url( get_post_format_link( get_post_format() ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'All %s posts', 'chunk' ), get_post_format_string( get_post_format() ) ) ); ?>"><?php echo esc_html( get_post_format_string( get_post_format() ) ); ?></a></span>
 		<?php edit_post_link( __( 'Edit', 'chunk' ), '<span class="edit-link">', '</span>' ); ?>
 	</div>
 	<div class="main">
@@ -24,10 +24,10 @@
 				the_title( sprintf( '<h2 class="entry-title"><a href="%s">', esc_url( $link_url ) ), '</a></h2>' );
 			else :
 				the_title( '<h2 class="entry-title">', '</h2>' );
-			endif; 
-		
+			endif;
+
 			// Sometimes links need descriptions and sometimes they don't ...
-	
+
 			// Let's compare the length of the first url with the length of the post content.
 			// If they're one and the same we don't really need to show the post content BECAUSE ...
 			// that's just a url and we're already using that url as a href for the title link above BUT ...
