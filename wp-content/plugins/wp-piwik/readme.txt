@@ -3,7 +3,7 @@
 Contributors: Braekling
 Requires at least: 4.0
 Tested up to: 4.2.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6046779
 Tags: statistics, stats, analytics, piwik, wpmu
 
@@ -17,7 +17,7 @@ To use this plugin you will need your own Piwik instance. If you do not already 
 
 **Requirements:** PHP 5.4 (or higher), WordPress 4.0 (or higher), Piwik 2.9 (or higher; 2.14.1 or higher recommended)
  
-**Languages:** English, Dutch, French, German, Greek, Hungarian, Italian, Portuguese (Brazil). Partially supported: Albanian, Azerbaijani, Belarusian, Chinese (simplified), Lithuanian, Norwegian, Persian, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian
+**Languages:** English, Dutch, French, German, Greek, Hungarian, Italian, Portuguese (Brazil). Partially supported: Albanian, Azerbaijani, Belarusian, Chinese (simplified),  Hindi, Lithuanian, Luxembourgish, Norwegian, Persian, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian
 
 **Note:** If you vote "It's broken", please tell me about your problem. It's hard to fix a bug I don't know about! ;-)
 
@@ -119,6 +119,14 @@ Add WP-Piwik to your /wp-content/plugins folder and enable it as [Network Plugin
 After several changes related to Piwik 2.14.1 and to prepare Piwik 3, I recommend to create a backup of your current system before updating Piwik and/or WP-Piwik. If you want to upgrade WP-Piwik from 0.8.x, please install 0.9.9.18 first: https://downloads.wordpress.org/plugin/wp-piwik.0.9.9.18.zip
 
 == Changelog ==
+
+= 1.0.4 =
+* Several language updates.
+* Feature: Offer setDownloadExtensions option (see expert settings).
+* Feature: Consider configured HHTP connection method in proxy script.
+* Widget: Visitor country added.
+* Bugfix: Annotations on scheduled posts will work.
+* Bugfix: Donation button will work again.
 
 = 1.0.3 =
 * Several language updates.
