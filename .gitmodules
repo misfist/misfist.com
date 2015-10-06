@@ -1,0 +1,3 @@
+[submodule "Mercator"]
+	path = wp-content/mu-plugins/mercator
+	url = https://github.com/humanmade/Mercator.git
