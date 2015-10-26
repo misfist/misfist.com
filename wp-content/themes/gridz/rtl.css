@@ -1,0 +1,61 @@
+/* == RTL CSS == */
+
+#header {
+direction:rtl;
+unicode-bidi:embed;
+}
+
+.site-logo {
+text-align:right;
+padding-right:0;
+padding-left:10px;
+}
+
+.primary-menu ul li {
+float:right;
+text-align:right;
+}
+
+.entry-content .more-link {
+display:block;
+direction:rtl;
+}
+
+#page-navigation,.post-navigation,.comment-navigation {
+direction:rtl;
+text-align:right;
+}
+
+.post-navigation a.last {
+float:right;
+}
+
+.wp-caption.alignleft {
+margin:5px 0 20px 20px;
+}
+
+.wp-caption.alignright {
+margin:5px 20px 20px 0;
+}
+
+.tablayout td.tdleft,.site-info,.entry-title {
+text-align:right;
+}
+
+.tablayout td.tdright,.site-social {
+text-align:left;
+}
+
+.entry-meta,.entry-content,.entry-footer,.widget-area,#comments {
+direction:rtl;
+}
+
+.alignright,a img.alignright {
+float:left;
+margin:5px 20px 20px 0;
+}
+
+.alignleft,a img.alignleft {
+float:right;
+margin:5px 0 20px 20px;
+}
