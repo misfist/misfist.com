@@ -1,0 +1,664 @@
+# Translation of WP LinkedIn in Serbian
+# This file is distributed under the same license as the WP LinkedIn package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-09-28 17:10:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: WP LinkedIn\n"
+
+#: class-admin.php:31
+msgid "LinkedIn API"
+msgstr ""
+
+#: class-admin.php:35
+msgid "Extensions"
+msgstr ""
+
+#: class-admin.php:69
+msgid "Extensions are premium WordPress plugins that add new features to the WP-LinkedIn plugin."
+msgstr ""
+
+#: class-admin.php:70
+msgid "The following is a list of the existing extensions."
+msgstr ""
+
+#: class-admin.php:72
+msgid "WP LinkedIn Multi-Users"
+msgstr ""
+
+#: class-admin.php:73
+msgid "Enables profiles and recommendations for any registered user. Enables users to create accounts and log in using LinkedIn"
+msgstr ""
+
+#: class-admin.php:74 class-admin.php:79 class-admin.php:84
+msgid "Get it!"
+msgstr ""
+
+#: class-admin.php:77
+msgid "WP LinkedIn for Companies"
+msgstr ""
+
+#: class-admin.php:78
+msgid "Provides shortcodes and widgets to display company profiles and company page updates on your blog."
+msgstr ""
+
+#: class-admin.php:82
+msgid "WP LinkedIn Advanced Templates"
+msgstr ""
+
+#: class-admin.php:83
+msgid "Provides advanced templates for the LinkedIn profile and the company page updates."
+msgstr ""
+
+#: class-admin.php:86
+msgid "If you purchased any extension please provide the license keys below."
+msgstr ""
+
+#: page-options.php:17
+msgid "Tools"
+msgstr ""
+
+#: page-options.php:37
+msgid "You need to regenerate the token when it has expired, when you installed a new extension for this plugin or when LinkedIn grants you new rights."
+msgstr ""
+
+#: page-options.php:41
+msgid "The content of your profile is locally cached for 12 hours, use that button if you want to force the plugin to reload your profile."
+msgstr ""
+
+#: class-admin.php:21 page-options.php:3
+msgid "LinkedIn Options"
+msgstr "LinkedIn opcije"
+
+#: class-admin.php:21
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: class-admin.php:32
+msgid "Client ID"
+msgstr ""
+
+#: class-admin.php:33
+msgid "Client secret"
+msgstr ""
+
+#: class-admin.php:23
+msgid "Options"
+msgstr "Opcije"
+
+#: class-admin.php:24
+msgid "Full Profile"
+msgstr ""
+
+#: class-admin.php:25
+msgid "Profile fields"
+msgstr "Polja profila"
+
+#: class-admin.php:26
+msgid "Profile language"
+msgstr "Jezik profila"
+
+#: class-admin.php:27
+msgid "Send mail on token expiry"
+msgstr "Pošalji mail po isteku tokena"
+
+#: class-admin.php:28
+msgid "Verify SSL peer"
+msgstr "Proveri SSL peer"
+
+#: class-admin.php:29
+msgid "LinkedIn cards"
+msgstr "LinkedIn kartice"
+
+#: class-admin.php:45
+msgid "Settings"
+msgstr "Postavke"
+
+#: class-admin.php:51
+msgid ""
+"As of April 11, 2014 LinkedIn requires that redirect uris\n"
+"\t\t\t\tbe registered, thus forcing every plugin installation to have\n"
+"\t\t\t\tits own application key/secret pair and register the corresponding\n"
+"\t\t\t\tredirect uri."
+msgstr ""
+"Od 11. aprila 2014. LinkedIn zahteva da se registruje preusmeravanje uri\n"
+"\t\t\t\tbe što znači da svaka instalacija plugin-a mora da ima svoj par koji se sastoji od \n"
+"\t\t\t\tits ključa aplikacije/tajne i da se registruje u odgovarajući \n"
+"\t\t\t\t preusmereni uri. "
+
+#: class-admin.php:55
+msgid "Please follow the instructions on <a href=\"http://vdvn.me/p2tt\" target=\"_blank\">how to create a LinkedIn API application for the WP-LinkedIn plugin</a>."
+msgstr ""
+
+#: class-admin.php:58
+msgid "Redirect URL"
+msgstr ""
+
+#: class-admin.php:100
+msgid "Check this option only if you have been authorized by LinkedIn to access the full profile."
+msgstr ""
+
+#: class-admin.php:101
+msgid "To be authorized you must apply to <a target=\"_blank\" href=\"https://help.linkedin.com/app/ask/path/api-dvr\">the \"Apply with LinkedIn\" program</a>."
+msgstr ""
+
+#: class-admin.php:103
+msgid "<a href=\"http://vdvn.me/p2lg\" target=\"_blank\">More information on vedovini.net</a>"
+msgstr ""
+
+#: class-admin.php:110
+msgid "Comma separated list of fields to show on the profile."
+msgstr "Spisak polja, odvojenih zarezima, koja će se prikazivati na profilu"
+
+#: class-admin.php:111
+msgid "You can overide this setting in the shortcode with the `fields` attribute."
+msgstr "Ovu postavku možete poništiti u kodu, u atributu “fields”"
+
+#: class-admin.php:112
+msgid "See the <a href=\"https://developers.linkedin.com/documents/profile-fields\" target=\"_blank\">LinkedIn API documentation</a> for the complete list of fields."
+msgstr "Za kompletan spisak polja, pogledajte <a href=\"https://developers.linkedin.com/documents/profile-fields\" target=\"_blank\">LinkedIn API documentation</a>.   "
+
+#: class-admin.php:120
+msgid "Default"
+msgstr "Standardna vrednost"
+
+#: class-admin.php:126
+msgid "The language of the profile to display if you have several profiles in different languages."
+msgstr "Jezik profila koji želite da prikažete ako imate nekoliko profila na različitim jezicima."
+
+#: class-admin.php:127
+msgid "You can overide this setting in the shortcode with the `lang` attribute."
+msgstr "Ovu postavku možete poništiti u kodu, u atributu “lang”."
+
+#: class-admin.php:128
+msgid "See \"Selecting the profile language\" <a href=\"https://developer.linkedin.com/documents/profile-api\" target=\"_blank\">LinkedIn API documentation</a> for details."
+msgstr "Za više detalja, kliknite na \"Selecting the profile language\" <a href=\"https://developer.linkedin.com/documents/profile-api\" target=\"_blank\">LinkedIn API documentation</a>."
+
+#: class-admin.php:134
+msgid "Check this option if you want the plugin to send you an email when the token has expired or is invalid."
+msgstr "Štiklirajte ovu opciju ako hoćete da vam plugin pošalje mail kad token istekne ili kad postane neupotrebljiv."
+
+#: class-admin.php:140
+msgid "Uncheck this option only if you have SSL certificate issues on your server."
+msgstr "Nemojte štiklirati ovu opciju samo u slučaju da imate problema sa SSL sertifikatom na serveru."
+
+#: class-admin.php:150
+msgid "Check the content types where you want your LinkedIn card inserted."
+msgstr "Štiklirajte vrste sadržaja gde hoćete da ubacite LinkedIn karticu."
+
+#: class-admin.php:155
+msgid "Your must create an application key/secret to access the LinkedIn API. Please follow the instructions <a href=\"%s\">on the settings page</a>."
+msgstr "Morate kreirati ključ/tajnu aplikacije da biste pristupili LinkedIn aplikacionom programskom interfejsu. Molimo vas da pratite uputstva <a href=\"%s\"> na stranici </a> postavki. "
+
+#: class-admin.php:162
+msgid "Your LinkedIn access token is invalid or has expired, please <a href=\"%s\">click here</a> to get a new one."
+msgstr "Vaš token za pristup LinkedIn-u je nevažeći ili je istekao. Kliknite ovde da biste dobili novi: <a href=\"%s\">."
+
+#: class-admin.php:169
+msgid "An error has occured while retrieving the profile:"
+msgstr "Došlo je do greške prilikom preuzimanja profila."
+
+#: class-admin.php:176
+msgid "The access token has been successfully updated."
+msgstr "Token za pristup uspešno je ažuriran."
+
+#: class-admin.php:183
+msgid "An error has occured while updating the access token, please try again."
+msgstr "Došlo je do greške prilikom ažuriranja tokena za pristup. Molimo vas, pokušajte ponovo. "
+
+#: class-admin.php:184
+msgid "Error message: "
+msgstr "Poruka o grešci:"
+
+#: class-admin.php:191 class-admin.php:198
+msgid "The cache has been cleared."
+msgstr "Keš memorija je obrisana"
+
+#: page-options.php:36
+msgid "Regenerate LinkedIn Access Token"
+msgstr "Ponovo napravi token za LinkedIn pristup "
+
+#: page-options.php:40
+msgid "Clear the Cache"
+msgstr "Očisti keš memoriju"
+
+#: page-options.php:51
+msgid "Do you like this Plugin?"
+msgstr "Da li vam se sviđa ovaj plugin?"
+
+#: page-options.php:53
+msgid "Please consider a donation."
+msgstr "Molimo vas da razmislite o donaciji"
+
+#: page-options.php:63
+msgid "We also need volunteers to translate that plugin into more languages."
+msgstr "Potrebni su nam i volonteri koji će prevoditi taj plugin na različite jezike."
+
+#: page-options.php:64
+msgid "If you wish to help then contact <a href=\"https://twitter.com/cvedovini\">@cvedovini</a> on Twitter or use that <a href=\"http://vdvn.me/contact/\">contact form</a>."
+msgstr ""
+
+#: class-admin.php:209
+msgid "Bahasa Indonesia"
+msgstr "Indonežanski"
+
+#: class-admin.php:210
+msgid "Czech"
+msgstr "Češki"
+
+#: class-admin.php:211
+msgid "Danish"
+msgstr "Danski"
+
+#: class-admin.php:212
+msgid "Dutch"
+msgstr "Holandski"
+
+#: class-admin.php:213
+msgid "French"
+msgstr "Francuski"
+
+#: class-admin.php:214
+msgid "German"
+msgstr "Nemački"
+
+#: class-admin.php:215
+msgid "Italian"
+msgstr "Italijanski"
+
+#: class-admin.php:216
+msgid "Japanese"
+msgstr "Japanski"
+
+#: class-admin.php:217
+msgid "Korean"
+msgstr "Korejski"
+
+#: class-admin.php:218
+msgid "Malay"
+msgstr "Malajski"
+
+#: class-admin.php:219
+msgid "Norwegian"
+msgstr "Norveški"
+
+#: class-admin.php:220
+msgid "Polish"
+msgstr "Poljski"
+
+#: class-admin.php:221
+msgid "Portuguese"
+msgstr "Portugalski"
+
+#: class-admin.php:222
+msgid "Romanian"
+msgstr "Rumunski"
+
+#: class-admin.php:223
+msgid "Russian"
+msgstr "Ruski"
+
+#: class-admin.php:224
+msgid "Spanish"
+msgstr "Španski"
+
+#: class-admin.php:225
+msgid "Swedish"
+msgstr "Švedski"
+
+#: class-admin.php:226
+msgid "Turkish"
+msgstr "Turski"
+
+#: class-admin.php:227
+msgid "Albanian"
+msgstr "Albanski"
+
+#: class-admin.php:228
+msgid "Armenian"
+msgstr "Jermenski"
+
+#: class-admin.php:229
+msgid "Bosnian"
+msgstr "Bosanski"
+
+#: class-admin.php:230
+msgid "Burmese (Myanmar)"
+msgstr "Burmanski (Mijanmar)"
+
+#: class-admin.php:231
+msgid "Chinese (Simplified)"
+msgstr "Kineski (pojednostavljen)"
+
+#: class-admin.php:232
+msgid "Chinese (Traditional)"
+msgstr "Kineski (tradicionalni)"
+
+#: class-admin.php:233
+msgid "Croatian"
+msgstr "Hrvatski"
+
+#: class-admin.php:234
+msgid "Finnish"
+msgstr "Finski"
+
+#: class-admin.php:235
+msgid "Greek"
+msgstr "Grčki"
+
+#: class-admin.php:236
+msgid "Hindi"
+msgstr "hindi"
+
+#: class-admin.php:237
+msgid "Hungarian"
+msgstr "Mađarski"
+
+#: class-admin.php:238
+msgid "Icelandic"
+msgstr "Islandski"
+
+#: class-admin.php:239
+msgid "Javanese"
+msgstr "Javanski"
+
+#: class-admin.php:240
+msgid "Kannada"
+msgstr "Kanadski"
+
+#: class-admin.php:241
+msgid "Latvian"
+msgstr "Letonski"
+
+#: class-admin.php:242
+msgid "Lithuanian"
+msgstr "Litvanski"
+
+#: class-admin.php:243
+msgid "Malayalam"
+msgstr "Malajalam"
+
+#: class-admin.php:244
+msgid "Serbian"
+msgstr "Srpski"
+
+#: class-admin.php:245
+msgid "Slovak"
+msgstr "Slovački"
+
+#: class-admin.php:246
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: class-admin.php:247
+msgid "Tamil"
+msgstr "Tamilski"
+
+#: class-admin.php:248
+msgid "Telugu"
+msgstr "Telugu"
+
+#: class-admin.php:249
+msgid "Thai"
+msgstr "Tajlandski"
+
+#: class-admin.php:250
+msgid "Ukrainian"
+msgstr "Ukrajinski"
+
+#: class-admin.php:251
+msgid "Vietnamese"
+msgstr "Vijetnamski"
+
+#: class-admin.php:252
+msgid "Other"
+msgstr "Drugi"
+
+#: class-card-widget.php:6
+msgid "LinkedIn Card"
+msgstr "LinkedIn kartica"
+
+#: class-card-widget.php:7
+msgid "A widget displaying your LinkedIn card"
+msgstr "Widget koji prikazuje vašu LinkedIn karticu"
+
+#: class-card-widget.php:40 class-profile-widget.php:44
+#: class-recommendations-widget.php:45
+msgid "Title:"
+msgstr "Naziv:"
+
+#: class-card-widget.php:44
+msgid "Width of picture (in px):"
+msgstr "Širina slike (u pikselima):"
+
+#: class-card-widget.php:48
+msgid "Max length of summary (in char):"
+msgstr "Maksimalna dužina rezimea (u karakterima)"
+
+#: class-card-widget.php:50
+msgid "Specify '0' to hide the summary."
+msgstr "Navedite “0” da biste sakrili u rezimeu."
+
+#: class-linkedin-connection.php:130
+msgid "An unknown error has occured and no token was retrieved."
+msgstr "Došlo je do nepoznate greške. Token nije preuzet."
+
+#: class-linkedin-connection.php:183
+msgid "Invalid state"
+msgstr "Nevažeće stanje"
+
+#: class-linkedin-connection.php:196
+msgid "Please click <a href=\"%s\">here</a> if you are not redirected immediately."
+msgstr ""
+
+#: class-linkedin-connection.php:321
+msgid "HTTP request returned error code %d."
+msgstr "HTTP zahtev izbacuje %d grešku u kodu. "
+
+#: class-linkedin-connection.php:333
+msgid "No token or token has expired."
+msgstr "Nema tokena ili je token istekao."
+
+#: class-linkedin-connection.php:342
+msgid "Invalid or expired access token"
+msgstr "Nevažeći ili istekao token za pristup."
+
+#: class-linkedin-connection.php:344
+msgid "The access token for the WP LinkedIn plugin is either invalid or has expired, please click on the following link to renew it."
+msgstr "Token za pristup WP LinkedIn plugin-u je nevažeći ili je istekao. Molimo vas, kliknite na sledeći link da biste ga obnovili."
+
+#: class-linkedin-connection.php:346
+msgid "This link will only be valid for a limited period of time."
+msgstr "Ovaj link biće validan samo u ograničenom vremenskom periodu."
+
+#: class-linkedin-connection.php:347
+msgid "-Thank you."
+msgstr "Hvala vam."
+
+#: class-profile-widget.php:6
+msgid "LinkedIn Profile"
+msgstr "LinkedIn profil."
+
+#: class-profile-widget.php:7
+msgid "A widget displaying your LinkedIn profile using the LinkedIn Javascript API"
+msgstr "Widget koji prikazuje vaš LinkedIn profil koristi LinkedIn Javascript API."
+
+#: class-profile-widget.php:49
+msgid "Show connections"
+msgstr "Prikaži kontakte"
+
+#: class-recommendations-widget.php:6
+msgid "LinkedIn Recommendations"
+msgstr "LinkedIn preporuke"
+
+#: class-recommendations-widget.php:7
+msgid "A slider with your LinkedIn recommendations"
+msgstr "Slajder sa vašim LinkedIn preporukama"
+
+#: class-recommendations-widget.php:49
+msgid "Width of widget (in px):"
+msgstr "Širina widget-a (u pikselima)"
+
+#: class-recommendations-widget.php:51
+msgid "You can also specify 'auto' to let javascript automatically compute the width or 'css' to set it yourself using your theme's stylesheet."
+msgstr "Možete odabrati opciju “auto” da biste omogućili javascript-u da automatski izračuna širinu, ili “css” da biste sami odredili širinu uz pomoć stylesheet-a teme."
+
+#: class-recommendations-widget.php:54
+msgid "Length of recommendations (in char):"
+msgstr "Dužina preporuka (u karakterima)"
+
+#: class-recommendations-widget.php:58
+msgid "Scroller's speed:"
+msgstr "Brzina skrolovanja"
+
+#: lib/EDD_SL_Plugin_Updater.php:176
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: lib/EDD_SL_Plugin_Updater.php:183
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s\">update now</a>."
+msgstr ""
+
+#: lib/EDD_SL_Plugin_Updater.php:323
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: lib/EDD_SL_Plugin_Updater.php:323
+msgid "Error"
+msgstr ""
+
+#: lib/class-plugin-updater.php:36 lib/class-plugin-updater.php:84
+msgid "You must provide a valid license key."
+msgstr ""
+
+#: lib/class-plugin-updater.php:37
+msgid "Please <a href=\"%s\">go to the settings page</a> and enter your key."
+msgstr ""
+
+#: lib/class-plugin-updater.php:62
+msgid "<a href=\"%s\">Renew your license</a>."
+msgstr ""
+
+#: lib/class-plugin-updater.php:110
+msgid "Your license key is active."
+msgstr ""
+
+#: lib/class-plugin-updater.php:113
+msgid "Please activate your license key."
+msgstr ""
+
+#: lib/class-plugin-updater.php:116
+msgid "Your license key is valid."
+msgstr ""
+
+#: lib/class-plugin-updater.php:119
+msgid "Your license key has expired, <a href=\"%s\">click here to renew it</a>."
+msgstr ""
+
+#: lib/class-plugin-updater.php:124
+msgid "Your license key is invalid."
+msgstr ""
+
+#: templates/profile-header.php:10
+msgid "Summary"
+msgstr "Rezime"
+
+#: templates/profile-header.php:17
+msgid "Specialties"
+msgstr "Specijalizacije"
+
+#: templates/profile-positions.php:2
+msgid "Experience"
+msgstr "Iskustvo"
+
+#: templates/profile-positions.php:5
+msgid "Present"
+msgstr "Trenutno"
+
+#: templates/recommendations.php:16
+msgid "Anonymous"
+msgstr "Anoniman"
+
+#: wp-linkedin.php:285
+msgid "You don't have any recommendation to show."
+msgstr "Nemate nijednu preporuku za prikazivanje."
+
+#: wp-linkedin.php:383
+msgid "Animal Welfare"
+msgstr "Briga za dobrobit životinja"
+
+#: wp-linkedin.php:384
+msgid "Arts and Culture"
+msgstr "Umetnost i kultura"
+
+#: wp-linkedin.php:385
+msgid "Children"
+msgstr "Deca"
+
+#: wp-linkedin.php:386
+msgid "Civil Rights and Social Action"
+msgstr "Građanska prava i društveni rad"
+
+#: wp-linkedin.php:387
+msgid "Disaster and Humanitarian Relief"
+msgstr "Pomoć u nepogodama i humanitarni rad"
+
+#: wp-linkedin.php:388
+msgid "Economic Empowerment"
+msgstr "Ekonomski napredak"
+
+#: wp-linkedin.php:389
+msgid "Education"
+msgstr "Obrazovanje"
+
+#: wp-linkedin.php:390
+msgid "Environment"
+msgstr "Životna sredina"
+
+#: wp-linkedin.php:391
+msgid "Health"
+msgstr "Zdravlje"
+
+#: wp-linkedin.php:392
+msgid "Human Rights"
+msgstr "Ljudska prava"
+
+#: wp-linkedin.php:393
+msgid "Politics"
+msgstr "Politika"
+
+#: wp-linkedin.php:394
+msgid "Poverty Alleviation"
+msgstr "Pomoć siromašnima"
+
+#: wp-linkedin.php:395
+msgid "Science and Technology"
+msgstr "Nauka i tehnologija"
+
+#: wp-linkedin.php:396
+msgid "Social Services"
+msgstr "Socijalne službe"
+
+#. Plugin Name of the plugin/theme
+msgid "WP LinkedIn"
+msgstr "WP LinkedIn"
+
+#. Plugin URI of the plugin/theme
+msgid "http://vdvn.me/pga"
+msgstr "http://vdvn.me/pga"
+
+#. Description of the plugin/theme
+msgid "This plugin enables you to add various part of your LinkedIn profile to your Wordpress blog."
+msgstr "Ovaj plugin omogućava vam da dodate različite delove LinkedIn profila svom Wordpress blogu."
+
+#. Author of the plugin/theme
+msgid "Claude Vedovini"
+msgstr "Claude Vedovini"
+
+#. Author URI of the plugin/theme
+msgid "http://vdvn.me/"
+msgstr "http://vdvn.me/"

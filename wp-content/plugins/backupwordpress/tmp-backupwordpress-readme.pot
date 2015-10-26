@@ -1,0 +1,3362 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "BackUpWordPress"
+msgstr ""
+
+#. Short description.
+msgid "Simple automated backups of your WordPress-powered website."
+msgstr ""
+
+#. Found in description list item.
+msgid "Manage multiple schedules."
+msgstr ""
+
+#. Screenshot description.
+msgid "Choose your schedule, backup type, number of backups to keep and whether to receive a notification email."
+msgstr ""
+
+#. Screenshot description.
+msgid "Easily manage exclude rules and see exactly which files are included and excluded from your backup."
+msgstr ""
+
+#. Found in description header.
+msgid "Features"
+msgstr ""
+
+#. Found in description header.
+msgid "Help develop this plugin"
+msgstr ""
+
+#. Found in description header.
+msgid "Translations"
+msgstr ""
+
+#. Found in description list item.
+msgid "Super simple to use, no setup required."
+msgstr ""
+
+#. Found in description list item.
+msgid "Works in low memory, \"shared host\" environments."
+msgstr ""
+
+#. Found in description list item.
+msgid "Option to have each backup file emailed to you."
+msgstr ""
+
+#. Found in description list item.
+msgid "Uses <code>zip</code> and <code>mysqldump</code> for faster backups if they are available."
+msgstr ""
+
+#. Found in description list item.
+msgid "Works on Linux &amp; Windows Server."
+msgstr ""
+
+#. Found in description list item.
+msgid "Exclude files and folders from your backups."
+msgstr ""
+
+#. Found in description list item.
+msgid "Good support should you need help."
+msgstr ""
+
+#. Found in description list item.
+msgid "Translations for Spanish, German, Chinese, Romanian, Russian, Serbian, Lithuanian, Italian, Czech, Dutch, French, Basque."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"https://bwp.hmn.md/?utm_source=wordpress-org&amp;utm_medium=plugin-page&amp;utm_campaign=freeplugin\">BackUpWordPress</a> will back up your entire site including your database and all your files on a schedule that suits you. Try it now to see how easy it is!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This plugin requires PHP version 5.3.2 or later"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The BackUpWordPress plugin is hosted on GitHub, if you want to help out with development or testing then head over to https://github.com/humanmade/backupwordpress/."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "We'd also love help translating the plugin into more languages, if you can help then please visit https://translate.wordpress.org/projects/wp-plugins/backupwordpress/dev/ to start translating."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Install BackUpWordPress either via the WordPress.org plugin directory, or by uploading the files to your server."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Sit back and relax safe in the knowledge that your whole site will be backed up every day."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "The plugin will try to use the <code>mysqldump</code> and <code>zip</code> commands via shell if they are available, using these will greatly improve the time it takes to back up your site."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix false positive error message."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix broken download links"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Dropped support for PclZip"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed duplicate cron schedule interval names ( props ucavus )"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrected some typos, grammar and punctuation ( props ucavus )"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug in the WP CLI command ( props duritong )"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better message for wp-cron related errors"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Replace 'bi-weekly' with less confusing wording"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a few errors misc reported by code quality tool"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Total site size display now subtracts excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Many general improvements and bug fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass schedule type instead of schedule id as context for the calculated sizes, it's more useful"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Simply output arrays rather than trying to be too clever about it"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Start tracking PDO availability through Intercom"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Catch database and files shell_exec warnings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Test under PHP 5.6 in Travis"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the new backupwordpress@hmn.md email address everywhere"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Clarify how people request access to Slack and GlotPress"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Rewrite our contributing guidelines to be more comprehensive"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add instructions to contributing.md"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revert plugin name as it doesn't make a diff in search results"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Always return an integer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes admin page slug for multisite"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes an issue when evaluating expression with empty"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes a fatal error on PHP 5.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Displays other notices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updates stable tag"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds some escaping and sanitizing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Defines plugins dir for different environments"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds tests for activation and deactivation hooks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds a debugging function for tests"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Symlinks plugin into tests dir"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Splits out deactivation code into separate functions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes activation and deactivation hooks not being fired"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exclude backups folder from size calculation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes a misplaced parenthesis"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes how error messages are bubbled up"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "get home path should return defined value"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removes redundant exclude statement as CVS folders are excluded by default"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds a flag parameter to allow get_files to return all files including default excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes default exclude pattern that was too greedy."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes issue where files where 'cache' files were excluded by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updates brazilian portuguese translations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes the issue with the 'no thanks' button in the Support modal and misc JS improvements. props SiamKreative."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes error in manual backups, caused by incorrect plugin version number in class, which is used for the JS script version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check if shell_exec is available before running command"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only validate day of month if this is the schedule type"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make FS optional and fix the DB connect method"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(issue-770) Exclude the folder, not the wildcard"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(issue-751) Rename plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(issue-698) skip mySql bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use shell_exec"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove use statement"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revert to using shell_exec"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove Process"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(cool-runnings-757) Add back session_write_close"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(issue-479) Hide hours and minutes for hourly backups"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(backupception) Only load if main site on multisite"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(all-paths-lead-to-rome) Set plugin path to main plugin file to avoid relative paths"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(socket-to-me-one-more-time) Fix paths"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use socket if available"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Display errors"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Put the db dump in the archive first - fixes issue with large archive"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Dont wait for response"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Run schedule as a Backdrop task"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass array directly to function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(issue-759) Fix require paths"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "check PHP version before anything else"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move plugin class to own file"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Skip mysql bug error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Delete all BWP options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Start the process"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Return and check WP_Error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(what-time-is-backup) Extract hours and minutes from the date as an array for display"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change plugin description if multisite"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use wp_get_sites"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a comment"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "We check for this on plugin instantiation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revert to clearing schedule and rescheduling"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Delete schedules and leftover options from subsites"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ensure plugin only runs on main site"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix Too Many Schedules"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use Symfony Process"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(fix-incorrect-type-error) File is an SPL object so get path"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Set root as default param"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Delete backdrop transient"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Force directory sizes recalculation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Define VCS abbr"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hide exclude patterns from Excludes list."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check if user can connect"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Test that the mysqldump command works"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a couple of mysql versions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Automatically exclude VCS folders"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Calculate Root size correctly"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Get default rules from backup object"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Do not auto ignore dot files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Count excluded"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Do not count excluded"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "If its the root then return its size directly"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix typo in transient names"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Set and return class property instead"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "List default excludes as such"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Require symfony finder"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Clear transients on deactivate"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Get list of files with Finder"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Load composer packages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "These are alredy filtered"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add some default excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use absolute path for excludes added via UI"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix tests"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix conditional"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix syntax error in travis YML"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Run codesniffer only on pull requests"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update tested WP versions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change min WP version required to match travis CI"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix readme changelog placement"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add condtion for Cron and Ajax"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix deactivate logic"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes recursive exclusion of files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(upgrade-options) Bump version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "strtolower is redundant"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Upgrade routine - renames service settings to avoid backslashes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the Service name as the setting name"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Clear settings for schedule settings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes bug in displaying settings error notices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update version number"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Merge pull request #726 from humanmade/fix-fatal-error-missing-class-addons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Leave bare minimum to avoid fatal error"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "remove old main plugin class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Keep deprecated classes in a deprecated.php file to avoid Fatal Error in addons during upgrade."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(simplify-bwp-file-timestamp) Simplify the file name timestamp"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix class file name"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(fixup-setup-class) Add missing transients to uninstall routine"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "switch Travis notifications to Slack instead of Hipchat"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Do not delete backups on uninstall"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "wrap in parenthesis"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix include paths after moving uninstall to own file herpderp"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update BackUp class include"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add all cases to switch"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass scanned files sizes through conform_dir()"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix some classes and requires"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(origin/issue-684, issue-684) Fix namespaces"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unnecessary wildcard from regex"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(crazy-refactor) Remove some duplication"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Formatting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix Class name"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Blank line"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Uses a DirectoryIterator to delete files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove tests for now"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix stable tag number"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revert to using uninstall.php"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add tests for uninstall and deactivate"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove double lie break"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove double line break"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove phpdocumentor"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "We still need to require some scripts..."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "We dont need to check for this constant in the hook callback"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use get_col to directly have an array of schedule option names"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove namespacing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove debugging"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make the uninstall, activation and deactivation hooks work"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(change-singleton-implementation) Change the singleton implementation to not use the static() function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "path argument interfers with wp-cli path argument."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix some scrutinizer issues, mostly major ones"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Consistent default name for database dumps"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Major 5.3 re-factoring fun"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor code formatting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "else if should be elseif"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update the WP_CLI command to fix some issues"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add support for copying and updating an existing backups"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correct $response1 variable"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(origin/issue-652, issue-652) Suppress warnings from filesystem functions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove debugging function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(origin/issue-475, issue-475) Fix a French string"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Format the intercom data better"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Load Intercom in the admin footer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix some HTML issues"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a function that returns a given option value"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Return Unknown if no average exists or invalid"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a start parameter to function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass in the start time as a parameter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make strings translatable"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Escape values"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds a function to track backup duration and another to display it"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds Average Backup Duration Info"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve display of arrays"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes open_basedir warnings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Replace spaces with tabs for indentation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "(wp-cron-test-improvements) Improve the reliability of the wp-cron test"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pop in the directory sizes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adapt heartbeat pulse"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update Javascript"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update constant name"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Load the default translations so that activation error message is in user language"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a few translatable strings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update French translations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-uglify Intercom js"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use provided callback argument to determine current screen"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "remove deprecated code"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only show notices on BWP admin page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix class name"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make function public for now"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Get an instance of BWP to load functions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show admin notice if fails to meet requirements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unneeded function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix references"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Refactor main class after addition of the Setup class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Introduce a setup class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Determine if we need to run a cleanup routine"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Introduce a custom hook for addons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Refactor main plugin file into a singleton class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bring activation and deactivation into main plugin class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "css changes to fix support button alignment"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes issue preventing backups from running without JS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove back compat memory limit define"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Refactor HMBKP_Notices to support non-persistant notices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor refactor for PHP minimum requirements notice"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Clear previous backup notices when running a new backup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issues with custom paths"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved singleton pattern"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Display errors in network admin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change to text input so multiple email address are supported"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removes HTML tag from string"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Account for new schedule"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make upsell sentence translatable"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fix return type"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Return true if transient exists"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check if constant is defined"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Request the site size via heartbeat send"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass site size through heartbeat"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only calculate if necessary"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Simplify the backup count display"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Enqueue scripts properly"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change how we check directory_sizes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add BackUpWordPress test case class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move class to separate file"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Group help tab display functions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update POT file"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make strings ready for translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add French translations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update textdomain"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix deleted function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use HM_Backup function to determine if shell_exec is enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check if file is readable first"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix how we kick off Task"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unused var"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Call recursive filescanner on admin page load"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update package.json"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update the POT file task params"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Replace hmbkp with backupwordpress as textdomain"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exclude folders"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add Grunt task options"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove hard line returns"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Display placeholder if exec fails"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add 30 second time diff allowance"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use $TRAVIS_BUILD_DIR"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "we do this in travis.yml"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Regenerate github account info"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update command to reflect function rename"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update tests to reflect function name change"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Rename function"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Filter tests to run"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix group flags"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Calculate site size on page load"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bump version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add parenthesis to require_once"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove disk space info"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Attempt to fix build"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "define WP_TESTS_DIR"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make sure current_action fnction is loaded"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove extra slashes and semicolons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove the custom webhook service"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better default WP_TESTS_DIR"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "move trailingslash calls out of the loop for performance"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor code cleanup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correct path for hm-backup so it's tests are run"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "add composer.lock"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use scrutinizer code coverage"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "add waffle.io badge"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use up to date commands for coverage"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add code rating"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't test 5.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update readme.md"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "excluded_dirs is deprecated"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update scrutinizer config"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add composer config and dev dependencies"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make PHPUnit generate an XML for coveralls"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add scrutinizer config"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ignore vendor dir"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a link to Help page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move to activation hook"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bump up required WP version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Escape all the things"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Save errors to a notices option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Reload page on errors"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove script"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unneeded class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check PHP version on plugins loaded"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check PHP version on activate"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update readme"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Set required version to 5.3.2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update tests"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Allow for a 30 second delta in asserting schedule time"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the new build env on Travis"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Restrict plugin to be network only"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix admin URL logic"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update readme changelog"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "remove uneeded images"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "latest hm-backup / fixes a serious bug in backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Typos in v 3.0 changelog"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Specify POT filename in grunt task"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Markdown readme"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Regenerate readme"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add plugin headers"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Refactor the recursive filesize scanner"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "correct text domain"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unneede statements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "reload the excludes filelist in the correct place when someone excludes a file"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Latest backdrop"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Regenerate minified CSS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Regenerate minified JS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix cancel backup action"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "WordPress Coding Standards"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exit early if incompatible version of WordPress"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update translations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update changelog"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Load minified CSS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Biweekly wording"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add missing period"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "use nonce_url instead of manually adding the nonce query param"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "close the settings form when done"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Design changes as per ticket"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Start tracking langauge in server info"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Right align the primary button in the enable support modal"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-factor the directory filesize code to use a single array instead of thoussands of transients"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove the warning that would show if you were using anything other than the latest stable, it's no longer needed now that the FAQ is local"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "switch to using a single transient to store directory filesize data"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add an anchor link"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add error message"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Prefix GET params"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update exclude rule action"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds function for building admin action urls"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fix vertical scroll"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds some functions to manage settings form submission errors"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Rename nonce and action"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fetch errors to display"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Form submission handling for BWP and add-ons settings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use a new function that persists form submission errors to  a transient"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "None check"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass the nonce around in the ajax request"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Enable support action links"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check nonces"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Modify action URLs to use the admin_post hook"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unneeded code"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New line at end"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use admin_post hook"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Display schedule start time in local timezone"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update translatable strings POT file"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update min WP version and tested up to"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "accidently used dash instead of underscore"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "namespaced option and added option to uninstall.php"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "basic show/hide of premium upsell"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix incorrect transient expiry"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show the spinner in the tab if a schedule other than the current is running"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Snip snip"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bring back the some javascript enhancements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Switch to the PHP 5.2 compatible version of Backdrop"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Finish up support"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Brace up single line if's and foreach's"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only load minified scripts and styles if WP_DEBUG isn't on"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Load the minified css and js files by default"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove the combined css files as we only have one now. Stop loading colorbox."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove colorbox"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't die when directly running a backup on page load"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-factor the backup filesize calculation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "make capability filterable"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "use core capabilities instead of custom"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Switch to Backdrop"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix typo in prefix"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hook function onto admin_post"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update delete link"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bookmark current admin page for redirect"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add custom capabilities and role"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exclude BackUpWP by default"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ignore the build folder"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add more build excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "minify JS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "generate markdown readme"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "minify css"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "combine css"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "regenerate readme"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make links consistent for the grunt task"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Convert URLS to markdown"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update lang files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add colorbox as bower dependency"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "remove colorbox folder"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove colorbox submodule"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change how we include FAQ"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add readme partials"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add package.json"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add Gruntfile"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add bower.json"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "JSHint rules"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "remove from ignore"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update ignore list"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add bower config"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add FAQ strings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Return the cached directory size early if we have it"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-factor the file browser scanner"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "correct sprintf usage"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Handle saving service forms"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Codeing standards"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move the error check outside of the foreach"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove uneeded $is_tab_visible"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only show excludes for backups which include files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show destinations in the list of schedule links"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "WordPress standard modal for enabling support"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove extra slash in include path"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a heading to the settings form"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More work on excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Another todo"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add some todos"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't include the parent directory in a browsable list"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More work on Excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Switch to only storing 3 backups by default"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More work on redesign"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "commented out enable support button till we figure out what to do with it"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "made tabs responsive below 639px"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add more default excludes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correctly highlight the tab for the first schedule"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Switch to tabs instead of subsubsub"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "First bash at a redesign settings UX"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Reverts a change to how the home path is calculated as it caused issues on installs where wp-config.php was stored outside of web root. Props to @mikelittle for the bug report."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bump minimum WP requirement to 3.7.3, the latest security release on the 3.7 branch."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issues that could cause schedule times to fail to account for timezone differences."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a nonce check to the schedule settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible JS warning when removing an exclude rule."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Our unit tests now run in PHP 5.2 again."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "It's now possible to choose the time and day that your schedule will run on."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Introduces several new unit tests around schedule timings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes a bug that could cause the hourly schedule to run constantly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the layout of the Constants help panel."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "If the backup root directory is unreadable then the plugin will no longer function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update the backups table match the standard WordPress table styles."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved styling for the settings dialogue."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved styling for the Server Info help tab."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "/s/back ups/backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove Deprecated call to <code>screen_icon</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated French translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update the <code>WP CLI</code> command to use the new method for registering command."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Reload the schedules when re-setting up the default schedules so they show up straight away."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "s/dpesnt't/doesn't."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only show the estimated total schedule size when editing an existing schedule."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Stop stripping 0 from the minutes on hourly backups so that backups at 10 (&amp; 20, etc.) past the hour correctly show."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Disable buttons whilst ajax requests are running."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move spinners outside the buttons as they didn't look very good inside."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve the detection of the home path on multisite installs which have WordPress in a subdirectory."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Track the time that the running backup is started and display how long a backup has been running for."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that meant it wasn't possible to run multiple manual backups at the same time."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Many other minor improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "BackUpWordPress now requires WordPress 3.7.1 as a minimum."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove some old back-compat code that was required because we supported older WP versions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "It's now possible to change the email address that notification emails are sent from using the <code>hmbkp_from_email</code> filter."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The spinner is now retina!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Close the PHP Session before starting the backup process to work around the 1 request per session issue. Backup status will now work on sites which happen to call <code>session_start</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pass <code>max_execution_time</code> and the BackUpWordPress Plugin version back to support. * Include the users real name in support requests"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Stop passing <code>$_SERVER</code> with support requests as it can contain things like <code>.htaccess</code> passwords on some server configurations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve the display of the server info in the enable support popup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New screenshots"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>wp_safe_redirect</code> for internal redirects."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>wp_is_writable</code> instead of <code>is_writable</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "In WordPress Multisite the backups admin page is now located in Network admin instead of the wp-admin of the main site."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue with the new intercom support integration that could cause loading the backups page to timeout"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed 3 stray PHP warnings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "BackUpWordPress will now always be loaded before any BackUpWordPress Extensions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an issue that could cause a long modal (excludes) to show underneath the WP admin bar."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add missing colorbox images"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Support for new premium extensions for storing backups in a variety of online services."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exclude the WP DB Manager backups and WP Super Cache cache directories by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "We now use Intercom to offer support directly from within the plugin, opt-in of course."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More i18n fixes / improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "We no longer show download links if your backups directory isn't web accessible."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a bug that caused the plugin activation and deactivation hooks from firing."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correctly handle <code>MYSQL TIMESTAMP</code> columns in database dumps."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<code>mysqldump</code> and <code>zip</code> are now correctly recognised on SmartOS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Schedule names are now translatable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Avoid having to re-calculate the filesize when a schedules type is set."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility with WordPress 3.8"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correct version number."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a PHP strict error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Save and close as separate buttons."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix bug that caused multiple notification emails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes typo in database option name."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated translations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve PHP docblocks."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make schedules class a singleton."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exclude popular backup plugin folders by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Exclude version control folders by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix broken localisation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>wp_safe_redirect</code> instead of <code>wp_redirect</code> for internal form submissions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Replace Fancybox with Colorbox as Fancybox 2 isn't GPL compatible."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the correct <code>HMBKP_ATTACHMENT_MAX_FILESIZE</code> constant consistently in the help section."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Correct filename for some mis-named translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show the total estimated disk space a schedule could take up (max backups * estimated site size)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a typo (your -&gt; you're)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the new time Constants and define backwords compatible ones for &gt; than 3.5."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Play nice with custom cron intervals."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Main plugin file is now <code>backupwordpress.php</code> for consistency."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add Paul De Wouters (<code>pauldewouters</code>) as a contributor, welcome Paul!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't remove non-backup files from custom backup paths."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a regression where setting a custom path which didn't exist could cause you to lose existing backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "When moving paths only move backup files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make some untranslatable strings translatable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't allow a single schedule to run in multiple threads at once, should finally fix edge case issues where some load balancer / proxies were causing multiple backups per run."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only highlight the <code>HMBKP_SCHEDULE_TIME</code> constant in help if it's not the default value."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove help text for deprecated <code>HMBKP_EMAIL</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Default to allways specificing <code>--single-transaction</code> when using <code>mysqldump</code> to backup the database, can be disabled by setting the <code>HMBKP_MYSQLDUMP_SINGLE_TRANSACTION</code> to <code>false</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Silence a <code>PHP Warning</code> if <code>mysql_pconnect</code> has been disabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ensure dot directories <code>.</code> &amp; <code>..</code> are always skipped when looping the filesystem."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Work around a warning in the latest version of MySQL when using the <code>-p</code> flag with <code>mysqldunmp</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issues on IIS that could cause the root directory to be incorrectly calculated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue on IIS that could cause the download backup url to be incorrect."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue on IIS that could mean your existing backups are lost when moving backup directory."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Avoid a <code>PHP FATAL ERROR</code> if the <code>mysql_set_charset</code> doesn't exist."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "All unit tests now pass under IIS on Windows."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Prefix the backup directory with <code>backupwordpress-</code> so that it's easier to identify."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-calculate the backup directory name on plugin update and move backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix some issues with how <code>HMBKP_SECURE_KEY</code> was generated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a fatal error on PHP 5.2, sorry! (again.)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a parse error, sorry!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a fatal error when uninstalling."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated translations for Brazilian, French, Danish, Spanish, Czech, Slovakian, Polish, Italian, German, Latvian, Hebrew, Chinese &amp; Dutch."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible notice when using the plugin on a server without internet access."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't show the wp-cron error message when <code>WP_USE_ALTERNATE_CRON</code> is defined as true."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ability to override the max attachment size for email notifications using the new <code>HMBKP_ATTACHMENT_MAX_FILESIZE</code> constant."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Nonce some ajax request."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Silence warnings created if <code>is_executable</code>, <code>escapeshellcmd</code> or <code>escapeshellarg</code> are disabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Handle situations where the mysql port is set to something wierd."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fallback to <code>mysql_connect</code> on system that disable <code>mysql_pconnect</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "You can now force the <code>--single-transaction</code> param when using <code>mysqldump</code> by defining <code>HMBKP_MYSQLDUMP_SINGLE_TRANSACTION</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Unit tests for <code>HM_Backup::is_safe_mode_available()</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Silence possible PHP Warnings when unlinking files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Stop storing a list of unreadable files in the backup warnings as it's too memory intensive."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revert the custom <code>RecursiveDirectoryIterator</code> as it caused an infinite loop on some servers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show all errors and warnings in the popup shown when a manual backup completes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Write the .backup_error and .backup_warning files everytime an error or warning happens instead of waiting until the end of the backups process."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a couple of <code>PHP E_STRICT</code> notices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Catch more errors during the manual backup process and expose them to the user."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't repeatedly try to create the backups directory in the <code>uploads</code> if <code>uploads</code> isn't writable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show the correct path in the warning message when the backups path can't be created."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Include any user defined auth keys and salts when generating the HMBKP_SECURE_KEY."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Stop relying on the built in WordPress schedules as other plugins can mess with them."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Delete old backups everytime the backups page is viewed in an attempt to ensure old backups are always cleaned up."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve modals on small screens and mobile devices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the retina spinner on retina screens."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Update buttons to the new 3.5 style."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible fatal error caused when a symlink points to a location that is outside an <code>open_basedir</code> restriction."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that could cause backups using PclZip with a custom backups path to fail."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Security hardening by improving escaping, sanitizitation and validation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Increase the timeout on the ajax cron check, should fix issues with cron errors showing on slow sites."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only clear the cached backup filesize if the backup type changes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add unit tests for all the schedule recurrences."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue which could cause weekly and monthly schedules to fail."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add an <code>uninstall.php</code> file which removes all BackUpWordPress data and options."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Catch a possible fatal error in <code>RecursiveDirectoryIterator::hasChildren</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that could cause mysqldump errors to be ignored thus causing the backup process to use an incomplete mysqldump file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a regression in <code>2.1.2</code> that broke previewing and adding new exclude rules."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that could stop the settings panel from closing on save on servers which return <code>'0'</code> for ajax requests."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that could cause the backup root to be set to <code>/</code> on sites with <code>site_url</code> and <code>home</code> set to different domains."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The mysqldump fallback function will now be used if <code>mysqldump</code> produces an empty file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible PHP <code>NOTICE</code> on Apache servers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible fatal error when a backup schedule is instantiated outside of wp-admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't use functions from misc.php as loading it too early can cause fatal errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't hardcode an English string in the JS, use the translated string instead."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Properly skip dot files, should fix fatal errors on systems with <code>open_basedir</code> restrictions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't call <code>apache_mod_loaded</code> as it caused wierd DNS issue on some sites, use <code>global $is_apache</code> instead."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible double full stop at the end of the schedule sentence."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor code cleanup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Stop blocking people with <code>safe_mode = On</code> from using the plugin, instead just show a warning."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix possible fatal error when setting schedule to monthly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issues with download backup not working on some shared hosts."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issuses with download backup not working on sites with strange characters in the site name."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a bug could cause the update actions to fire on initial activation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved reliability when changing backup paths, now with Unit Tests."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Generate the lists of excluded, included and unreadable files in a more memory efficient way, no more fatal errors on sites with lots of files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bring back .htaccess protection of the backups directory on <code>Apache</code> servers with <code>mod_rewrite</code> enabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Prepend a random string to the backups directory to make it harder to brute force guess."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fall back to storing the backups directoy in <code>uploads</code> if <code>WP_CONTENT_DIR</code> isn't writable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Attempt to catch <code>E_ERROR</code> level errors (Fatal errors) that happen during the backup process and offer to email them to support."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Provide more granular status messages during the backup process."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show a spinner next to the schedule link when a backup is running on a schedule which you are not currently viewing."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve the feedback when removing an exclude rule."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that could cause an exclude rule to be marked as default when it in-fact isn't, thus not letting it be deleted."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a line encouraging people to rate the plugin if they like it."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Change the support line to point to the FAQ before recommending they contact support."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix the link to the \"How to Restore\" post in the FAQ."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Some string changes for translators, 18 changed strings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix possible warning on plugin activation if the sites cron option is empty."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't show the version warning in the help for Constants as that comes from the current version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-setup the cron schedules if they get deleted somehow."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Delete all BackUpWordPress cron entries when the plugin is deactivated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Introduce the <code>HMBKP_SCHEDULE_TIME</code> constant to allow control over the time schedules run."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make sure the schedule times and times of previous backups are shown in local time."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a bug that could cause the legacy backup schedule to be created on every update, not just when going from 1.x to 2.x."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve the usefulness of the <code>wp-cron.php</code> response code check."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use the built in <code>site_format</code> function for human readable filesizes instead of defining our own function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Revert the change to the way the plugin url and path were calculated as it caused regressions on some systems."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issues with scheduled backups not firing in some cases."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better compatibility when the WP Remote plugin is active alongside BackUpWordPress."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Catch and display more WP Cron errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "BackUpWordPress now fails to activate on WordPress 3.3.2 and below."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Other minor fixes and improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only send backup failed emails if the backup actually failed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Turn off the generic \"memory limit probably hit\" message as it was showing for too many people."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible notice when the backup running filename is blank."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Include the <code>wp_error</code> response in the cron check."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix fatal error on PHP 5.2."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ability to have multiple schedules with separate settings &amp; excludes per schedule."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ability to manage exclude rules and see exactly which files are included and excluded."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue with sites with an <code>open_basedir</code> restriction."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Backups should now be much more reliable in low memory environments."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Lots of other minor improvements and bug fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated and improved translations across the board - props @elektronikLexikon."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "German translation - props @elektronikLexikon."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New Basque translation - props Unai ZC."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New Dutch translation - Anno De Vries."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New Italian translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better support for when WordPress is installed in a sub directory - props @mattheu"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "French translation props Christophe - http://catarina.fr."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Spanish Translation props DD666 - https://github.com/radinamatic."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Serbian translation props StefanRistic - https://github.com/StefanRistic."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Lithuanian translation props Vincent G - http://www.Host1Free.com."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Romanian translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix conflict with WP Remote."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a minor issue where invalid email address's were still stored."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "The root path that is backed up can now be controlled by defining <code>HMBKP_ROOT</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issue with backups being listed in reverse chronological order."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issue with newest backup being deleted when you hit your max backups limit."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "It's now possible to have backups sent to multiple email address's by entering them as a comma separated list."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a bug which broke the ability to override the <code>mysqldump</code> path with <code>HMBKP_MYSQLDUMP_PATH</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>echo</code> rather than <code>pwd</code> when testing <code>shell_exec</code> as it's supported cross platform."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Spanish translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a minor spelling mistake."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Speed up the manage backups page by caching the FAQ data for 24 hours."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix backup path issue with case sensitive filesystems."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue with emailing backups that could cause the backup file to not be attached."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix an issue that could cause the backup to be marked as running for ever if emailing the backup <code>FATAL</code> error'd."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Never show the running backup in the list of backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show an error backup email failed to send."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix possible notice when deleting a backup file which doesn't exist."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix possible notice on older versions of <code>PHP</code> which don't define <code>E_DEPRECATED</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make <code>HMBKP_SECURE_KEY</code> override-able."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "BackUpWordPress should now work when <code>ABSPATH</code> is <code>/</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't show warning message as they cause to much panic."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Move previous methods errors to warnings in fallback methods."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Wrap <code>.htaccess</code> rewrite rules in if <code>mod_rewrite</code> check."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add link to new restore help article to FAQ."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issue that could cause \"not using latest stable version\" message to show when you were in-fact using the latest version."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix in <code>zip command</code> check that could cause an incorrect <code>zip</code> path to be used."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Detect and pass <code>MySQL</code> port to <code>mysqldump</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't fail archive verification for errors in previous archive methods."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved detection of the <code>zip</code> and <code>mysqldump</code> commands."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix issues when <code>ABSPATH</code> is <code>/</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove reliance on <code>SECURE_AUTH_KEY</code> as it's often not defined."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>warning()</code> not <code>error()</code> for issues reported by <code>zip</code>, <code>ZipArchive</code> &amp; <code>PclZip</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix download zip on Windows when <code>ABSPATH</code> contains a trailing forward slash."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Send backup email after backup completes so that fatal errors in email code don't stop the backup from completing."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add missing / to <code>PCLZIP_TEMPORARY_DIR</code> define."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Catch and display errors during <code>mysqldump</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Track <code>PHP</code> errors as backup warnings not errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only show warning message for <code>PHP</code> errors in BackUpWordPress files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ability to dismiss the error / warning messages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Disable use of <code>PclZip</code> for full archive checking for now as it causes memory issues on some large sites."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't delete \"number of backups\" setting on update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better handling of multibyte characters in archive and database dump filenames."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Mark backup as running and increase callback timeout to <code>500</code> when firing backup via ajax."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't send backup email if backup failed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Filter out duplicate exclude rules."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix fatal error on PHP =&lt; 5.3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixes issue with backups dir being included in backups on some Windows Servers."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Consistent handling of symlinks across all archive methods (they are followed)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use .htaccess rewrite cond authentication to allow for secure http downloads of backup files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Track errors and warnings that happen during backup and expose them through admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fire manual backups using ajax instead of wp-cron, <code>HMBKP_DISABLE_MANUAL_BACKUP_CRON</code> is no longer needed and has been removed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Ability to cancel a running backup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Zip files are now integrity checked after every backup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More robust handling of failed / corrupt zips, backup process now fallsback through the various zip methods until one works."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>mysql_query</code> instead of the depreciated <code>mysql_list_tables</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better handling of unreadable files in ZipArchive and the backup size calculation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Support for wp-cli, usage: <code>wp backup [--files_only] [--database_only] [--path&lt;dir&gt;] [--root&lt;dir&gt;] [--zip_command_path=&lt;path&gt;] [--mysqldump_command_path=&lt;path&gt;]</code>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better detection of <code>zip</code> command."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't delete user settings on update / deactivate."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use <code>ZipArchive</code> if <code>zip</code> is not available, still falls back to <code>PclZip</code> if neither <code>zip</code> nor <code>ZipArchive</code> are installed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better exclude rule parsing, fixes lots of edge cases, excludes now pass all 52 unit tests."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved the speed of the backup size calculation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-written core backup engine should be more robust especially in edge case scenarios."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "48 unit tests for the core backup engine, yay for unit tests."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove some extraneous status information from the admin interface."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Rename Advanced Options to Settings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New <code>Constant</code> <code>HMBKP_CAPABILITY</code> to allow the default <code>add_menu_page</code> capability to be changed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Suppress possible filemtime warnings in some edge cases."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "3.3 compatability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Set proper charset of MySQL backup, props valericus."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix some inconsistencies between the estimated backup size and actual backup size when excluding files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "1.4 was incorrectly marked as beta."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Most options can now be set on the backups page, all options can still be set by defining them as <code>Constants</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Russian translation, props valericus."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "All dates are now translatable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some strings which weren't translatable."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New Constant <code>HMBKP_DISABLE_MANUAL_BACKUP_CRON</code> which enable you to disable the use of <code>wp_cron</code> for manual backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Manual backups now work if <code>DISABLE_WP_CRON</code> is defined as <code>true</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Spanish translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bump PHP version check to 5.2.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fallback to PHP mysqldump if shell_exec fails for any reason."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Silently ignore unreadable files / folders"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make sure binary data is properly exported when doing a mysqldump"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use 303 instead of 302 when redirecting in the admin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't <code>set_time_limit</code> inside a loop"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Use WordPress 3.2 style buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't pass an empty password to mysqldump"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Check for PHP version. Deactivate plugin if running on PHP version 4."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Re-written back up engine, no longer copies everything to a tmp folder before zipping which should improve speed and reliability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Support for excluding files and folders, define <code>HMBKP_EXCLUDE</code> with a comma separated list of files and folders to exclude, supports wildcards <code>*</code>, path fragments and absolute paths."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Full support for moving the backups directory, if you define a new backups directory then your existing backups will be moved to it."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Work around issues caused by low MySQL <code>wait_timeout</code> setting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add FAQ to readme.txt."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Pull FAQ into the contextual help tab on the backups page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Block activation on old versions of WordPress."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Stop guessing compressed backup file size, instead just show size of site uncompressed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix bug in <code>safe_mode</code> detection which could cause <code>Off</code> to act like <code>On</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better name for the database dump file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better name for the backup files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve styling for advanced options."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show examples for all advanced options."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Language improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Layout tweaks."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show live backup status in the back up now button when a back up is running."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show free disk space after total used by backups."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Several langauge changes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Work around the 1 cron every 60 seconds limit."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Store backup status in a 2 hour transient as a last ditch attempt to work around the \"stuck on backup running\" issue."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show a warning and disable backups when PHP is in Safe Mode, may try to work round issues and re-enable in the future."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Highlight defined <code>Constants</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show defaults for all <code>Constants</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show a warning if both <code>HMBKP_FILES_ONLY</code> and <code>HMBKP_DATABASE_ONLY</code> are defined at the same time."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Make sure options added in 1.1.4 are cleared on de-activate."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Support <code>mysqldump on</code> Windows if it's available."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New option to have each backup emailed to you on completion. Props @matheu for the contribution."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved windows server support."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a rare issue where database backups could fail when using the mysqldump PHP fallback if <code>mysql.max_links</code> is set to 2 or less."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't suppress <code>mysql_connect</code> errors in the mysqldump PHP fallback."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "One time highlight of the most recent completed backup when viewing the manage backups page after a successful backup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a spelling error in the <code>shell_exec</code> disabled message."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Store the BackUpWordPress version as a <code>Constant</code> rather than a <code>Variable</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't <code>(float)</code> the BackUpWordPress version number, fixes issues with minor versions numbers being truncated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor PHPDoc improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Attempt to re-connect if database connection hits a timeout while a backup is running, should fix issues with the \"Back Up Now\" button continuing to spin even though the backup is completed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "When using <code>PCLZIP</code> as the zip fallback don't store the files with absolute paths. Should fix issues unzipping the file archives using \"Compressed (zipped) Folders\" on Windows XP."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a bug that stopped <code>HMBKP_DISABLE_AUTOMATIC_BACKUP</code> from working."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix a possible <code>max_execution_timeout</code> fatal error when attempting to calculate the path to <code>mysqldump</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Clear the running backup status and reset the calculated filesize on update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show a link to the manage backups page in the plugin description."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Other general fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove the logging facility as it provided little benefit and complicated the code, your existing logs will be deleted on update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Expose the various <code>Constants</code> that can be defined to change advanced settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to disable the automatic backups completely <code>define( 'HMBKP_DISABLE_AUTOMATIC_BACKUP', true );</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to switch to file only or database only backups <code>define( 'HMBKP_FILES_ONLY', true );</code> Or <code>define( 'HMBKP_DATABASE_ONLY', true );</code>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to define how many old backups should be kept <code>define( 'HMBKP_MAX_BACKUPS', 20 );</code>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to define the time that the daily backup should run <code>define( 'HMBKP_DAILY_SCHEDULE_TIME', '16:30' );</code>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweaks to the backups page layout."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "General bug fixes and improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't ajax load estimated backup size if it's already been calculated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix time in backup complete log message."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't mark backup as running until cron has been called, will fix issues with backup showing as running even if cron never fired."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Show number of backups saved message."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add a link to the backups page to the plugin action links."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Suppress <code>filesize()</code> warnings when calculating backup size."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin should now work when symlinked."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove all options on deactivate, you should now be able to deactivate then activate to fix issues with settings etc. becoming corrupt."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Call setup_defaults for users who update from backupwordpress 0.4.5 so they get new settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Don't ajax ping running backup status quite so often."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Don't throw PHP Warnings when <code>shell_exec</code> is disabled"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Minor bug fix release."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Fix some silly 1.0 bugs"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "1.0 represents a total rewrite &amp; rethink of the BackUpWordPress plugin with a focus on making it \"Just Work\". The management and development of the plugin has been taken over by <a href=\"http://hmn.md\">Human Made Limited</a> the chaps behind <a href=\"https://wpremote.com\">WP Remote</a>"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Version 0.4.5 and previous were developed by <a href=\"http://profiles.wordpress.org/users/wpdprx/\">wpdprx</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>Where does BackUpWordPress store the backup files?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Backups are stored on your server in <code>/wp-content/backups</code>, you can change the directory."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Important: By default BackUpWordPress backs up everything in your site root as well as your database, this includes any non WordPress folders that happen to be in your site root. This does mean that your backup directory can get quite large."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>What if I want to back up my site to another destination?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "BackUpWordPress Pro supports Dropbox, Google Drive, Amazon S3, Rackspace, Azure, DreamObjects and FTP/SFTP. Check it out here: <a href=\"http://bwp.hmn.md/?utm_source=wordpress-org&amp;utm_medium=plugin-page&amp;utm_campaign=freeplugin\" title=\"BackUpWordPress Homepage\">https://bwp.hmn.md</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>How do I restore my site from a backup?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You need to download the latest backup file either by clicking download on the backups page or via <code>FTP</code>. <code>Unzip</code> the files and upload all the files to your server overwriting your site. You can then import the database using your hosts database management tool (likely <code>phpMyAdmin</code>)."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "See this guide for more details - <a href=\"https://bwp.hmn.md/support-center/restore-backup/\" title=\"Go to support center\">How to restore from backup</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>Does BackUpWordPress back up the backups directory?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "No."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>I'm not receiving my backups by email</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Most servers have a filesize limit on email attachments, it's generally about 10mb. If your backup file is over that limit it won't be sent attached to the email, instead you should receive an email with a link to download the backup, if you aren't even receiving that then you likely have a mail issue on your server that you'll need to contact your host about."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>How many backups are stored by default?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "BackUpWordPress stores the last 10 backups by default."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>How long should a backup take?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Unless your site is very large (many gigabytes) it should only take a few minutes to perform a back up, if your back up has been running for longer than an hour it's safe to assume that something has gone wrong, try de-activating and re-activating the plugin, if it keeps happening, contact support."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>What do I do if I get the wp-cron error message?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The issue is that your <code>wp-cron.php</code> is not returning a <code>200</code> response when hit with a HTTP request originating from your own server, it could be several things, in most cases, it's an issue with the server / site."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "There are some things you can test to confirm this is the issue."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Report the results to our support team for further help. To do this, either enable suport from your Admin Dashboard (recommended), or email backupwordpress@hmn.md"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>How to get BackUpWordPress working in Heart Internet</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The script to be entered into the Heart Internet cPanel is: <code>/usr/bin/php5 /home/sites/yourdomain.com/public_html/wp-cron.php</code> (note the space between php5 and the location of the file). The file <code>wp-cron.php</code> <code>chmod</code> must be set to <code>711</code>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>My backups seem to be failing?</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If your backups are failing, it's commonly caused by a lack of available resources on your server. The easiest way to establish this is to exclude some of, or the entirety of your uploads folder, running a backup, and if that succeeds, then you'll know it's probably a server issue. If not, report the results to our support team for further help. To do this, either enable support from your Admin Dashboard (recommended), or email backupwordpress@hmn.md"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>Further Support &amp; Feedback</strong>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "General support questions should be posted in the <a href=\"http://wordpress.org/tags/backupwordpress?forum_id=10\">WordPress support forums, tagged with backupwordpress.</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "For development issues, feature requests or anybody wishing to help out with development checkout <a href=\"https://github.com/humanmade/backupwordpress/\">BackUpWordPress on GitHub.</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can also tweet <a href=\"http://twitter.com/humanmadeltd\">@humanmadeltd</a> or email backupwordpress@hmn.md for further help/support."
+msgstr ""

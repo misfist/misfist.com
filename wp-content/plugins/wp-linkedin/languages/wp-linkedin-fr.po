@@ -1,0 +1,666 @@
+# Translation of WP LinkedIn in French (France)
+# This file is distributed under the same license as the WP LinkedIn package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-10-05 06:20:22+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: WP LinkedIn\n"
+
+#: class-admin-pages.php:147
+msgid "Options saved."
+msgstr "Options sauvegardées."
+
+#: class-admin-sections.php:69
+msgid "See \"Requesting alternate profile languages\" in the <a href=\"%s\" target=\"_blank\">LinkedIn API documentation</a> for details."
+msgstr "Visiter \"Requesting alternate profile languages\" dans <a href=\"%s\" target=\"_blank\">la documentation de l'API LinkedIn</a> pour plus d'information."
+
+#: class-admin-sections.php:172
+msgid "Copy"
+msgstr "Copier"
+
+#: class-admin-sections.php:150
+msgid "LinkedIn API"
+msgstr "API LinkedIn"
+
+#: class-admin-sections.php:202
+msgid "Extensions"
+msgstr "Extensions"
+
+#: class-admin-sections.php:211
+msgid "Extensions are premium WordPress plugins that add new features to the WP-LinkedIn plugin."
+msgstr "Les extensions sont des plugins payant qui ajoutent de nouvelles fonctionnalités au plugin WP LinkedIn."
+
+#: class-admin-sections.php:212
+msgid "The following is a list of the existing extensions."
+msgstr "Ci-après la liste des extensions existantes."
+
+#: class-admin-sections.php:214
+msgid "WP LinkedIn Multi-Users"
+msgstr "WP LinkedIn Multi-Utilisateurs"
+
+#: class-admin-sections.php:215
+msgid "Enables profiles and recommendations for any registered user. Enables users to create accounts and log in using LinkedIn"
+msgstr "Permet d'afficher le profile et les recommandations pour n'importe quel utilisateur enregistré. Permet aux utilisateurs de créer des comptes et de se connecter en utilisant LinkedIn."
+
+#: class-admin-sections.php:216 class-admin-sections.php:221
+#: class-admin-sections.php:226
+msgid "Get it!"
+msgstr "Télécharger!"
+
+#: class-admin-sections.php:219
+msgid "WP LinkedIn for Companies"
+msgstr "WP LinkedIn Entreprises"
+
+#: class-admin-sections.php:220
+msgid "Provides shortcodes and widgets to display company profiles and company page updates on your blog."
+msgstr "Fournis des codes courts et des widgets pour afficher les profiles de compagnies et les mises à jour des pages de compagnies sur votre blog."
+
+#: class-admin-sections.php:224
+msgid "WP LinkedIn Advanced Templates"
+msgstr "WP LinkedIn Modèles Avancés"
+
+#: class-admin-sections.php:225
+msgid "Provides advanced templates for the LinkedIn profile and the company page updates."
+msgstr "Fournis des modèles avancés pour l'affichage du profile LinkedIn et des mises à jour des pages de compagnies."
+
+#: class-admin-sections.php:228
+msgid "If you purchased any extension please provide the license keys below."
+msgstr "Si vous avez acheté des extensions merci de fournir vos clés de license ci-dessous."
+
+#: class-admin-sections.php:235
+msgid "Tools"
+msgstr "Outils"
+
+#: class-admin-sections.php:242
+msgid "You need to regenerate the token when it has expired, when you installed a new extension for this plugin or when LinkedIn grants you new rights."
+msgstr "Vous devez régénérer le jeton quand il expire, quand vous installez une nouvelle extension pour ce plugin ou quand LinkedIn vous assigne de nouveaux droits d'accès."
+
+#: class-admin-sections.php:246
+msgid "The content of your profile is locally cached for 12 hours, use that button if you want to force the plugin to reload your profile."
+msgstr "Le contenu de votre profile est caché localement pendant 12 heures, utilisez ce bouton si vous voulez forcer le plugin à mettre à jour votre profile."
+
+#: class-admin-pages.php:18 class-admin-pages.php:111 page-options.php:3
+msgid "LinkedIn Options"
+msgstr "Options LinkedIn"
+
+#: class-admin-pages.php:19 class-admin-pages.php:112
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: class-admin-sections.php:155
+msgid "Client ID"
+msgstr "Client ID"
+
+#: class-admin-sections.php:156
+msgid "Client secret"
+msgstr "Client secret"
+
+#: class-admin-sections.php:27
+msgid "Options"
+msgstr "Options"
+
+#: class-admin-sections.php:31
+msgid "Full Profile"
+msgstr "Profile complet"
+
+#: class-admin-sections.php:32
+msgid "Profile fields"
+msgstr "Champs du profil"
+
+#: class-admin-sections.php:33
+msgid "Profile language"
+msgstr "Langage du profil"
+
+#: class-admin-sections.php:34
+msgid "Send mail on token expiry"
+msgstr "Envoyer un e-mail à l'expiration du token"
+
+#: class-admin-sections.php:157
+msgid "Verify SSL peer"
+msgstr "Vérifier le pair SSL"
+
+#: class-admin-sections.php:35
+msgid "LinkedIn cards"
+msgstr "Carte de visite"
+
+#: class-admin-pages.php:40 class-admin-pages.php:129
+#: lib/class-plugin-updater.php:72
+msgid "Settings"
+msgstr "Réglages"
+
+#: class-admin-sections.php:161
+msgid ""
+"As of April 11, 2014 LinkedIn requires that redirect uris\n"
+"\t\t\t\tbe registered, thus forcing every plugin installation to have\n"
+"\t\t\t\tits own application key/secret pair and register the corresponding\n"
+"\t\t\t\tredirect uri."
+msgstr "A partir du 11 avril 2014 LinkedIn exige que les uris de redirection soient enregistrées, forçant ainsi chaque installation de l'extension à avoir ses propres clés afin d'enregistrer l'uri correspondante."
+
+#: class-admin-sections.php:165
+msgid "Please follow the instructions on <a href=\"http://vdvn.me/p2tt\" target=\"_blank\">how to create a LinkedIn API application for the WP-LinkedIn plugin</a>."
+msgstr "Merci de suivre les instructions <a href=\"http://vdvn.me/p2tt\" target=\"_blank\">permettant de créer une application pour l'API LinkedIn, nécessaire à l'utilisation de l'extension WP-LinkedIn</a>."
+
+#: class-admin-sections.php:154
+msgid "Redirect URL"
+msgstr "URL de redirection"
+
+#: class-admin-sections.php:41
+msgid "Check this option only if you have been authorized by LinkedIn to access the full profile."
+msgstr "Sélectionner cette option uniquement si avez été autorisé par LinkedIn à avoir accès au profile complet."
+
+#: class-admin-sections.php:42
+msgid "To be authorized you must apply to <a target=\"_blank\" href=\"https://help.linkedin.com/app/ask/path/api-dvr\">the \"Apply with LinkedIn\" program</a>."
+msgstr "Pour être autorisé vous devez <a target=\"_blank\" href=\"https://help.linkedin.com/app/ask/path/api-dvr\">vous inscrire au programme \"Apply with LinkedIn\"</a>."
+
+#: class-admin-sections.php:44
+msgid "<a href=\"http://vdvn.me/p2lg\" target=\"_blank\">More information on vedovini.net</a>"
+msgstr "<a href=\"http://vdvn.me/p2lg\" target=\"_blank\">Plus d'information sur vedovini.net</a>"
+
+#: class-admin-sections.php:51
+msgid "Comma separated list of fields to show on the profile."
+msgstr "Liste des champs à afficher dans le profil, séparés par des virgules."
+
+#: class-admin-sections.php:52
+msgid "You can overide this setting in the shortcode with the `fields` attribute."
+msgstr "Vous pouvez surcharger ce réglage dans le shortcode en utilisant l'attribut `fields`"
+
+#: class-admin-sections.php:53
+msgid "See the <a href=\"https://developers.linkedin.com/documents/profile-fields\" target=\"_blank\">LinkedIn API documentation</a> for the complete list of fields."
+msgstr "Visitez <a href=\"https://developers.linkedin.com/documents/profile-fields\" target=\"_blank\">la documentation de l'API LinkedIn</a> pour la liste exhaustive des champs."
+
+#: class-admin-sections.php:61
+msgid "Default"
+msgstr "Langue par défaut"
+
+#: class-admin-sections.php:67
+msgid "The language of the profile to display if you have several profiles in different languages."
+msgstr "Le langage à afficher si vous avez plusieurs profils dans différents langages."
+
+#: class-admin-sections.php:68
+msgid "You can overide this setting in the shortcode with the `lang` attribute."
+msgstr "Vous pouvez surcharger ce réglage dans le shortcode en utilisant l'attribut `lang`"
+
+#: class-admin-sections.php:76
+msgid "Check this option if you want the plugin to send you an email when the token has expired or is invalid."
+msgstr "Cochez cette option si vous voulez que l'extension vous envoie un e-mail lorsque le jeton a expiré ou n'est pas valide."
+
+#: class-admin-sections.php:195
+msgid "Uncheck this option only if you have SSL certificate issues on your server."
+msgstr "Décocher cette option si vous avez des problèmes de certificat SSL sur votre serveur."
+
+#: class-admin-sections.php:87
+msgid "Check the content types where you want your LinkedIn card inserted."
+msgstr "Sélectionner les types de contenu dans lesquels insérer la carte de visite."
+
+#: class-admin-pages.php:46 class-admin-pages.php:135
+msgid "Your must create an application key/secret to access the LinkedIn API. Please follow the instructions <a href=\"%s\">on the settings page</a>."
+msgstr "Vous devez créer une clé applicative pour accéder à l'API de LinkedIn. Merci de suivre les instruction <a href=\"%s\">sur la page des réglages</a>."
+
+#: class-admin-pages.php:53
+msgid "Your LinkedIn access token is invalid or has expired, please <a href=\"%s\">click here</a> to get a new one."
+msgstr "Votre jeton d'accès à LinkedIn est non valid ou a expiré, merci de <a href=\"%s\">cliquer ici</a> afin d'en générer un nouveau."
+
+#: class-admin-pages.php:60
+msgid "An error has occured while retrieving the profile:"
+msgstr "Une erreur est survenue lors de la récupération du profil:"
+
+#: class-admin-pages.php:67
+msgid "The access token has been successfully updated."
+msgstr "Le jeton d'accès a été mis à jour avec succès."
+
+#: class-admin-pages.php:74
+msgid "An error has occured while updating the access token, please try again."
+msgstr "Une erreur est survenue lors de la mise à jour du jeton d'accès, merci d'essayer à nouveau."
+
+#: class-admin-pages.php:75
+msgid "Error message: "
+msgstr "Message d'erreur:"
+
+#: class-admin-pages.php:82 class-admin-pages.php:89
+msgid "The cache has been cleared."
+msgstr "Le cache a été vidé."
+
+#: class-admin-sections.php:241
+msgid "Regenerate LinkedIn Access Token"
+msgstr "Régénérer le jeton d'accès à LinkedIn"
+
+#: class-admin-sections.php:245
+msgid "Clear the Cache"
+msgstr "Vider le cache"
+
+#: page-options.php:35
+msgid "Do you like this Plugin?"
+msgstr "Appréciez-vous cette extension?"
+
+#: page-options.php:37
+msgid "Please consider a donation."
+msgstr "Merci de penser à une donation."
+
+#: page-options.php:47
+msgid "We also need volunteers to translate that plugin into more languages."
+msgstr "Nous avons également besoin de volontaires pour traduire cette extension dans plus de langues."
+
+#: page-options.php:48
+msgid "If you wish to help then contact <a href=\"https://twitter.com/cvedovini\">@cvedovini</a> on Twitter or use that <a href=\"http://vdvn.me/contact/\">contact form</a>."
+msgstr "Si vous voulez offrir votre aide merci de contacter <a href=\"https://twitter.com/cvedovini\">@cvedovini</a> sur Twitter ou utiliser ce <a href=\"http://vdvn.me/contact/\">formulaire de contact</a>."
+
+#: class-admin-sections.php:95
+msgid "Bahasa Indonesia"
+msgstr "Indonésien"
+
+#: class-admin-sections.php:96
+msgid "Czech"
+msgstr "Tchèque"
+
+#: class-admin-sections.php:97
+msgid "Danish"
+msgstr "Danois"
+
+#: class-admin-sections.php:98
+msgid "Dutch"
+msgstr "Néerlandais"
+
+#: class-admin-sections.php:99
+msgid "French"
+msgstr "Français"
+
+#: class-admin-sections.php:100
+msgid "German"
+msgstr "Allemand"
+
+#: class-admin-sections.php:101
+msgid "Italian"
+msgstr "Italien"
+
+#: class-admin-sections.php:102
+msgid "Japanese"
+msgstr "Japonais"
+
+#: class-admin-sections.php:103
+msgid "Korean"
+msgstr "Coréen"
+
+#: class-admin-sections.php:104
+msgid "Malay"
+msgstr "Malais"
+
+#: class-admin-sections.php:105
+msgid "Norwegian"
+msgstr "Norvégien"
+
+#: class-admin-sections.php:106
+msgid "Polish"
+msgstr "Polonais"
+
+#: class-admin-sections.php:107
+msgid "Portuguese"
+msgstr "Portugais"
+
+#: class-admin-sections.php:108
+msgid "Romanian"
+msgstr "Roumain"
+
+#: class-admin-sections.php:109
+msgid "Russian"
+msgstr "Russe"
+
+#: class-admin-sections.php:110
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: class-admin-sections.php:111
+msgid "Swedish"
+msgstr "Suédois"
+
+#: class-admin-sections.php:112
+msgid "Turkish"
+msgstr "Turc"
+
+#: class-admin-sections.php:113
+msgid "Albanian"
+msgstr "Albanais"
+
+#: class-admin-sections.php:114
+msgid "Armenian"
+msgstr "Arménien"
+
+#: class-admin-sections.php:115
+msgid "Bosnian"
+msgstr "Bosniaque"
+
+#: class-admin-sections.php:116
+msgid "Burmese (Myanmar)"
+msgstr "Birman"
+
+#: class-admin-sections.php:117
+msgid "Chinese (Simplified)"
+msgstr "Chinois (Simplifié)"
+
+#: class-admin-sections.php:118
+msgid "Chinese (Traditional)"
+msgstr "Chinois (Traditionel)"
+
+#: class-admin-sections.php:119
+msgid "Croatian"
+msgstr "Croate"
+
+#: class-admin-sections.php:120
+msgid "Finnish"
+msgstr "Finnois"
+
+#: class-admin-sections.php:121
+msgid "Greek"
+msgstr "Grecque"
+
+#: class-admin-sections.php:122
+msgid "Hindi"
+msgstr "Hindou"
+
+#: class-admin-sections.php:123
+msgid "Hungarian"
+msgstr "Hongrois"
+
+#: class-admin-sections.php:124
+msgid "Icelandic"
+msgstr "Islandais"
+
+#: class-admin-sections.php:125
+msgid "Javanese"
+msgstr "Javanais"
+
+#: class-admin-sections.php:126
+msgid "Kannada"
+msgstr "Kannada"
+
+#: class-admin-sections.php:127
+msgid "Latvian"
+msgstr "Letton"
+
+#: class-admin-sections.php:128
+msgid "Lithuanian"
+msgstr "Lituanien"
+
+#: class-admin-sections.php:129
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: class-admin-sections.php:130
+msgid "Serbian"
+msgstr "Serbe"
+
+#: class-admin-sections.php:131
+msgid "Slovak"
+msgstr "Slovaque"
+
+#: class-admin-sections.php:132
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: class-admin-sections.php:133
+msgid "Tamil"
+msgstr "Tamoul"
+
+#: class-admin-sections.php:134
+msgid "Telugu"
+msgstr "Télougou"
+
+#: class-admin-sections.php:135
+msgid "Thai"
+msgstr "Thaïlandais"
+
+#: class-admin-sections.php:136
+msgid "Ukrainian"
+msgstr "Ukrainien"
+
+#: class-admin-sections.php:137
+msgid "Vietnamese"
+msgstr "Vietnamien"
+
+#: class-admin-sections.php:138
+msgid "Other"
+msgstr "Autre"
+
+#: class-card-widget.php:6
+msgid "LinkedIn Card"
+msgstr "Carte de visite"
+
+#: class-card-widget.php:7
+msgid "A widget displaying your LinkedIn card"
+msgstr "Votre carte de visite LinkedIn"
+
+#: class-card-widget.php:40 class-profile-widget.php:44
+#: class-recommendations-widget.php:45
+msgid "Title:"
+msgstr "Titre:"
+
+#: class-card-widget.php:44
+msgid "Width of picture (in px):"
+msgstr "Largeur de la photo (en px):"
+
+#: class-card-widget.php:48
+msgid "Max length of summary (in char):"
+msgstr "Longueur du résumé (en nombre de caractères):"
+
+#: class-card-widget.php:50
+msgid "Specify '0' to hide the summary."
+msgstr "Indiquer '0' pour cacher le résumé."
+
+#: class-linkedin-connection.php:144
+msgid "An unknown error has occured and no token was retrieved."
+msgstr "Une erreur inconnue s'est produite et le jeton n'a pu être récupéré."
+
+#: class-linkedin-connection.php:198
+msgid "Invalid state"
+msgstr "Etat non valide"
+
+#: class-linkedin-connection.php:211
+msgid "Please click <a href=\"%s\">here</a> if you are not redirected immediately."
+msgstr "Merci de <a href=\"%s\">cliquer ici</a> si vous n'êtes pas immédiatement redirigé."
+
+#: class-linkedin-connection.php:338
+msgid "HTTP request returned error code %d."
+msgstr "La requette HTTP a retourné un code d'erreur %d."
+
+#: class-linkedin-connection.php:350
+msgid "No token or token has expired."
+msgstr "Pas de jeton ou le jeton a expiré."
+
+#: class-linkedin-connection.php:359
+msgid "Invalid or expired access token"
+msgstr "Jeton d'accès invalid ou expiré"
+
+#: class-linkedin-connection.php:361
+msgid "The access token for the WP LinkedIn plugin is either invalid or has expired, please click on the following link to renew it."
+msgstr "Le jeton d'accès pour l'extension WP LinkedIn est soit invalide soit expiré, merci de cliquer sur le lien suivant afin de le renouveler."
+
+#: class-linkedin-connection.php:363
+msgid "This link will only be valid for a limited period of time."
+msgstr "Ce lien ne sera valide que pour une période de temps limitée."
+
+#: class-linkedin-connection.php:364
+msgid "-Thank you."
+msgstr "-Merci."
+
+#: class-profile-widget.php:6
+msgid "LinkedIn Profile"
+msgstr "Profil LinkedIn"
+
+#: class-profile-widget.php:7
+msgid "A widget displaying your LinkedIn profile using the LinkedIn Javascript API"
+msgstr "La version JavaScript de la carte de visite LinkedIn"
+
+#: class-profile-widget.php:49
+msgid "Show connections"
+msgstr "Afficher les connections"
+
+#: class-recommendations-widget.php:6
+msgid "LinkedIn Recommendations"
+msgstr "Recommandations LinkedIn"
+
+#: class-recommendations-widget.php:7
+msgid "A slider with your LinkedIn recommendations"
+msgstr "Liste déroulante de vos recommendations LinkedIn"
+
+#: class-recommendations-widget.php:49
+msgid "Width of widget (in px):"
+msgstr "Largeur du composant (en px):"
+
+#: class-recommendations-widget.php:51
+msgid "You can also specify 'auto' to let javascript automatically compute the width or 'css' to set it yourself using your theme's stylesheet."
+msgstr "Vous pouvez également indiquer \"auto\" pour laisser Javascript calculer la largeur ou \"css\" pour pouvoir l'indiquer vous-même dans la feuille de style de votre thème."
+
+#: class-recommendations-widget.php:54
+msgid "Length of recommendations (in char):"
+msgstr "Longueur de la recommendation (en nombre de caractères):"
+
+#: class-recommendations-widget.php:58
+msgid "Scroller's speed:"
+msgstr "Vitesse de défilement (en ms):"
+
+#: lib/EDD_SL_Plugin_Updater.php:176
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr "Une nouvelle version de %1$s est disponible.  <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">Voir les détails de la version %3$s</a>."
+
+#: lib/EDD_SL_Plugin_Updater.php:183
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s\">update now</a>."
+msgstr "Une nouvelle version de %1$s est disponible.  <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">Voir les détails de la version %3$s</a> ou <a href=\"%4$s\">effectuer la mise-à-jour maintenant</a>."
+
+#: lib/EDD_SL_Plugin_Updater.php:319
+msgid "You do not have permission to install plugin updates"
+msgstr "Vous n’avez pas les droits pour installer des mises-à-jour d’extensions"
+
+#: lib/EDD_SL_Plugin_Updater.php:319
+msgid "Error"
+msgstr "Erreur"
+
+#: lib/class-plugin-updater.php:49 lib/class-plugin-updater.php:104
+msgid "You must provide a valid license key."
+msgstr "Vous devez fournir une clé de licence valide."
+
+#: lib/class-plugin-updater.php:50
+msgid "Please <a href=\"%s\">go to the settings page</a> and enter your key."
+msgstr "Merci d’aller sur <a href=“%s”>la page des paramètres</a> pour renseigner votre clé."
+
+#: lib/class-plugin-updater.php:81
+msgid "<a href=\"%s\">Renew your license</a>."
+msgstr "<a href=\"%s\">Renouveler votre licence</a>."
+
+#: lib/class-plugin-updater.php:130
+msgid "Your license key is inactive."
+msgstr "Votre clé de licence est inactive."
+
+#: lib/class-plugin-updater.php:134
+msgid "Your license key is valid."
+msgstr "Votre clé de licence est valide."
+
+#: lib/class-plugin-updater.php:137
+msgid "Your license key has expired, <a href=\"%s\">click here to renew it</a>."
+msgstr "Votre licence a expiré, <a href=“%s”>cliquer ici pour la renouveler</a>."
+
+#: lib/class-plugin-updater.php:143
+msgid "Your license key is invalid."
+msgstr "Votre clé de licence est invalide."
+
+#: templates/profile-header.php:10
+msgid "Summary"
+msgstr "Résumé"
+
+#: templates/profile-header.php:17
+msgid "Specialties"
+msgstr "Spécialités"
+
+#: templates/profile-positions.php:2
+msgid "Experience"
+msgstr "Expérience"
+
+#: templates/profile-positions.php:5
+msgid "Present"
+msgstr "Maintenant"
+
+#: templates/recommendations.php:16
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: wp-linkedin.php:287
+msgid "You don't have any recommendation to show."
+msgstr "Vous n'avez pas de recommandation."
+
+#: wp-linkedin.php:385
+msgid "Animal Welfare"
+msgstr "Protection animale"
+
+#: wp-linkedin.php:386
+msgid "Arts and Culture"
+msgstr "Arts et Culture"
+
+#: wp-linkedin.php:387
+msgid "Children"
+msgstr "Enfants"
+
+#: wp-linkedin.php:388
+msgid "Civil Rights and Social Action"
+msgstr "Droits civils et action sociale"
+
+#: wp-linkedin.php:389
+msgid "Disaster and Humanitarian Relief"
+msgstr "Catastrophes et aide humanitaire"
+
+#: wp-linkedin.php:390
+msgid "Economic Empowerment"
+msgstr "Autonomisation économique"
+
+#: wp-linkedin.php:391
+msgid "Education"
+msgstr "Education"
+
+#: wp-linkedin.php:392
+msgid "Environment"
+msgstr "Environnement"
+
+#: wp-linkedin.php:393
+msgid "Health"
+msgstr "Santé"
+
+#: wp-linkedin.php:394
+msgid "Human Rights"
+msgstr "Droits de l'homme"
+
+#: wp-linkedin.php:395
+msgid "Politics"
+msgstr "Politique"
+
+#: wp-linkedin.php:396
+msgid "Poverty Alleviation"
+msgstr "Réduction de la pauvreté"
+
+#: wp-linkedin.php:397
+msgid "Science and Technology"
+msgstr "Science et technologie"
+
+#: wp-linkedin.php:398
+msgid "Social Services"
+msgstr "Services sociaux"
+
+#. Plugin Name of the plugin/theme
+msgid "WP LinkedIn"
+msgstr "WP LinkedIn"
+
+#. Plugin URI of the plugin/theme
+msgid "http://vdvn.me/pga"
+msgstr "http://vdvn.me/pga"
+
+#. Description of the plugin/theme
+msgid "This plugin enables you to add various part of your LinkedIn profile to your Wordpress blog."
+msgstr "Cette extension vous permet d'afficher différentes parties de votre profil LinkedIn sur votre blog Wordpress."
+
+#. Author of the plugin/theme
+msgid "Claude Vedovini"
+msgstr "Claude Vedovini"
+
+#. Author URI of the plugin/theme
+msgid "http://vdvn.me/"
+msgstr "http://vdvn.me/"
