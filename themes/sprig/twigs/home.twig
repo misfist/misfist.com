@@ -1,0 +1,16 @@
+{% extends 'layouts/sidebar.twig' %}
+
+{% block content %}
+    {% for post in posts() %} {{ the_post(post) }}
+        {% include 'content/content-excerpt.twig' %}
+        <hr/>
+    {% endfor %}
+    {% if posts() is empty %}
+        {% include 'content/content-none.twig' %}
+    {% endif %}
+    {% include 'includes/paging.twig' %}
+{% endblock %}
+
+{% block sidebar %}
+    {% set sidebar = wp.dynamic_sidebar('primary') %}
+{% endblock %}
