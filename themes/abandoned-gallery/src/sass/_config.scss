@@ -1,0 +1,20 @@
+// Colors
+
+$base-colors: (
+  'primary': #383F41, 
+  'accent': #7D8587,
+  'secondary': #670000,
+  'foreground': #191919,
+  'background': #AEAEAE
+);
+
+$white: #fff;
+$black: #191919;
+
+
+@function color-palette($key: 'primary') {
+  @return map-get($base-colors, $key);
+}
+
+// Usage $button-color: color-palette('primary'); // #8e3329
+

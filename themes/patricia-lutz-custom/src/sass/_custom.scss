@@ -1,0 +1,21 @@
+/* =Resume Formatting
+----------------------------------------------- */
+
+body.page-template-page-category-php {
+  h2.entry-title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  h4 {
+    margin-top: 0;
+  }
+  article {
+    border-bottom: 1px dashed $gray02;
+    ul {
+      margin-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

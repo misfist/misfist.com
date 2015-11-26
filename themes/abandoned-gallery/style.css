@@ -1,0 +1,15 @@
+/*
+Theme Name: Abandoned Gallery
+Theme URI: https://github.com/misfist/abandoned-gallery
+Author: Pea
+Author URI: http://misfist.com
+Description: Custom gallery based on Gridz
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, white, one-column, two-columns, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-colors, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, sticky-post, translation-ready, theme-options
+Template: pinpress
+Text Domain: adandoned
+*/
+body #header {
+  background-color: #191919; }

@@ -1,0 +1,298 @@
+/* =Content
+----------------------------------------------- */
+
+section {
+  @include clearfix;
+}
+
+article {
+  border-bottom: 1px dashed $gray02;
+  padding: 29px 5px 15px 15px;
+  text-align: left;
+  h2 {}
+  .entry-content,
+  .tag-links {
+    line-height: 1.75em;
+  }
+}
+
+aside {
+  padding: 0px;
+  text-align: right;
+  h1 {
+    text-transform: uppercase;
+    color: $black;
+  }
+  a {
+    text-decoration: none;
+  }
+  .date {
+    color: $black;
+    margin: 0px;
+  }
+  .comments {
+    color: $red;
+    display: block;
+    margin: -4px 0 0;
+    a {
+      color: $red;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  .cat-links {
+    color: $gray03;
+    margin-top: 10px;
+    a {
+      color: $gray05;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  .edit-link a {}
+}
+
+
+div.margin {
+  margin: 10px;
+}
+
+.archive div.main, .single div.main {
+  margin-top: 5px;
+  padding-top: 0;
+}
+
+.archive div.main h2, .single div.main h2 {
+  margin-top: 0;
+}
+
+.archive div.entry-meta, .single div.entry-meta {
+  margin-top: 5px;
+}
+
+.post-205 div {
+  &.entry-meta, &.main {
+    padding-top: 0;
+  }
+  &.entry-meta {
+    margin-top: 5px;
+  }
+}
+
+
+blockquote {
+  background: $gray02;
+  border-left: 10px solid $red;
+  color: $black;
+  font-family: $serif-font;
+  // font-size: 15px;
+  padding: 10px;
+  text-align: justify;
+}
+
+a {
+  color: $black;
+  text-decoration: underline;
+  &:hover {
+    color: $red;
+  }
+}
+
+.entry-content a {
+  img {
+    border: 10px solid $gray02;
+  }
+  &:hover img {
+    border: 10px solid $black;
+  }
+}
+
+b, strong {
+  color: $black;
+}
+
+.cat-links {
+  display: block;
+}
+
+.tag-links {
+  display: block;
+  strong {
+    background: $gray02;
+    border-radius: 3px;
+    color: $gray06;
+    font-weight: normal;
+    margin-right: 4px;
+    padding: 3px 6px;
+  }
+}
+
+.entry-content {
+  table {
+    margin: 0 0 20px 0;
+    text-align: left;
+    width: 100%;
+  }
+  tr th, thead th {
+    color: $gray04;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 9px 24px;
+  }
+  tr {
+    td {
+      padding: 6px 24px;
+    }
+    &.alternate td {
+      background: $gray01;
+    }
+  }
+  ul {
+    padding-left: 1em;
+    li {
+      list-style: square;
+      position: inside;
+      color: $gray08;
+    }
+  }
+  
+}
+
+.page-link a {
+  background: $red;
+  border-radius: 26px;
+  color: $black;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 26px;
+  margin: 0 0 1em;
+  text-align: center;
+  text-decoration: none;
+  width: 26px;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.page-title h2 {
+  background: $gray09;
+  border-radius: 3px;
+  color: $gray02;
+  display: inline-block;
+  font-weight: normal;
+  margin: 10px 0 0 20px;
+  padding: 3px 14px;
+}
+
+.navigation {
+  margin: 10px 0;
+  div {
+    display: inline;
+    margin: 0 5px;
+  }
+}
+
+.date > h1 {
+  // font-size: 25px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+/* Alignment */
+
+.alignleft {
+  display: inline;
+  float: left;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* General */
+
+ol ol {
+  list-style: upper-alpha;
+  ol {
+    list-style: lower-roman;
+  }
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
+/* Sticky */
+
+.sticky {
+  .main {
+    background: $gray02;
+  }
+  .date {
+    display: none;
+  }
+  .entry-meta .comments {
+    margin-top: 2px;
+  }
+}
+
+/* Page */
+
+.page .entry-meta .comments {
+  margin-top: 2px;
+}
+
+/* =Post Formats
+-------------------------------------------------------------- */
+/* Aside */
+
+.format-aside {
+  .entry-title {
+    display: none;
+  }
+  .entry-content p:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Link */
+
+.format-link .entry-title:after {
+  content: "\2192";
+  // font-size: 26px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+/* Quote */
+
+.format-quote blockquote {
+  font-size: 16px;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Chat */
+
+.format-chat {
+  .entry-title {
+    display: none;
+  }
+  .entry-content p {
+    margin: 0.5em 0;
+    &:nth-child(odd) {
+      font-weight: bold;
+    }
+  }
+}
