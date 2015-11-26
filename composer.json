@@ -1,0 +1,127 @@
+{
+    "name": "misfist/misfist.com",
+    "authors": [
+        {
+            "name": "Pea",
+            "email": "pea@misfist.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/admin-columns",
+                "version": "master",
+                "type": "wordpress-muplugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/misfist/admin-columns/archive/master.zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/admin-columns-acf",
+                "version": "master",
+                "type": "wordpress-muplugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/misfist/admin-columns-acf/archive/master.zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/advanced-custom-fields",
+                "version": "master",
+                "type": "wordpress-muplugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/misfist/advanced-custom-fields/archive/master.zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "misfist/advanced-custom-fields-repeater",
+                "version": "master",
+                "type": "wordpress-muplugin",
+                "dist": {
+                    "type": "git",
+                    "url": "https://github.com/misfist/advanced-custom-fields-repeater.git"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jarednova/timber",
+                "version": "master",
+                "type": "wordpress-muplugin",
+                "dist": {
+                    "type": "git",
+                    "url": "https://github.com/jarednova/timber.git"
+                }
+            }
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/admin-management-xtended": ">=2.4.0",
+        "wpackagist-plugin/admin-post-navigation": ">=1.9.2",
+        "wpackagist-plugin/backupwordpress": ">=3.3.2",
+        "wpackagist-plugin/disable-comments": ">=1.3.2",
+        "wpackagist-plugin/jetpack": ">=3.7.2",
+        "wpackagist-plugin/jetpack-module-control": ">=1.3",
+        "wpackagist-plugin/media-tags": ">=3.2.0.1",
+        "wpackagist-plugin/multisite-plugin-manager": ">=3.1.4",
+        "wpackagist-plugin/network-plugin-auditor": ">=1.9.1",
+        "wpackagist-plugin/postman-smtp": ">=1.6.25",
+        "wpackagist-plugin/printfriendly": ">=3.4.5",
+        "wpackagist-plugin/rest-api": ">=2.0-beta5",
+        "wpackagist-plugin/rest-api-enabler": ">=1.0.1",
+        "wpackagist-plugin/better-rest-api-featured-images": ">=1.0.0",
+        "wpackagist-plugin/custom-contact-forms": ">=6.9.0",
+        "wpackagist-plugin/wordpress-importer": ">=0.6.1",
+        "wpackagist-plugin/wp-oauth": ">=0.4",
+        "wpackagist-plugin/wp-piwik": ">=1.0.5",
+        "wpackagist-plugin/wp-super-cache": ">=1.4.6",
+        "jarednova/timber": "dev-master",
+        "wpackagist-theme/carton": ">=1.0.5",
+        "wpackagist-theme/chunk": ">=1.3.2",
+        "wpackagist-theme/gridz": ">=1.0.5",
+        "wpackagist-theme/twentyfifteen": ">=1.3",
+        "wpackagist-theme/twentyfourteen": ">=1.5",
+        "misfist/advanced-custom-fields": "dev-master",
+        "misfist/admin-columns": "dev-master",
+        "misfist/admin-columns-acf": "dev-master",
+        "misfist/advanced-custom-fields-repeater": "dev-master"
+    },
+    "require-dev": {
+        "wpackagist-plugin/developer": ">=1.2.5",
+        "wpackagist-plugin/which-template": ">=4.0",
+        "wpackagist-plugin/debug-bar-extender": ">=0.5",
+        "wpackagist-plugin/debug-bar": ">=0.8.2",
+        "wpackagist-plugin/debug-bar-actions-and-filters-addon": ">=1.4.1",
+        "wpackagist-plugin/wp-log-viewer": ">=0.13.0",
+        "wpackagist-plugin/rewrite-rules-inspector": ">=1.2.1",
+        "wpackagist-plugin/simply-show-ids": ">=1.3.3",
+        "wpackagist-plugin/theme-check": ">=20150818.1",
+        "wpackagist-plugin/user-switching": ">=1.0.8",
+        "wpackagist-plugin/wp-example-content": ">=1.3",
+        "wpackagist-plugin/rest-api-console": ">=2.0.1"
+    },
+    "extra": {
+        "installer-paths": {
+            "./plugins/{$name}/": ["type:wordpress-plugin"],
+            "./mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "./themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}

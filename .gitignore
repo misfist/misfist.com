@@ -1,0 +1,12 @@
+*.log
+.htaccess
+.DS_Store
+*.bak
+*~
+.brackets.json
+*.sass-cache
+composer.lock
+
+node_modules
+vendor
+uploads/*
