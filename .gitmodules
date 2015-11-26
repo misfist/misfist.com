@@ -1,15 +1,15 @@
 [submodule "mu-plugins/advanced-custom-fields"]
 	path = mu-plugins/advanced-custom-fields
-	url = https://misfist@github.com/misfist/advanced-custom-fields.git
+url=https://github.com/misfist/advanced-custom-fields.git
 [submodule "mu-plugins/admin-columns"]
 	path = mu-plugins/admin-columns
 	url = https://github.com/misfist/admin-columns.git
 [submodule "mu-plugins/admin-columns-acf"]
 	path = mu-plugins/admin-columns-acf
-	url = https://misfist@github.com/misfist/admin-columns-acf.git
+url=https://github.com/misfist/admin-columns-acf.git
 [submodule "mu-plugins/acf-repeater"]
 	path = mu-plugins/acf-repeater
-	url = https://misfist@github.com/misfist/advanced-custom-fields-repeater.git
+url=https://github.com/misfist/advanced-custom-fields-repeater.git
 [submodule "mu-plugins/timber-library"]
 	path = mu-plugins/timber-library
 	url = https://github.com/jarednova/timber.git
