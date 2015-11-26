@@ -16,7 +16,7 @@
             "package": {
                 "name": "misfist/admin-columns",
                 "version": "master",
-                "type": "wordpress-muplugin",
+                "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
                     "url": "https://github.com/misfist/admin-columns/archive/master.zip"
@@ -28,7 +28,7 @@
             "package": {
                 "name": "misfist/admin-columns-acf",
                 "version": "master",
-                "type": "wordpress-muplugin",
+                "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
                     "url": "https://github.com/misfist/admin-columns-acf/archive/master.zip"
@@ -40,7 +40,7 @@
             "package": {
                 "name": "misfist/advanced-custom-fields",
                 "version": "master",
-                "type": "wordpress-muplugin",
+                "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
                     "url": "https://github.com/misfist/advanced-custom-fields/archive/master.zip"
@@ -52,7 +52,7 @@
             "package": {
                 "name": "misfist/advanced-custom-fields-repeater",
                 "version": "master",
-                "type": "wordpress-muplugin",
+                "type": "wordpress-plugin",
                 "dist": {
                     "type": "git",
                     "url": "https://github.com/misfist/advanced-custom-fields-repeater.git"
@@ -64,7 +64,7 @@
             "package": {
                 "name": "jarednova/timber",
                 "version": "master",
-                "type": "wordpress-muplugin",
+                "type": "wordpress-plugin",
                 "dist": {
                     "type": "git",
                     "url": "https://github.com/jarednova/timber.git"
