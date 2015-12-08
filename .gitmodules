@@ -10,6 +10,3 @@
 [submodule "plugins/acf-repeater"]
 	path = plugins/acf-repeater
 	url = https://github.com/misfist/advanced-custom-fields-repeater.git
-[submodule "plugins/timber-library"]
-	path = plugins/timber-library
-	url = https://github.com/jarednova/timber.git

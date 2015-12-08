@@ -62,9 +62,21 @@
         {
             "type": "package",
             "package": {
-                "name": "jarednova/timber",
+                "name": "glocalcoop/anp-network-content",
                 "version": "master",
                 "type": "wordpress-plugin",
+                "dist": {
+                    "type": "git",
+                    "url": "https://github.com/glocalcoop/anp-network-content.git"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jarednova/timber",
+                "version": "master",
+                "type": "wordpress-muplugin",
                 "dist": {
                     "type": "git",
                     "url": "https://github.com/jarednova/timber.git"
@@ -92,7 +104,7 @@
         "wpackagist-plugin/wp-oauth": ">=0.4",
         "wpackagist-plugin/wp-piwik": ">=1.0.5",
         "wpackagist-plugin/wp-super-cache": ">=1.4.6",
-        "jarednova/timber": "dev-master",
+        "wpackagist-plugin/timber-library": ">=0.22.2",
         "wpackagist-theme/carton": ">=1.0.5",
         "wpackagist-theme/chunk": ">=1.3.2",
         "wpackagist-theme/gridz": ">=1.0.5",
@@ -101,7 +113,8 @@
         "misfist/advanced-custom-fields": "dev-master",
         "misfist/admin-columns": "dev-master",
         "misfist/admin-columns-acf": "dev-master",
-        "misfist/advanced-custom-fields-repeater": "dev-master"
+        "misfist/advanced-custom-fields-repeater": "dev-master",
+        "glocalcoop/anp-network-content": "dev-master"
     },
     "require-dev": {
         "wpackagist-plugin/developer": ">=1.2.5",
