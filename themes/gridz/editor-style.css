@@ -1,0 +1,48 @@
+/* == EDITOR CSS == */
+
+html .mceContentBody {
+max-width:625px;
+}
+
+body {
+color:#444;
+font-family:Helvetica, Arial, sans-serif;
+font-size:13px;
+line-height:180%;
+text-rendering:optimizeLegibility;
+vertical-align:baseline;
+}
+
+a {
+color:#0080ff;
+}
+
+a:hover {
+color:red;
+}
+
+img,embed,iframe {
+max-width:100%;
+}
+
+blockquote {
+background-color:#333;
+color:#fff;
+margin:0;
+padding:10px;
+}
+
+.alignleft,.wp-caption.alignleft {
+float:left;
+margin:5px 10px 15px 0;
+}
+
+.alignright,.wp-caption.alignright {
+float:right;
+margin:5px 0 15px 10px;
+}
+
+.aligncenter,.wp-caption.aligncenter {
+display:block;
+margin:10px auto 15px!important;
+}

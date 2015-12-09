@@ -1,0 +1,158 @@
+/* =Widgets
+----------------------------------------------- */
+
+#widgets {
+  border-top: 1px solid $gray03;
+  margin: 30px 0 0 0;
+  padding: 30px 0 0 0;
+  text-align: left;
+}
+
+.widget-title {
+  color: $gray07;
+  font-family: $header-font;
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+#widgets {
+  .widget-area {
+    width: 100%;
+  }
+  .widget {
+    float: left;
+    padding: 12px;
+    width: 30%;
+  }
+}
+
+.widget {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 0 30px 0;
+}
+
+#widgets .widget:nth-child(3n+1) {
+  clear: left;
+}
+
+.widget ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Calendar Widget */
+
+.widget_calendar #wp-calendar {
+  color: $gray07;
+  text-align: center;
+  width: 100%;
+  caption, td, th {
+    text-align: center;
+  }
+  caption {
+    color: $black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 3px 0;
+    text-transform: uppercase;
+  }
+  th {
+    border-bottom: 1px solid $gray03;
+    border-top: 1px solid $gray03;
+    color: $black;
+    font-weight: bold;
+  }
+  tfoot td {
+    border-bottom: 1px solid $gray03;
+    border-top: 1px solid $gray03;
+  }
+}
+
+/* Recent Comments Widget */
+
+.widget_recent_comments {
+  .avatar {
+    max-width: none;
+  }
+  td {
+    &.recentcommentstexttop {
+      vertical-align: top;
+    }
+    &.recentcommentstextend {
+      vertical-align: top;
+      line-height: 1.1em;
+    }
+  }
+}
+
+/* Authors Widget */
+
+.widget_authors {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  img {
+    vertical-align: middle;
+    + strong {
+      font-weight: normal;
+      margin-left: 8px;
+    }
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+/* Authors Widget */
+
+.widget_author_grid ul, .widget_authors ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* Twitter Widget */
+
+.widget .tweets li {
+  margin: 0 0 10px 0;
+}
+
+/* Cloud Widgets */
+
+.wp_widget_tag_cloud div, .widget_tag_cloud div {
+  word-wrap: break-word;
+}
+
+/* RSS Widgets */
+
+.widget_rss li {
+  margin: 0 0 10px 0;
+}
+
+.widget_rss_links p img {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* Linkedin Badge */
+
+.gdlb-widget-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Printfriendly Plugin */
+
+.printfriendly {
+  float: right;
+  a img {
+    border: none !important;
+  }
+}

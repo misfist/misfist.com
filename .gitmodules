@@ -1,0 +1,9 @@
+[submodule "plugins/admin-columns"]
+	path = plugins/admin-columns
+	url = https://github.com/misfist/admin-columns.git
+[submodule "plugins/admin-columns-acf"]
+	path = plugins/admin-columns-acf
+	url = https://github.com/misfist/admin-columns-acf.git
+[submodule "plugins/acf-repeater"]
+	path = plugins/acf-repeater
+	url = https://github.com/misfist/advanced-custom-fields-repeater.git

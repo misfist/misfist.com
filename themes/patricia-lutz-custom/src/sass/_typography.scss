@@ -1,0 +1,46 @@
+/* =Typography
+----------------------------------------------- */
+
+html {
+	font-size: $base-size;
+	// @media (max-width: $smallscreen) {
+	// 	font-size: $base-size - 2;
+	// }
+	@include breakpoint(small) {
+		font-size: $base-size - 2;
+	}
+	@include breakpoint(xsmall) {
+		font-size: $base-size - 3;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $header-font;
+	text-transform: uppercase;
+}
+
+
+h1 {
+	font-size: $h1-size;
+}
+h2 {
+	font-size: $h2-size;
+}
+h3 {
+	font-size: $h3-size;
+}
+h4 {
+	font-size: $h4-size;
+}
+h5 {
+	font-size: $h5-size;
+}
+
+
+// p,
+// li,
+// ul,

@@ -1,0 +1,181 @@
+# Translation of Chunk in Greek (Polytonic)
+# This file is distributed under the same license as the Chunk package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-06-01 14:46:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Chunk\n"
+
+#. Description of the plugin/theme
+msgid "A straightforward theme with bold typography designed by <a href=\"http://twitter.com/thisistran/\">Tran N</a>. Featuring multiple post formats, custom background, custom menu, and custom header. Also comes with an optional footer widget area."
+msgstr ""
+
+#: index.php:11
+msgid "Matches for: &ldquo;%s&rdquo; &hellip;"
+msgstr "Ταιριάζουν μὲ τὸ: &ldquo;%s&rdquo; &hellip;"
+
+#: single.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Previous post"
+msgstr "<span class=\"meta-nav\">&larr;</span> Προηγούμενο ἄρθρο"
+
+#: single.php:30
+msgid "Next post <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Ἑπόμενο ἄρθρο <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:221
+msgid "Download: %1$s"
+msgstr "Κατεβάστε: %1$s"
+
+#: image.php:21
+msgid "<a href=\"%1$s\" title=\"Link to full-size image\">%2$s &times; %3$s</a> in <a href=\"%4$s\" title=\"Return to %5$s\" rel=\"gallery\">%5$s</a>"
+msgstr "<a href=\"%1$s\" title=\"Σύνδεση μὲ εἰκόνα πλήρους μεγέθους\">%2$s &times; %3$s</a> στὴν συλλογὴ εἰκόνων <a href=\"%4$s\" title=\"Ἐπιστοφὴ στὴν συλλογὴ %5$s\" rel=\"gallery\">%5$s</a>"
+
+#: functions.php:175
+msgid "Page %s"
+msgstr "Σελίδα %s"
+
+#: functions.php:61
+msgid "Footer"
+msgstr "Ὑποσέλιδο"
+
+#: functions.php:41
+msgid "Main Menu"
+msgstr "Κύριο μενού"
+
+#: footer.php:11
+msgid "Theme: %1$s by %2$s."
+msgstr "Θέμα: %1$s ἀπὸ τὸν/τὴν %2$s."
+
+#: footer.php:9
+msgid "Proudly powered by %s"
+msgstr "Λειτουργεῖ μὲ τὴν βοήθεια τοῦ %s"
+
+#: footer.php:9
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Μιὰ πλατφόρμα σημασιολογικῶν προσωπικῶν ἐκδόσεων"
+
+#: content.php:21
+msgid "By %1$s"
+msgstr "ἀπὸ τὸν/τὴν %1$s"
+
+#: content-link.php:45
+msgid "Tagged "
+msgstr "Μαρκαρίστηκε ὡς"
+
+#: content-audio.php:32 content.php:48 image.php:74
+msgid "Tagged"
+msgstr "Μαρκαρίστηκε ὡς"
+
+#: content-audio.php:30 content-link.php:42 content.php:45 image.php:72
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: content-audio.php:29 content-link.php:41 content.php:46 image.php:71
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Συνέχεια <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-audio.php:17 content-link.php:15 content.php:30 image.php:30
+msgid "Edit"
+msgstr "Ἐπεξεργασία"
+
+#: content-audio.php:16 content-link.php:14 content.php:28
+msgid "All %s posts"
+msgstr "Ὅλα τὰ ἄρθρα τοῦ %s"
+
+#: content-audio.php:13 content-link.php:11 content.php:16 image.php:16
+msgid "1 Comment"
+msgstr ""
+
+#: content-audio.php:13 content-link.php:11 content.php:16 image.php:16
+msgid "% Comments"
+msgstr "% Σχόλια"
+
+#: content-audio.php:13 content-link.php:11 content.php:16 image.php:16
+msgid "Leave a comment"
+msgstr "Σχολιάστε"
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr "Ἡ ὑποβολὴ σχολίων ἔχει κλείσει."
+
+#: comments.php:27
+msgid "Newer Comments &rarr;"
+msgstr "Νεότερα σχόλια &rarr;"
+
+#: comments.php:15
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:26
+msgid "&larr; Older Comments"
+msgstr "&larr; Παλαιότερα σχόλια"
+
+#: archive.php:89 index.php:40
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Νεώτερα ἄρθρα <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:88 index.php:39
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Παλαιότερα ἄρθρα"
+
+#: archive.php:78 image.php:87 index.php:29 single.php:19
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Λυπούμεθα, ἀλλὰ δὲν ὑπῆρξαν ἀποτελέσματα γιὰ τὸ αἰτηθέν ἀρχεῖο. Ἴσως μιὰ ἀναζήτηση θὰ βοηθοῦσε νὰ βρεῖτε ἕνα σχετικὸ ἄρθρο."
+
+#: archive.php:76 image.php:85 index.php:27 single.php:17
+msgid "Nothing Found"
+msgstr "Οὑδὲν εὑρέθη!"
+
+#: archive.php:58
+msgid "Archives"
+msgstr "Ἀρχεῖα"
+
+#: archive.php:55
+msgid "Links"
+msgstr "Σύνδεσμοι"
+
+#: archive.php:52
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:49
+msgid "Videos"
+msgstr "Βίντεο"
+
+#: archive.php:46
+msgid "Images"
+msgstr "Εἰκόνες"
+
+#: archive.php:43
+msgid "Asides"
+msgstr ""
+
+#: archive.php:40
+msgid "Yearly Archives: %s"
+msgstr "Ἐτήσια Ἀρχεῖα: %s"
+
+#: archive.php:37
+msgid "Monthly Archives: %s"
+msgstr "Μηνιαία Ἀρχεῖα: %s "
+
+#: archive.php:34
+msgid "Daily Archives: %s"
+msgstr "Ἡμερήσια ἀρχεῖα: %s"
+
+#: archive.php:26
+msgid "Author Archives: %s"
+msgstr "Ἀρχεῖα συγγραφέως: %s "
+
+#: archive.php:19
+msgid "Tag Archives: %s"
+msgstr "Ἀρχεῖα ἐτικέττας: %s"
+
+#: archive.php:16
+msgid "Category Archives: %s"
+msgstr "Ἀρχεῖα κατηγορίας: %s"

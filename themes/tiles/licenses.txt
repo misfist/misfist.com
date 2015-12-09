@@ -1,0 +1,35 @@
+-Genericons Font
+--By Automattic http://genericons.com/
+--Licensed under GPL
+
+-No Image Icon
+--By Evil Icons http://evil-icons.io/
+--Licensed under MIT
+
+-Classie Script
+--By Bonzo https://github.com/ded/bonzo
+--Licensed under MIT
+
+-Color Finder
+--By Pieroxy http://pieroxy.net/blog/pages/color-finder/index.html
+--Licensed under WTFPL
+
+-gridScrollFx
+--By Codrops http://www.codrops.com
+--Licensed under MIT
+
+-Images Loaded
+--By Desandro http://imagesloaded.desandro.com/
+--Licensed under MIT
+
+-MobileMenu
+--By Codrops http://www.codrops.com
+--Licensed under MIT
+
+-Modernizr
+--By Modernizr http://modernizr.com/
+--Licensed under MIT
+
+-Tendina jQuery Plugin
+--By Ivan Prignano https://iprignano.github.io/tendina/
+--Licensed under MIT

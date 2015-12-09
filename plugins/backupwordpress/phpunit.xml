@@ -1,0 +1,25 @@
+<phpunit
+	bootstrap="tests/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	>
+	<testsuites>
+		<testsuite name="backup">
+			<directory prefix="test" suffix=".php">tests/backup</directory>
+		</testsuite>
+		<testsuite name="schedule">
+			<directory prefix="test" suffix=".php">tests/schedule</directory>
+		</testsuite>
+		<testsuite name="other">
+			<directory prefix="test" suffix=".php">tests/other</directory>
+		</testsuite>
+	</testsuites>
+	<groups>
+        <exclude>
+            <group>full-backup</group>
+        </exclude>
+    </groups>
+</phpunit>

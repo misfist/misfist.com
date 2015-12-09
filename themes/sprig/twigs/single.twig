@@ -1,0 +1,14 @@
+{% extends 'layouts/sidebar.twig' %}
+
+{% block content %}
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            {% for post in posts() %}{{ the_post(post) }}
+                {% include 'content/content-single.twig' %}
+            {% endfor %}
+        </main><!-- #main -->
+    </div><!-- #primary -->
+{% endblock %}
+{% block sidebar %}
+    {% set sidebar = wp.dynamic_sidebar('primary') %}
+{% endblock %}
