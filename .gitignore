@@ -1,9 +1,12 @@
 *.log
-*.zip
-*.tar
-*.gz
-*.bak
+.htaccess
 .DS_Store
+*.bak
+*~
+.brackets.json
+*.sass-cache
+composer.lock
 
-*.less
-.sass-cache
+node_modules
+vendor
+uploads/*
