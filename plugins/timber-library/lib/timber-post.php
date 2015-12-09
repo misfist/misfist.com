@@ -389,10 +389,11 @@ class TimberPost extends TimberCore implements TimberCoreInterface {
 					$text .= ' &hellip; ';
 				}
 			}
+			$read_more_class = apply_filters('timber/post/get_preview/read_more_class', "read-more");
 			if ( $readmore && isset($readmore_matches) && !empty($readmore_matches[1]) ) {
-				$text .= ' <a href="' . $this->get_permalink() . '" class="read-more">' . trim($readmore_matches[1]) . '</a>';
+				$text .= ' <a href="' . $this->get_permalink() . '" class="'.$read_more_class .'">' . trim($readmore_matches[1]) . '</a>';
 			} elseif ( $readmore ) {
-				$text .= ' <a href="' . $this->get_permalink() . '" class="read-more">' . trim($readmore) . '</a>';
+				$text .= ' <a href="' . $this->get_permalink() . '" class="'.$read_more_class .'">' . trim($readmore) . '</a>';
 			}
 			if ( !$strip && $last_p_tag && ( strpos($text, '<p>') || strpos($text, '<p ') ) ) {
 				$text .= '</p>';
@@ -716,8 +717,11 @@ class TimberPost extends TimberCore implements TimberCoreInterface {
 
 	function get_comments($ct = 0, $order = 'wp', $type = 'comment', $status = 'approve', $CommentClass = 'TimberComment') {
 
-		global $overridden_cpage;
+		global $overridden_cpage, $user_ID;
 		$overridden_cpage = false;
+
+		$commenter = wp_get_current_commenter();
+		$comment_author_email = $commenter['comment_author_email'];
 
 		$args = array('post_id' => $this->ID, 'status' => $status, 'order' => $order);
 		if ( $ct > 0 ) {
@@ -725,6 +729,12 @@ class TimberPost extends TimberCore implements TimberCoreInterface {
 		}
 		if ( strtolower($order) == 'wp' || strtolower($order) == 'wordpress' ) {
 			$args['order'] = get_option('comment_order');
+		}
+
+		if ( $user_ID ) {
+			$args['include_unapproved'] = array( $user_ID );
+		} elseif ( ! empty( $comment_author_email ) ) {
+			$args['include_unapproved'] = array( $comment_author_email );
 		}
 
 		$comments = get_comments($args);
@@ -834,7 +844,6 @@ class TimberPost extends TimberCore implements TimberCoreInterface {
 				$term_class_objects[$taxonomy] = $terms;
 			}
 		}
-
 		return $term_class_objects;
 	}
 
@@ -959,14 +968,13 @@ class TimberPost extends TimberCore implements TimberCoreInterface {
 	}
 
 	/**
-	 * @return int
+	 * @return int the number of comments on a post
 	 */
 	public function get_comment_count() {
 		if ( isset($this->ID) ) {
 			return get_comments_number($this->ID);
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 
 	/**
