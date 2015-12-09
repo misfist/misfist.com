@@ -1,6 +1,3 @@
-[submodule "plugins/advanced-custom-fields"]
-	path = plugins/advanced-custom-fields
-	url = https://github.com/misfist/advanced-custom-fields.git
 [submodule "plugins/admin-columns"]
 	path = plugins/admin-columns
 	url = https://github.com/misfist/admin-columns.git
