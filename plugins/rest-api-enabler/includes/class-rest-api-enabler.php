@@ -132,7 +132,7 @@ class REST_API_Enabler {
 
 		$this->slug = 'rest-api-enabler';
 		$this->name = __( 'REST API Enabler', 'rest-api-enabler' );
-		$this->version = '1.0.1';
+		$this->version = '1.0.2';
 		$this->options = get_option( $this->slug );
 
 		$this->load_dependencies();
@@ -396,7 +396,6 @@ class REST_API_Enabler {
 		$option = $this->options["post_type_{$post_type_slug}"];
 		$wp_post_types[ $post_type_slug ]->show_in_rest = $option['show_in_rest'];
 		$wp_post_types[ $post_type_slug ]->rest_base = $option['rest_base'];
-		$wp_post_types[ $post_type_slug ]->rest_controller_class = 'WP_REST_Posts_Controller';
 
 	}
 
