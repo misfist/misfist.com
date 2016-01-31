@@ -3,8 +3,8 @@
 **Donate link:** http://braadmartin.com/  
 **Tags:** featured, images, post, thumbnail, rest, api, better  
 **Requires at least:** 4.0  
-**Tested up to:** 4.3  
-**Stable tag:** 1.0.1  
+**Tested up to:** 4.4  
+**Stable tag:** 1.1.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -12,20 +12,20 @@ Enhances the featured image data returned on the post object by the REST API to 
 
 ## Description ##
 
-The REST API returns a `featured_image` field on the post object by default, but this field is simply the image ID.
+Version 2 of the WordPress REST API returns a `featured_media` field (formerly featured_image) on the post object by default, but this field is simply the image ID.
 
 This plugin adds a `better_featured_image` field to the post object that contains the available image sizes and urls, allowing you to get this information without making a second request.
 
 It takes this:
 
 
-	"featured_image": 13,
+	"featured_media": 13,
 
 
 And turns it into this:
 
 
-	"featured_image": 13,
+	"featured_media": 13,
 	"better_featured_image": {
 	    "id": 13,
 	    "alt_text": "Hot Air Balloons",
@@ -89,6 +89,32 @@ The format of the response is nearly identical to what you would get sending a r
 
 I've done some basic performance tests that indicate the difference in response times with and without this plugin to be about 10-15ms for a collection of 10 posts and 0-5ms for a single post. For me this is much faster than making a second request to `/media/`, especially for multiple posts.
 
+As of version 1.1.0, there is a filter `better_rest_api_featured_image` that allows you to add custom data to the better_featured_image field. The filter is directly on the return value of the function that returns the better_featured_image field. This can be used to do things like add custom image meta or an SVG version of the image to the response. Here's an example of how you might use it:
+
+
+	add_filter( 'better_rest_api_featured_image', 'xxx_modify_rest_api_featured_image', 10, 2 );
+	/**
+	 * Modify the Better REST API Featured Image response.
+	 *
+	 * @param   array  $featured_image  The array of image data.
+	 * @param   int    $image_id        The image ID.
+	 *
+	 * @return  array                   The modified image data.
+	 */
+	function xxx_modify_rest_api_featured_image( $featured_image, $image_id ) {
+	
+	  // Add an extra_data_string field with a string value.
+	  $featured_image['extra_data_string'] = 'A custom value.';
+	
+	  // Add an extra_data_array field with an array value.
+	  $featured_image['extra_data_array'] = array(
+	    'custom_key' => 'A custom value.',
+	  );
+	
+	  return $featured_image;
+	}
+
+
 This plugin is on [on Github](https://github.com/BraadMartin/better-rest-api-featured-images "Better REST API Featured Images") and pull requests are always welcome. :)
 
 ## Installation ##
@@ -113,11 +139,24 @@ The WP REST API includes a filter on the response data it returns, and this plug
 
 The plugin loads on `init` at priority 12, in order to come after any custom post types have been registered.
 
-### Why doesn't the plugin replace the default `featured_image` field? ###
+### Why doesn't the plugin replace the default `featured_media` field? ###
 
-The `featured_image` field is a core field, and other applications might expect it to always be an integer value. To avoid any issues, this plugin includes the extra data under the `better_featured_image` field name.
+The `featured_media` field is a core field, and other applications might expect it to always be an integer value. To avoid any issues, this plugin includes the extra data under the `better_featured_image` field name.
+
+### Why is the core field called `featured_media` but the plugin field is `better_featured_image`? ###
+
+Prior to V2 Beta 11 of the REST API the core field was called `featured_image`. As of Beta 11 this field was changed to `featured_media`, with the idea that at some point in the future there may be additional media items included on this field beyond the featured image. Version 1.1.1 of this plugin is compatible with both Beta 11 and all previous versions of V2.
 
 ## Changelog ##
+
+### 1.1.1 ###
+* Compatibility with v2 beta 11 of the REST API (now the core field is called featured_media; this plugin's field is still better_featured_image). Props: filose
+
+### 1.1.0 ###
+* Add a better_rest_api_featured_image filter for adding custom data to the response. Props: avishayil
+
+### 1.0.2 ###
+* Change register_api_field to register_rest_field for compatibility with the REST API v2 beta 9. Props: Soean
 
 ### 1.0.1 ###
 * Switch to returning null instead of 0 when no featured image is present
@@ -126,6 +165,15 @@ The `featured_image` field is a core field, and other applications might expect 
 * First Release
 
 ## Upgrade Notice ##
+
+### 1.1.1 ###
+* Compatibility with v2 beta 11 of the REST API (now the core field is called featured_media; this plugin's field is still better_featured_image). Props: filose
+
+### 1.1.0 ###
+* Add a better_rest_api_featured_image filter for adding custom data to the response. Props: avishayil
+
+### 1.0.2 ###
+* Change register_api_field to register_rest_field for compatibility with the REST API v2 beta 9. Props: Soean
 
 ### 1.0.1 ###
 * Switch to returning null instead of 0 when no featured image is present

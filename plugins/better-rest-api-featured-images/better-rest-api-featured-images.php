@@ -10,7 +10,7 @@
  * Plugin Name:         Better REST API Featured Images
  * Plugin URI:          https://wordpress.org/plugins/better-rest-api-featured-images/
  * Description:         Enhances the featured image data returned on the post object by the REST API to include urls for all available sizes and other useful image data.
- * Version:             1.0.1
+ * Version:             1.1.1
  * Author:              Braad Martin
  * Author URI:          http://braadmartin.com
  * License:             GPL-2.0+
@@ -40,13 +40,24 @@ function better_rest_api_featured_images_init() {
 		// and supports featured images.
 		if ( $show_in_rest && $supports_thumbnail ) {
 
-			register_api_field( $post_type_name,
-				'better_featured_image',
-				array(
-					'get_callback' => 'better_rest_api_featured_images_get_field',
-					'schema'       => null,
-				)
-			);
+			// Compatibility with the REST API v2 beta 9+
+			if ( function_exists( 'register_rest_field' ) ) {
+				register_rest_field( $post_type_name,
+					'better_featured_image',
+					array(
+						'get_callback' => 'better_rest_api_featured_images_get_field',
+						'schema'       => null,
+					)
+				);
+			} elseif ( function_exists( 'register_api_field' ) ) {
+				register_rest_field( $post_type_name,
+					'better_featured_image',
+					array(
+						'get_callback' => 'better_rest_api_featured_images_get_field',
+						'schema'       => null,
+					)
+				);
+			}
 		}
 	}
 }
@@ -56,12 +67,14 @@ function better_rest_api_featured_images_init() {
  *
  * @since   1.0.0
  *
- * @return  object|0
+ * @return  object|null
  */
 function better_rest_api_featured_images_get_field( $object, $field_name, $request ) {
 
 	// Only proceed if the post has a featured image.
-	if ( $object['featured_image'] ) {
+	if ( ! empty( $object['featured_media'] ) ) {
+		$image_id = (int)$object['featured_media'];
+	} elseif ( ! empty( $object['featured_image'] ) ) {
 		$image_id = (int)$object['featured_image'];
 	} else {
 		return null;
@@ -98,5 +111,5 @@ function better_rest_api_featured_images_get_field( $object, $field_name, $reque
 		$featured_image['media_details']['sizes'] = new stdClass;
 	}
 
-	return $featured_image;
+	return apply_filters( 'better_rest_api_featured_image', $featured_image, $image_id );
 }
