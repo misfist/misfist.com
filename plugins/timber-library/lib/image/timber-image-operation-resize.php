@@ -34,13 +34,25 @@ class TimberImageOperationResize extends TimberImageOperation {
 	 * @return  string    the final filename to be used (ex: my-awesome-pic-300x200-c-default.jpg)
 	 */
 	public function filename($src_filename, $src_extension) {
-		$result = $src_filename . '-' . $this->w . 'x' . $this->h . '-c-' . ( $this->crop ? $this->crop : 'f' ); // Crop will be either user named or f (false)
+		$w = 0;
+		$h = 0;
+		if ( $this->w ) {
+			$w = $this->w;
+		}
+		if ( $this->h ) {
+			$h = $this->h;
+		}
+		$result = $src_filename . '-' . $w . 'x' . $h . '-c-' . ( $this->crop ? $this->crop : 'f' ); // Crop will be either user named or f (false)
 		if($src_extension) {
 			$result .= '.'.$src_extension;
 		}
 		return $result;
 	}
 
+	/**
+	 * @param string $load_filename
+	 * @param string $save_filename
+	 */
 	protected function run_animated_gif( $load_filename, $save_filename ) {
 		$image = wp_get_image_editor( $load_filename );
 		$current_size = $image->get_size();
@@ -155,16 +167,20 @@ class TimberImageOperationResize extends TimberImageOperation {
 			);
 			$result = $image->save( $save_filename );
 			if ( is_wp_error( $result ) ) {
-				error_log( 'Error resizing image' );
-				error_log( print_r( $result, true ) );
+				// @codeCoverageIgnoreStart
+				TimberHelper::error_log( 'Error resizing image' );
+				TimberHelper::error_log( $result );
 				return false;
+				// @codeCoverageIgnoreEnd
 			} else {
 				return true;
 			}
 		} else if ( isset( $image->error_data['error_loading_image'] ) ) {
+			// @codeCoverageIgnoreStart
 			TimberHelper::error_log( 'Error loading ' . $image->error_data['error_loading_image'] );
 		} else {
 			TimberHelper::error_log( $image );
+			// @codeCoverageIgnoreEnd
 		}
 	}
 }
