@@ -26,13 +26,13 @@
 	});
 
 	wp.ccf.utils.insertFormShortcode = function( form ) {
-		var existingForm = wp.ccf.forms.findWhere( { ID: form.get( 'ID' ) } );
+		var existingForm = wp.ccf.forms.findWhere( { id: form.get( 'id' ) } );
 		if ( ! existingForm ) {
 			wp.ccf.forms.add( form );
 		}
 
 		var editor = tinymce.get( wpActiveEditor );
-		var shortcode = '[ccf_form id="' + form.get( 'ID' ) + '"]';
+		var shortcode = '[ccf_form id="' + form.get( 'id' ) + '"]';
 
 		if ( editor && ! editor.isHidden() ) {
 			tinymce.activeEditor.execCommand( 'mceInsertContent', false, shortcode );
@@ -114,9 +114,14 @@
 		return '-';
 	};
 
-	wp.ccf.utils.getPrettyFieldDate = function( value ) {
+	wp.ccf.utils.getPrettyFieldDate = function( value, field ) {
 		var dateString = '',
-			output = '';
+			output = '',
+			format = 'HH:mm MM/DD/YY';
+
+		if ( field && field.ccf_field_dateFormat && 'dd/mm/yyyy' === field.ccf_field_dateFormat ) {
+			format = 'HH:mm DD/MM/YY';
+		}
 
 		if ( value.hour && value.minute && value['am-pm'] ) {
 			dateString += value.hour + ':' + value.minute + ' ' + value['am-pm'];
@@ -130,7 +135,7 @@
 			return '-';
 		}
 
-		var date = moment.utc( dateString );
+		var date = moment( dateString, format );
 
 		if ( ! date.isValid() ) {
 			return ccfSettings.invalidDate;
@@ -145,7 +150,7 @@
 				output += ' ';
 			}
 
-			output += date.format( 'M/D/YYYY' );
+			output += value.date;
 		}
 
 		return output;

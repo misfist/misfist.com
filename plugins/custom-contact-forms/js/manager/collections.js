@@ -18,7 +18,7 @@
 		{
 			model: wp.ccf.models.Form,
 
-			url: WP_API_Settings.root + '/ccf/forms',
+			url: ccfSettings.apiRoot.replace( /\/$/, '' ) + '/ccf/v1/forms',
 
 			formsFetching: {},
 
@@ -55,7 +55,7 @@
 			model: wp.ccf.models.Field,
 
 			url: function() {
-				return WP_API_Settings.root + '/ccf/forms/' + this.formId + '/fields';
+				return ccfSettings.apiRoot + '/ccf/forms/' + this.formId + '/fields';
 			},
 
 			initialize: function( models, options ) {
@@ -68,12 +68,30 @@
 		}
 	);
 
+	wp.ccf.collections.PostFieldMappings = wp.ccf.collections.PostFieldMappings || Backbone.Collection.extend(
+		{
+			model: wp.ccf.models.PostFieldMapping
+		}
+	);
+
+	wp.ccf.collections.FormNotificationAddresses = wp.ccf.collections.FormNotificationAddresses || Backbone.Collection.extend(
+		{
+			model: wp.ccf.models.FormNotificationAddress
+		}
+	);
+
+	wp.ccf.collections.FormNotifications = wp.ccf.collections.FormNotifications || Backbone.Collection.extend(
+		{
+			model: wp.ccf.models.FormNotification
+		}
+	);
+
 	wp.ccf.collections.Submissions = wp.ccf.collections.Submissions || wp.api.collections.Posts.extend(
 		{
 			model: wp.ccf.models.Submission,
 
 			url: function() {
-				return WP_API_Settings.root + '/ccf/forms/' + this.formId + '/submissions';
+				return ccfSettings.apiRoot.replace( /\/$/, '' ) + '/ccf/v1/forms/' + this.formId + '/submissions';
 			},
 
 			initialize: function( models, options ) {

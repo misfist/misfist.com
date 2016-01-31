@@ -8,8 +8,6 @@
 
 	var _verifiedRecaptcha = {};
 
-	var _formFrameOnload = {};
-
 	window.ccfRecaptchaOnload = function() {
 		var recaptchas = document.querySelectorAll( '.ccf-recaptcha-wrapper' );
 
@@ -353,17 +351,19 @@
 
 	wp.ccf.validators.radio = wp.ccf.validators.radio || choiceValidator;
 
-	wp.ccf.iframeOnload = function( formId ) {
-		if ( _formFrameOnload[formId] ) {
-			_formFrameOnload[formId]();
-		}
-	};
-
 	wp.ccf.setupDOM = wp.ccf.setupDOM || function() {
-		var datepickers = document.querySelectorAll( '.ccf-datepicker' );
+		var datepickers = document.querySelectorAll( '.ccf-datepicker' ),
+			options,
+			format;
 
 		for ( var i = 0; i < datepickers.length; i++ ) {
-			$( datepickers[i] ).datepicker();
+			options = {};
+			format = datepickers[i].getAttribute( 'data-date-format');
+			if ( format ) {
+				options.dateFormat = format.replace( /yyyy/i, 'yy' );
+			}
+
+			$( datepickers[i] ).datepicker( options );
 		}
 
 		var forms = document.querySelectorAll( '.ccf-form-wrapper' );
@@ -382,7 +382,7 @@
 
 				var fieldsBySlug = {};
 
-				_formFrameOnload[formId] = function() {
+				$frame.on( 'load', function() {
 					var data,
 						content = $frame.contents().find( 'body' ).text();
 
@@ -445,7 +445,7 @@
 						});
 					}
 
-				};
+				} );
 
 				$button.on( 'click', function( event ) {
 					event.preventDefault();

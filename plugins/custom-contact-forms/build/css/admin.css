@@ -16,4 +16,22 @@
   cursor: pointer;
   -webkit-font-smoothing: antialiased; }
 
+.ccf-subscribe.updated {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #FCECAD; }
+
+.ccf-subscribe.updated form {
+  display: inline; }
+
+.ccf-subscribe .ad-wrap {
+  margin: 0.5em 0;
+  padding: 2px; }
+
+.ccf-subscribe input[type=email] {
+  margin-left: 5px;
+  margin-right: 5px; }
+
 /*# sourceMappingURL=admin.css.map */

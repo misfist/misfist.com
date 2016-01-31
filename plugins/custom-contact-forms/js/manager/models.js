@@ -1,4 +1,4 @@
-( function( $, Backbone, _, ccfSettings, WP_API_Settings ) {
+( function( $, Backbone, _, ccfSettings ) {
 	'use strict';
 
 	wp.ccf.models = wp.ccf.models || {};
@@ -73,16 +73,103 @@
 		}
 	);
 
+	wp.ccf.models.PostFieldMapping = wp.ccf.models.PostFieldMapping || Backbone.Model.extend(
+		{
+			defaults: {
+				formField: '',
+				postField: '',
+				customFieldKey: ''
+			},
+
+			decode: function() {
+				return _modelDecode.call( this, [] );
+			},
+
+			set: _modelSet
+		}
+	);
+
+	wp.ccf.models.FormNotificationAddress = wp.ccf.models.FormNotificationAddress || Backbone.Model.extend(
+		{
+			defaults: {
+				type: 'custom',
+				field: '',
+				email: ''
+			},
+
+			decode: function() {
+				return _modelDecode.call( this, [] );
+			},
+
+			set: _modelSet
+		}
+	);
+
+	wp.ccf.models.FormNotification = wp.ccf.models.FormNotification || Backbone.Model.extend(
+		{
+			defaults: function() {
+				return {
+					title: '',
+					content: '[all_fields]',
+					active: false,
+					addresses: new wp.ccf.collections.FormNotificationAddresses(),
+					fromType: 'default',
+					fromAddress: '',
+					fromField: '',
+					subjectType: 'default',
+					subject: '',
+					subjectField: '',
+					fromNameType: 'custom',
+					fromName: 'WordPress',
+					fromNameField: ''
+				};
+			},
+
+			initialize: function( attributes ) {
+				if ( typeof attributes === 'object' && attributes.addresses ) {
+					var addresses = [];
+
+					_.each( attributes.addresses, function( address ) {
+						var addressModel = new wp.ccf.models.FormNotificationAddress( address );
+						addressModel.decode();
+
+						addresses.push( addressModel );
+					});
+
+					this.set( 'addresses', new wp.ccf.collections.FormNotificationAddresses( addresses ) );
+				}
+			},
+
+			decode: function() {
+				return _modelDecode.call( this, [] );
+			},
+
+			toJSON: function() {
+				var attributes = this.constructor.__super__.toJSON.call( this );
+
+				if ( attributes.addresses ) {
+					attributes.addresses = attributes.addresses.toJSON();
+				}
+
+				return attributes;
+			},
+
+			set: _modelSet
+		}
+	);
+
 	wp.ccf.models.Form = wp.ccf.models.Form || wp.api.models.Post.extend(
 		{
 
-			urlRoot: WP_API_Settings.root + '/ccf/forms',
+			urlRoot: ccfSettings.apiRoot.replace( /\/$/, '' ) + '/ccf/v1/forms',
 
 			set: _modelSet,
 
 			sync: _sync,
 
-			initialize: function() {
+			idAttribute: 'id',
+
+			initialize: function( attributes ) {
 				this.on( 'sync', this.decode, this );
 			},
 
@@ -96,19 +183,14 @@
 					completionActionType: 'text',
 					completionRedirectUrl: '',
 					completionMessage: '',
-					sendEmailNotifications: false,
-					emailNotificationAddresses: ccfSettings.adminEmail,
-					emailNotificationFromType: 'default',
-					emailNotificationFromAddress: '',
-					emailNotificationFromField: '',
-					emailNotificationSubjectType: 'default',
-					emailNotificationSubject: '',
-					emailNotificationSubjectField: '',
-					emailNotificationFromNameType: 'custom',
-					emailNotificationFromName: 'WordPress',
-					emailNotificationFromNameField: '',
+					postCreation: false,
+					postCreationType: 'post',
+					postCreationStatus: 'draft',
+					postFieldMappings: new wp.ccf.collections.PostFieldMappings(),
+					notifications: new wp.ccf.collections.FormNotifications(),
 					pause: false,
-					pauseMessage: ccfSettings.pauseMessage
+					pauseMessage: ccfSettings.pauseMessage,
+					theme: 'none'
 				};
 
 				defaults = _.defaults( defaults, this.constructor.__super__.defaults );
@@ -142,7 +224,9 @@
 			},
 
 			parse: function( response ) {
-				var SELF = this;
+				var SELF = this,
+					i = 0,
+					z = 0;
 
 				if ( response.fields ) {
 
@@ -150,7 +234,7 @@
 
 					if ( fields && fields.length > 0 ) {
 
-						for ( var i = 0; i < response.fields.length; i++ ) {
+						for ( i = 0; i < response.fields.length; i++ ) {
 							var newField = response.fields[i];
 
 							var field = fields.findWhere( { slug: newField.slug } );
@@ -160,7 +244,7 @@
 									var choices = SELF.get( 'choices' );
 
 									if ( choices && choices.length > 0 ) {
-										for ( var z = 0; z < newField.choices; z++ ) {
+										for ( z = 0; z < newField.choices; z++ ) {
 											var choice = choices.at( z );
 											choice.set( newField.choices[z] );
 											choice.decode();
@@ -186,7 +270,101 @@
 							newFields.push( fieldModel );
 						});
 
-						response.fields = new wp.ccf.collections.Fields( newFields, { formId: response.ID } );
+						response.fields = new wp.ccf.collections.Fields( newFields, { formId: response.id } );
+						if ( ! fields ) {
+							response.fields = new wp.ccf.collections.Fields( newFields, { formId: response.id } );
+						} else {
+							fields.add( newFields );
+							delete response.fields;
+						}
+					}
+				}
+
+				if ( response.notifications ) {
+
+					var notifications = SELF.get( 'notifications' );
+
+					if ( notifications && notifications.length > 0 ) {
+
+						for ( i = 0; i < response.notifications.length; i++ ) {
+							var newNotification = response.notifications[i];
+
+							var notification = notifications.at( i );
+
+							if ( notification ) {
+								if ( typeof newNotification.addresses !== 'undefined' ) {
+									var addresses = notification.get( 'addresses' );
+
+									if ( addresses && addresses.length > 0 ) {
+										for ( z = 0; z < newNotification.addresses; z++ ) {
+											var address = addresses.at( z );
+											address.set( newNotification.addresses[z] );
+											address.decode();
+										}
+									}
+
+									delete response.notifications[i].addresses;
+								}
+
+								notification.set( newNotification );
+								notification.decode();
+							}
+						}
+
+						delete response.notifications;
+					} else {
+						var newNotifications = [];
+
+						_.each( response.notifications, function( notification ) {
+							var notificationModel = new wp.ccf.models.FormNotification( notification );
+							notificationModel.decode();
+
+							newNotifications.push( notificationModel );
+						});
+
+						if ( ! notifications ) {
+							response.notifications = new wp.ccf.collections.FormNotifications( newNotifications );
+						} else {
+							notifications.add( newNotifications );
+							delete response.notifications;
+						}
+					}
+				}
+
+				if ( response.postFieldMappings ) {
+
+					var postFieldMappings = SELF.get( 'postFieldMappings' );
+
+					if ( postFieldMappings && postFieldMappings.length > 0 ) {
+
+						for ( i = 0; i < response.postFieldMappings.length; i++ ) {
+							var newPostFieldMapping = response.postFieldMappings[i];
+
+							var postFieldMapping = postFieldMappings.at( i );
+
+							if ( postFieldMapping ) {
+								postFieldMapping.set( newPostFieldMapping );
+								postFieldMapping.decode();
+							}
+						}
+
+						delete response.postFieldMappings;
+					} else {
+						var newPostFieldMappings = [];
+
+						_.each( response.postFieldMappings, function( postFieldMapping ) {
+							var postFieldMappingModel = new wp.ccf.models.PostFieldMapping( postFieldMapping );
+							postFieldMappingModel.decode();
+
+							newPostFieldMappings.push( postFieldMappingModel );
+						});
+
+						if ( ! postFieldMappings ) {
+							response.postFieldMappings = new wp.ccf.collections.PostFieldMappings( newPostFieldMappings );
+						} else {
+							postFieldMappings.add( newPostFieldMappings );
+							response.postFieldMappings = postFieldMappings;
+						}
 					}
 				}
 
@@ -200,6 +378,14 @@
 					attributes.fields = attributes.fields.toJSON();
 				}
 
+				if ( attributes.notifications ) {
+					attributes.notifications = attributes.notifications.toJSON();
+				}
+
+				if ( attributes.postFieldMappings ) {
+					attributes.postFieldMappings = attributes.postFieldMappings.toJSON();
+				}
+
 				if ( attributes.author ) {
 					attributes.author = attributes.author.toJSON();
 				}
@@ -211,23 +397,24 @@
 
 	wp.ccf.models.Submission = wp.api.models.Submission || wp.api.models.Post.extend(
 		{
-			idAttribute: 'ID',
-
 			defaults: {
-				ID: null,
-				data: {}
+				id: null,
+				data: {},
+				fields: {}
 			},
 
-			sync: _sync
+			sync: _sync,
+
+			urlRoot: ccfSettings.apiRoot.replace( /\/$/, '' ) + '/ccf/v1/submissions'
 		}
 	);
 
 	wp.ccf.models.Field = wp.api.models.Field || wp.api.models.Post.extend(
 		{
-			idAttribute: 'ID',
+			idAttribute: 'id',
 
 			defaults: {
-				ID: null
+				id: null
 			},
 
 			set: _modelSet,
@@ -259,7 +446,7 @@
 
 	wp.ccf.models.StandardField = wp.ccf.models.StandardField || wp.ccf.models.Field.extend(
 		{
-			idAttribute: 'ID',
+			idAttribute: 'id',
 
 			defaults: function() {
 				var defaults = {
@@ -373,7 +560,8 @@
 				var defaults = {
 					type: 'date',
 					showDate: true,
-					showTime: true
+					showTime: true,
+					dateFormat: 'mm/dd/yyyy'
 				};
 
 				return _.defaults( defaults, this.constructor.__super__.defaults() );
@@ -543,4 +731,4 @@
 			}
 		}
 	);
-})( jQuery, Backbone, _, ccfSettings, WP_API_Settings );
+})( jQuery, Backbone, _, ccfSettings );
