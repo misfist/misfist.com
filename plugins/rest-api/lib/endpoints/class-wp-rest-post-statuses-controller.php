@@ -11,6 +11,7 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 			array(
 				'methods'         => WP_REST_Server::READABLE,
 				'callback'        => array( $this, 'get_items' ),
+				'args'            => $this->get_collection_params(),
 			),
 			'schema' => array( $this, 'get_public_item_schema' ),
 		) );
@@ -19,6 +20,9 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 			array(
 				'methods'         => WP_REST_Server::READABLE,
 				'callback'        => array( $this, 'get_item' ),
+				'args'            => array(
+					'context'          => $this->get_context_param( array( 'default' => 'view' ) ),
+				),
 			),
 			'schema' => array( $this, 'get_public_item_schema' ),
 		) );
@@ -44,7 +48,7 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 			}
 			$data[ $obj->name ] = $this->prepare_response_for_collection( $status );
 		}
-		return $data;
+		return rest_ensure_response( $data );
 	}
 
 	/**
@@ -58,7 +62,8 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 		if ( empty( $obj ) ) {
 			return new WP_Error( 'rest_status_invalid', __( 'Invalid status.' ), array( 'status' => 404 ) );
 		}
-		return $this->prepare_item_for_response( $obj, $request );
+		$data = $this->prepare_item_for_response( $obj, $request );
+		return rest_ensure_response( $data );
 	}
 
 	/**
@@ -70,7 +75,7 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 	 */
 	public function prepare_item_for_response( $status, $request ) {
 		if ( ( false === $status->public && ! is_user_logged_in() ) || ( true === $status->internal && is_user_logged_in() ) ) {
-			return new WP_Error( 'rest_cannot_read_status', __( 'Cannot view status.' ), array( 'status' => 403 ) );
+			return new WP_Error( 'rest_cannot_read_status', __( 'Cannot view status.' ), array( 'status' => rest_authorization_required_code() ) );
 		}
 
 		$data = array(
@@ -84,20 +89,29 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 		);
 
 		$context = ! empty( $request['context'] ) ? $request['context'] : 'view';
-		$data = $this->filter_response_by_context( $data, $context );
 		$data = $this->add_additional_fields_to_object( $data, $request );
+		$data = $this->filter_response_by_context( $data, $context );
 
-		$data = rest_ensure_response( $data );
+		$response = rest_ensure_response( $data );
 
 		$posts_controller = new WP_REST_Posts_Controller( 'post' );
 
 		if ( 'publish' === $status->name ) {
-			$data->add_link( 'archives', rest_url( '/wp/v2/' . $posts_controller->get_post_type_base( 'post' ) ) );
+			$response->add_link( 'archives', rest_url( '/wp/v2/' . $posts_controller->get_post_type_base( 'post' ) ) );
 		} else {
-			$data->add_link( 'archives', add_query_arg( 'status', $status->name, rest_url( '/wp/v2/' . $posts_controller->get_post_type_base( 'post' ) ) ) );
+			$response->add_link( 'archives', add_query_arg( 'status', $status->name, rest_url( '/wp/v2/' . $posts_controller->get_post_type_base( 'post' ) ) ) );
 		}
 
-		return $data;
+		/**
+		 * Filter a status returned from the API.
+		 *
+		 * Allows modification of the status data right before it is returned.
+		 *
+		 * @param WP_REST_Response  $response The response object.
+		 * @param object            $status   The original status object.
+		 * @param WP_REST_Request   $request  Request used to generate the response.
+		 */
+		return apply_filters( 'rest_prepare_status', $response, $status, $request );
 	}
 
 	/**
@@ -112,43 +126,54 @@ class WP_REST_Post_Statuses_Controller extends WP_REST_Controller {
 			'type'                 => 'object',
 			'properties'           => array(
 				'name'             => array(
-					'description'  => 'The title for the status.',
+					'description'  => __( 'The title for the status.' ),
 					'type'         => 'string',
 					'context'      => array( 'view' ),
 					),
 				'private'          => array(
-					'description'  => 'Whether posts with this status should be private.',
+					'description'  => __( 'Whether posts with this status should be private.' ),
 					'type'         => 'boolean',
 					'context'      => array( 'view' ),
 					),
 				'protected'        => array(
-					'description'  => 'Whether posts with this status should be protected.',
+					'description'  => __( 'Whether posts with this status should be protected.' ),
 					'type'         => 'boolean',
 					'context'      => array( 'view' ),
 					),
 				'public'           => array(
-					'description'  => 'Whether posts of this status should be shown in the front end of the site.',
+					'description'  => __( 'Whether posts of this status should be shown in the front end of the site.' ),
 					'type'         => 'boolean',
 					'context'      => array( 'view' ),
 					),
 				'queryable'        => array(
-					'description'  => 'Whether posts with this status should be publicly-queryable.',
+					'description'  => __( 'Whether posts with this status should be publicly-queryable.' ),
 					'type'         => 'boolean',
 					'context'      => array( 'view' ),
 					),
 				'show_in_list'     => array(
-					'description'  => 'Whether to include posts in the edit listing for their post type.',
+					'description'  => __( 'Whether to include posts in the edit listing for their post type.' ),
 					'type'         => 'boolean',
 					'context'      => array( 'view' ),
 					),
 				'slug'             => array(
-					'description'  => 'An alphanumeric identifier for the status.',
+					'description'  => __( 'An alphanumeric identifier for the status.' ),
 					'type'         => 'string',
 					'context'      => array( 'view' ),
 					),
 				),
 			);
 		return $this->add_additional_fields_schema( $schema );
+	}
+
+	/**
+	 * Get the query params for collections
+	 *
+	 * @return array
+	 */
+	public function get_collection_params() {
+		return array(
+			'context'        => $this->get_context_param( array( 'default' => 'view' ) ),
+		);
 	}
 
 }

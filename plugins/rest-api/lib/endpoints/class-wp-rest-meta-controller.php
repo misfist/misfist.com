@@ -40,11 +40,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 				'methods'             => WP_REST_Server::READABLE,
 				'callback'            => array( $this, 'get_items' ),
 				'permission_callback' => array( $this, 'get_items_permissions_check' ),
-				'args'                => array(
-					'context'             => array(
-						'default'             => 'view',
-					),
-				),
+				'args'                => $this->get_collection_params(),
 			),
 			array(
 				'methods'             => WP_REST_Server::CREATABLE,
@@ -61,9 +57,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 				'callback'            => array( $this, 'get_item' ),
 				'permission_callback' => array( $this, 'get_item_permissions_check' ),
 				'args'                => array(
-					'context'             => array(
-						'default'             => 'view',
-					),
+					'context'          => $this->get_context_param( array( 'default' => 'edit' ) ),
 				),
 			),
 			array(
@@ -77,8 +71,9 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 				'callback'            => array( $this, 'delete_item' ),
 				'permission_callback' => array( $this, 'delete_item_permissions_check' ),
 				'args'                => array(
-					'force' => array(
-						'default' => false,
+					'force'    => array(
+						'default'     => false,
+						'description' => __( 'Required to be true, as resource does not support trashing.' ),
 					),
 				),
 			),
@@ -102,13 +97,13 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 			 */
 			'properties' => array(
 				'id' => array(
-					'description' => 'Unique identifier for the object.',
-					'type'        => 'int',
+					'description' => __( 'Unique identifier for the object.' ),
+					'type'        => 'integer',
 					'context'     => array( 'edit' ),
 					'readonly'    => true,
 				),
 				'key' => array(
-					'description' => 'The key for the custom field.',
+					'description' => __( 'The key for the custom field.' ),
 					'type'        => 'string',
 					'context'     => array( 'edit' ),
 					'required'    => true,
@@ -117,13 +112,26 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 					),
 				),
 				'value' => array(
-					'description' => 'The value of the custom field.',
+					'description' => __( 'The value of the custom field.' ),
 					'type'        => 'string',
 					'context'     => array( 'edit' ),
 				),
 			),
 		);
 		return $schema;
+	}
+
+	/**
+	 * Get the query params for collections
+	 *
+	 * @return array
+	 */
+	public function get_collection_params() {
+		$params = parent::get_collection_params();
+		$new_params = array();
+		$new_params['context'] = $params['context'];
+		$new_params['context']['default'] = 'edit';
+		return $new_params;
 	}
 
 	/**
@@ -191,7 +199,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 		$meta = get_metadata_by_mid( $this->parent_type, $mid );
 
 		if ( empty( $meta ) ) {
-			return new WP_Error( 'rest_meta_invalid_id', __( 'Invalid meta ID.' ), array( 'status' => 404 ) );
+			return new WP_Error( 'rest_meta_invalid_id', __( 'Invalid meta id.' ), array( 'status' => 404 ) );
 		}
 
 		if ( absint( $meta->$parent_column ) !== $parent_id ) {
@@ -265,7 +273,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 		$current = get_metadata_by_mid( $this->parent_type, $mid );
 
 		if ( empty( $current ) ) {
-			return new WP_Error( 'rest_meta_invalid_id', __( 'Invalid meta ID.' ), array( 'status' => 404 ) );
+			return new WP_Error( 'rest_meta_invalid_id', __( 'Invalid meta id.' ), array( 'status' => 404 ) );
 		}
 
 		if ( absint( $current->$parent_column ) !== $parent_id ) {
@@ -333,7 +341,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 		 *
 		 * @param array           $value    The inserted meta data.
 		 * @param WP_REST_Request $request  The request sent to the API.
-		 * @param bool            $creating True when adding meta, false when updating.
+		 * @param boolean         $creating True when adding meta, false when updating.
 		 */
 		do_action( 'rest_insert_meta', $value, $request, false );
 
@@ -399,7 +407,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 
 		$response->set_status( 201 );
 		$data = $response->get_data();
-		$response->header( 'Location', rest_url( $this->parent_base . '/' . $parent_id . '/meta/' . $data['id'] ) );
+		$response->header( 'Location', rest_url( 'wp/v2' . '/' . $this->parent_base . '/' . $parent_id . '/meta/' . $data['id'] ) );
 
 		/* This action is documented in lib/endpoints/class-wp-rest-meta-controller.php */
 		do_action( 'rest_insert_meta', $data, $request, true );
@@ -427,7 +435,7 @@ abstract class WP_REST_Meta_Controller extends WP_REST_Controller {
 		$current = get_metadata_by_mid( $this->parent_type, $mid );
 
 		if ( empty( $current ) ) {
-			return new WP_Error( 'rest_meta_invalid_id', __( 'Invalid meta ID.' ), array( 'status' => 404 ) );
+			return new WP_Error( 'rest_meta_invalid_id', __( 'Invalid meta id.' ), array( 'status' => 404 ) );
 		}
 
 		if ( absint( $current->$parent_column ) !== (int) $parent_id ) {
