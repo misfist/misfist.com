@@ -85,7 +85,6 @@
     }
   ],
   "require": {
-    "composer/installers": "~1.0",
     "wpackagist-plugin/admin-management-xtended": ">=2.4.0",
     "wpackagist-plugin/admin-post-navigation": ">=2.0",
     "wpackagist-plugin/backupwordpress": "3.6.2",
