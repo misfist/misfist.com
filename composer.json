@@ -54,8 +54,8 @@
         "version": "master",
         "type": "wordpress-plugin",
         "dist": {
-          "type": "git",
-          "url": "https://github.com/misfist/advanced-custom-fields-repeater.git"
+          "type": "zip",
+          "url": "https://github.com/misfist/advanced-custom-fields-repeater/archive/master.zip"
         }
       }
     },
@@ -66,20 +66,8 @@
         "version": "master",
         "type": "wordpress-plugin",
         "dist": {
-          "type": "git",
-          "url": "https://github.com/glocalcoop/anp-network-content.git"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "jarednova/timber",
-        "version": "master",
-        "type": "wordpress-muplugin",
-        "dist": {
-          "type": "git",
-          "url": "https://github.com/jarednova/timber.git"
+          "type": "zip",
+          "url": "https://github.com/glocalcoop/anp-network-content/archive/master.zip"
         }
       }
     }
@@ -108,8 +96,7 @@
     "misfist/advanced-custom-fields": "dev-master",
     "misfist/admin-columns": "dev-master",
     "misfist/admin-columns-acf": "dev-master",
-    "misfist/advanced-custom-fields-repeater": "dev-master",
-    "glocalcoop/anp-network-content": "dev-master"
+    "misfist/advanced-custom-fields-repeater": "dev-master"
   },
   "require-dev": {
     "wpackagist-plugin/developer": ">=1.2.5",
