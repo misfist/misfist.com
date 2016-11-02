@@ -107,11 +107,5 @@
     "wpackagist-plugin/user-switching": ">=1.0.8",
     "wpackagist-plugin/rest-api-console": ">=2.0.1",
     "wpackagist-plugin/wordpress-importer": "0.6.3"
-  },
-  "extra": {
-    "installer-paths": {
-      "./plugins/{$name}/": ["type:wordpress-plugin"],
-      "./themes/{$name}/": ["type:wordpress-theme"]
-    }
   }
 }
