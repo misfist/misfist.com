@@ -10,3 +10,6 @@ composer.lock
 node_modules
 vendor
 uploads/*
+themes
+plugins
+mu-plugins

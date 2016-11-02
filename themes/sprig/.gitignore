@@ -1,6 +1,0 @@
-node_modules/*
-.sass-cache/*
-vendor/*
-inc/Twig/twig_cache/*
-.DS_Store
-.idea
