@@ -1,16 +1,10 @@
-*.log
-.htaccess
-.DS_Store
-*.bak
-*~
-.brackets.json
-*.sass-cache
-composer.lock
+# Ignore Everything
+*
 
-node_modules
-vendor
-uploads/*
-themes
-plugins
-mu-plugins
-upgrade
+# Except
+!.git
+!.gitignore
+!composer.json
+!composer.lock
+!readme.txt
+!readme.md
